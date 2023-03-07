@@ -1,20 +1,50 @@
-/* Typography
---------------------------------------------- */
-@import "typography/typography";
+:root {
+    --color-primary: #5A825A;
+    --color-secondary: #F0821F;
+    
+    --color-text-primary: #1E1E1E;
+    --color-text-light: #ffffff;
+    
+    --shadow-dark: 0 2rem 6rem rgba(0,0,0, .3);
+}
 
-/* Elements
---------------------------------------------- */
-@import "elements/body";
-@import "elements/hr";
-@import "elements/lists";
-@import "elements/media";
-@import "elements/tables";
+$bp-largest:75em; //1200/16
+$bp-large:68.75em; //1100/16
+$bp-medium:56.25em; //900/16
+$bp-small:37.5em; //600/16
+$bp-smallest:31.25em; //600/16
 
-/* Links
---------------------------------------------- */
-@import "elements/links";
+* {
+    margin: 0;
+    padding: 0;
+}
 
-/* Forms
---------------------------------------------- */
-@import "elements/buttons";
-@import "elements/fields";
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //1rem = 10px
+
+    // @media only screen and (max-width:$bp-large) {
+    //     font-size: 50%;
+    // }
+    @media only screen and (max-width:$bp-medium) {
+        font-size: 55%;
+    }
+    @media only screen and (max-width:$bp-small) {
+        font-size: 40%;
+    }
+}
+
+body {
+    font-weight: 100;
+    line-height: 1.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: var(--color-text-primary);  
+}

@@ -1,0 +1,25 @@
+.soil-gel-page {
+	
+	.section {
+		&__how-it-works {
+			background-color: green;
+			text-align: center;
+			color: var(--color-text-light);
+			.content{
+				display: flex;
+				img {
+					width: 300px;
+					height: 300px;
+					border-radius: 100%;
+					margin-bottom: 1.5rem;
+				}
+				> div {
+					display: flex;
+					flex-direction: column;
+					width: 50%;
+					align-items: center;
+				}
+			}
+		}
+	}
+}

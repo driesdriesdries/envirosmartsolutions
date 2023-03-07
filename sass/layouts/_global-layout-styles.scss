@@ -1,0 +1,17 @@
+.container {
+	max-width: 1440px;
+	background-color: bisque;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	border: 2px solid gold;
+}
+
+.section {
+	width: 100%;
+	max-width: 1140px;
+	background-color: aquamarine;
+	border-bottom: 3px solid orangered;
+	padding: 0 2rem;
+}
