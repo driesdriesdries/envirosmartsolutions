@@ -1,0 +1,15 @@
+//Styling of the footer
+.footer {
+	background-color: #D9D9D9;
+	.section {
+		height: 10rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		p {
+			margin-bottom: 0;
+			font-style: italic;
+			color: var(--color-text-primary);
+		}
+	}
+}

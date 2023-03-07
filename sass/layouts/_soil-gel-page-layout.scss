@@ -1,10 +1,24 @@
 .soil-gel-page {
-	
+	.container {
+		&__1 {
+			// background-color: var(--canvas-green);
+		}
+		&__2 {
+			background-color: var(--canvas-green);
+		}
+		&__3 {
+			background-color: #ffffff;
+		}
+		&__4 {
+			background-color: var(--canvas-green);
+		}
+	}
 	.section {
 		&__how-it-works {
 			background-color: green;
 			text-align: center;
 			color: var(--color-text-light);
+			border-radius: var(--rounded-corners);
 			.content{
 				display: flex;
 				img {
@@ -18,6 +32,21 @@
 					flex-direction: column;
 					width: 50%;
 					align-items: center;
+				}
+			}
+		}
+		&__benefits {
+			text-align: center;
+			.card-section {
+				display: flex;
+				justify-content: space-between;
+				.card {
+					width: 32%;
+					background-color: var(--canvas-green);
+					border-radius: var(--rounded-corners);
+					ul {
+						list-style-type: none;
+					}
 				}
 			}
 		}

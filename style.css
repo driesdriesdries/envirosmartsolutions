@@ -333,10 +333,12 @@ template {
 --------------------------------------------------------------*/
 :root {
   --color-primary: #5A825A;
+  --canvas-green: #F4FBF3;
   --color-secondary: #F0821F;
   --color-text-primary: #1E1E1E;
   --color-text-light: #ffffff;
-  --shadow-dark: 0 2rem 6rem rgba(0,0,0, .3); }
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0, .3);
+  --rounded-corners: 20px; }
 
 * {
   margin: 0;
@@ -389,7 +391,9 @@ h1 {
   color: var(--color-text-light); }
 
 h2 {
-  font-size: 4rem; }
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem; }
 
 h3 {
   font-size: 3rem; }
@@ -408,6 +412,9 @@ h6 {
 
 p {
   margin-bottom: 1.5em;
+  font-size: 1.6rem; }
+
+li {
   font-size: 1.6rem; }
 
 dfn,
@@ -455,7 +462,6 @@ big {
 --------------------------------------------------------------*/
 .container {
   max-width: 1440px;
-  background-color: bisque;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -465,14 +471,24 @@ big {
 .section {
   width: 100%;
   max-width: 1140px;
-  background-color: aquamarine;
-  border-bottom: 3px solid orangered;
-  padding: 0 2rem; }
+  border-bottom: 1px solid orangered;
+  background-color: cornflowerblue;
+  padding: 0 3rem; }
+
+.soil-gel-page .container__2 {
+  background-color: var(--canvas-green); }
+
+.soil-gel-page .container__3 {
+  background-color: #ffffff; }
+
+.soil-gel-page .container__4 {
+  background-color: var(--canvas-green); }
 
 .soil-gel-page .section__how-it-works {
   background-color: green;
   text-align: center;
-  color: var(--color-text-light); }
+  color: var(--color-text-light);
+  border-radius: var(--rounded-corners); }
   .soil-gel-page .section__how-it-works .content {
     display: flex; }
     .soil-gel-page .section__how-it-works .content img {
@@ -486,6 +502,18 @@ big {
       width: 50%;
       align-items: center; }
 
+.soil-gel-page .section__benefits {
+  text-align: center; }
+  .soil-gel-page .section__benefits .card-section {
+    display: flex;
+    justify-content: space-between; }
+    .soil-gel-page .section__benefits .card-section .card {
+      width: 32%;
+      background-color: var(--canvas-green);
+      border-radius: var(--rounded-corners); }
+      .soil-gel-page .section__benefits .card-section .card ul {
+        list-style-type: none; }
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -493,6 +521,18 @@ big {
 --------------------------------------------- */
 .main-navigation {
   background-color: orangered; }
+
+.footer {
+  background-color: #D9D9D9; }
+  .footer .section {
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .footer .section p {
+      margin-bottom: 0;
+      font-style: italic;
+      color: var(--color-text-primary); }
 
 /* Posts and pages
 --------------------------------------------- */

@@ -17,12 +17,13 @@ get_header();
 
 	<main id="primary" class="site-main soil-gel-page">
 		
-		<div class="container">
+		<div class="container container__1">
 			<div class="section">
 			<h1>Boost crop yield with Soil Gel while saving on valuable resources</h1>
 			</div>
 		</div>
-		<div class="container">
+		
+		<div class="container container__2">
 			<div class="section section__how-it-works">
 				<h2>How it works</h2>
 				
@@ -41,10 +42,52 @@ get_header();
 			<div class="section">Testimonial</div>
 			<div class="section">Applications</div>
 		</div>
-		<div class="container">
-			<div class="section">Benefits</div>
+
+		<div class="container container__3">
+			<div class="section section__benefits">
+				<h2>Benefits</h2>
+				<div class="card-section">
+					<div class="card">
+						<img src="#" alt="">
+						<h3>Heading</h3>
+						<ul>
+							<li>xxxx</li>
+							<li>xxxx</li>
+							<li>xxxx</li>
+							<li>xxxx</li>
+							<li>xxxx</li>
+							<li>xxxx</li>
+						</ul>
+					</div>
+					<div class="card">
+						<img src="#" alt="">
+						<h3>Heading</h3>
+						<ul>
+							<li>xxxx</li>
+							<li>xxxx</li>
+							<li>xxxx</li>
+							<li>xxxx</li>
+							<li>xxxx</li>
+							<li>xxxx</li>
+						</ul>
+					</div>
+					<div class="card">
+						<img src="#" alt="">
+						<h3>Heading</h3>
+						<ul>
+							<li>xxxx</li>
+							<li>xxxx</li>
+							<li>xxxx</li>
+							<li>xxxx</li>
+							<li>xxxx</li>
+							<li>xxxx</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="container">
+
+		<div class="container container__4">
 			<div class="section">FAQ</div>
 			<div class="section">Social Proof</div>
 		</div>
@@ -52,5 +95,5 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
+//get_sidebar();
 get_footer();

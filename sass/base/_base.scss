@@ -1,11 +1,13 @@
 :root {
     --color-primary: #5A825A;
+    --canvas-green: #F4FBF3;
     --color-secondary: #F0821F;
     
     --color-text-primary: #1E1E1E;
     --color-text-light: #ffffff;
     
     --shadow-dark: 0 2rem 6rem rgba(0,0,0, .3);
+    --rounded-corners: 20px;
 }
 
 $bp-largest:75em; //1200/16

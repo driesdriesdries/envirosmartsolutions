@@ -11,11 +11,13 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+	<footer class="container footer">
+		<div class="section">
+			<p>Copyright Notice: All content © 2023 EnviroSmart Solutions unless otherwise stated. All rights reserved.</p>
+		</div>
+	</footer>
+
+	
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
