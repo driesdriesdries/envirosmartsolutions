@@ -2,6 +2,9 @@
 	.container {
 		&__1 {
 			// background-color: var(--canvas-green);
+			.section {
+				text-align: center;
+			}
 		}
 		&__2 {
 			background-color: var(--canvas-green);
@@ -15,10 +18,12 @@
 	}
 	.section {
 		&__how-it-works {
-			background-color: green;
+			background-image: linear-gradient(to right bottom, var(--color-primary), #B7CCB7);
+			background-size: cover;
 			text-align: center;
 			color: var(--color-text-light);
 			border-radius: var(--rounded-corners);
+			margin: var(--section-margin);
 			.content{
 				display: flex;
 				img {
@@ -35,19 +40,51 @@
 				}
 			}
 		}
+
+		&__testimonial {
+			text-align: center;
+			padding: 10rem 15rem;
+		}
+
 		&__benefits {
 			text-align: center;
+			margin: var(--section-margin);
+			padding-left: 0rem;
+			padding-right: 0rem;
 			.card-section {
 				display: flex;
 				justify-content: space-between;
+				margin-bottom: 2rem;
 				.card {
 					width: 32%;
 					background-color: var(--canvas-green);
 					border-radius: var(--rounded-corners);
+					img {
+						border-radius: 100%;
+						width: 12.5rem;
+						height: 12.5rem;
+						margin-top: 2rem;
+					}
 					ul {
+						text-align: left;
 						list-style-type: none;
+						margin-left: 1.5rem;
+						li:last-child {
+							margin-bottom: 2rem;
+						}
 					}
 				}
+			}
+		}
+		&__social-proof {
+			background-image: linear-gradient(to right bottom, #B7CCB7, var(--color-primary));
+			border-radius: var(--rounded-corners);
+			padding: 10rem 15rem;
+			text-align: center;
+			margin: var(--section-margin);
+
+			h4 {
+				color: #ffffff;
 			}
 		}
 	}

@@ -1,17 +1,17 @@
 .container {
 	max-width: 1440px;
-	//background-color: teal;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin: 0 auto;
-	border: 2px solid gold;
+	border: 1px solid gold;
+	background-color: teal;
 }
 
 .section {
 	width: 100%;
 	max-width: 1140px;
-	border-bottom: 1px solid orangered;
-	background-color: cornflowerblue;
 	padding: 0 3rem;
+	border: 1px solid black;
+	// background-color: cornflowerblue;
 }

@@ -39,7 +39,11 @@ get_header();
 				</div>
 
 			</div>
-			<div class="section">Testimonial</div>
+			
+			<div class="section section__testimonial">
+				<h4><i>“SoilGel is completely environmentally friendly and does not present any toxins or contamination for plants, soil, humans, or the environment.”</i></h4>
+			</div>
+			
 			<div class="section">Applications</div>
 		</div>
 
@@ -48,9 +52,24 @@ get_header();
 				<h2>Benefits</h2>
 				<div class="card-section">
 					<div class="card">
-						<img src="#" alt="">
+						<img src="https://imgs.search.brave.com/qNgeVwKOZ3LaCyLZzAhdt-FW1ZzIuPsVnpUsQIX_efw/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5Z/aFlSdUtYSjVPSnVy/N2VkYm81QkRBSGFI/YSZwaWQ9QXBp" alt="">
 						<h3>Heading</h3>
 						<ul>
+							<li>xxxx</li>
+							<li>xxxx</li>
+							<li>xxxx</li>
+							<li>xxxx</li>
+							<li>xxxx</li>
+						</ul>
+					</div>
+					<div class="card">
+					<img src="https://imgs.search.brave.com/qNgeVwKOZ3LaCyLZzAhdt-FW1ZzIuPsVnpUsQIX_efw/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5Z/aFlSdUtYSjVPSnVy/N2VkYm81QkRBSGFI/YSZwaWQ9QXBp" alt="">
+						<h3>Heading</h3>
+						<ul>
+							<li>xxxx</li>
+							<li>xxxx</li>
+							<li>xxxx</li>
+							<li>xxxx</li>
 							<li>xxxx</li>
 							<li>xxxx</li>
 							<li>xxxx</li>
@@ -60,19 +79,7 @@ get_header();
 						</ul>
 					</div>
 					<div class="card">
-						<img src="#" alt="">
-						<h3>Heading</h3>
-						<ul>
-							<li>xxxx</li>
-							<li>xxxx</li>
-							<li>xxxx</li>
-							<li>xxxx</li>
-							<li>xxxx</li>
-							<li>xxxx</li>
-						</ul>
-					</div>
-					<div class="card">
-						<img src="#" alt="">
+					<img src="https://imgs.search.brave.com/qNgeVwKOZ3LaCyLZzAhdt-FW1ZzIuPsVnpUsQIX_efw/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5Z/aFlSdUtYSjVPSnVy/N2VkYm81QkRBSGFI/YSZwaWQ9QXBp" alt="">
 						<h3>Heading</h3>
 						<ul>
 							<li>xxxx</li>
@@ -89,7 +96,12 @@ get_header();
 
 		<div class="container container__4">
 			<div class="section">FAQ</div>
-			<div class="section">Social Proof</div>
+			
+			<div class="section section__social-proof">
+				<h4>
+					<i>Soil Gel is Utilised worldwide: Europe, North America, China, India, Japan, Australia, Indonesia, Malaysia, South Korea, Brazil, Mexico, South Africa and Middle East</i>
+				</h4>
+			</div>
 		</div>
 
 	</main><!-- #main -->
