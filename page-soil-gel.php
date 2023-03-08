@@ -98,41 +98,36 @@ get_header();
 				<div class="card-section">
 					<div class="card">
 						<img src="https://imgs.search.brave.com/qNgeVwKOZ3LaCyLZzAhdt-FW1ZzIuPsVnpUsQIX_efw/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5Z/aFlSdUtYSjVPSnVy/N2VkYm81QkRBSGFI/YSZwaWQ9QXBp" alt="">
-						<h3>Heading</h3>
+						<h3>Users</h3>
 						<ul>
-							<li>xxxx</li>
-							<li>xxxx</li>
-							<li>xxxx</li>
-							<li>xxxx</li>
-							<li>xxxx</li>
+							<li>Save Water</li>
+							<li>Irrigate less - Reduce frequency</li>
+							<li>Minimise Evaporation</li>
+							<li>Store Water</li>
+							<li>Save Electricity & Combat loadshedding </li>
 						</ul>
 					</div>
 					<div class="card">
 					<img src="https://imgs.search.brave.com/qNgeVwKOZ3LaCyLZzAhdt-FW1ZzIuPsVnpUsQIX_efw/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5Z/aFlSdUtYSjVPSnVy/N2VkYm81QkRBSGFI/YSZwaWQ9QXBp" alt="">
-						<h3>Heading</h3>
+						<h3>Plants</h3>
 						<ul>
-							<li>xxxx</li>
-							<li>xxxx</li>
-							<li>xxxx</li>
-							<li>xxxx</li>
-							<li>xxxx</li>
-							<li>xxxx</li>
-							<li>xxxx</li>
-							<li>xxxx</li>
-							<li>xxxx</li>
-							<li>xxxx</li>
+							<li>Increase production</li>
+							<li>Accelerate and enrich root development</li>
+							<li>Improve plant health and seed germination</li>
+							<li>Promote early hatching and healthy plant</li>
+							<li>Increase rate of survival and delay wilting</li>
+							<li>Increase resistance to water stress</li>
+							<li>Save Fertilizer, Reduces fertilizer usage</li>
 						</ul>
 					</div>
 					<div class="card">
 					<img src="https://imgs.search.brave.com/qNgeVwKOZ3LaCyLZzAhdt-FW1ZzIuPsVnpUsQIX_efw/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5Z/aFlSdUtYSjVPSnVy/N2VkYm81QkRBSGFI/YSZwaWQ9QXBp" alt="">
-						<h3>Heading</h3>
+						<h3>Soil</h3>
 						<ul>
-							<li>xxxx</li>
-							<li>xxxx</li>
-							<li>xxxx</li>
-							<li>xxxx</li>
-							<li>xxxx</li>
-							<li>xxxx</li>
+							<li>Improve Soil Structure Soil activator</li>
+							<li>Prevent hardening and compaction</li>
+							<li>Improve aeration capacity – Provides potassium</li>
+							<li>Improve retention capacity up to 85% in sandy soils</li>
 						</ul>
 					</div>
 				</div>

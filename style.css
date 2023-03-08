@@ -565,6 +565,14 @@ big {
         text-align: left;
         list-style-type: none;
         margin-left: 1.5rem; }
+        .soil-gel-page .section__benefits .card-section .card ul li::before {
+          content: "";
+          display: inline-block;
+          width: 1rem;
+          height: 1rem;
+          background-color: red;
+          border-radius: 100%;
+          margin-right: 1rem; }
         .soil-gel-page .section__benefits .card-section .card ul li:last-child {
           margin-bottom: 2rem; }
 
