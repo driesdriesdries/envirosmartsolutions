@@ -46,6 +46,48 @@
 			padding: 10rem 15rem;
 		}
 
+		&__application {
+			//background-color: antiquewhite;
+			display: flex;
+			padding: 3rem 3rem;
+			border: 3px solid var(--color-primary);
+			border-radius: var(--rounded-corners);
+			margin-bottom: 5rem;
+			margin-top: 5rem;
+			.copy {
+				//background-color: aquamarine;
+				width: 40%;
+				align-self: center;
+				padding-right: 5rem;
+			}
+			.image-grid {
+				width: 60%;
+				display: flex;
+				justify-content: space-around;
+				flex-wrap: wrap;
+				background-color: red;
+
+				&__grid-item{
+					width: 31%;
+					&--image {
+						width: 100%;
+						border-radius: var(--rounded-corners);
+						z-index: 2;
+					}
+					&--caption {
+						background-color: #212121;
+						text-align: center;
+						margin-top: -2.8rem;
+						position: relative;
+						z-index: 3;
+						border-bottom-left-radius: 2rem;
+						border-bottom-right-radius: 2rem;
+						color: #ffffff;
+						margin-bottom: 1rem;
+					}
+				}
+			}
+		}
 		&__benefits {
 			text-align: center;
 			margin: var(--section-margin);
@@ -77,6 +119,7 @@
 			}
 		}
 		&__social-proof {
+		
 			background-image: linear-gradient(to right bottom, #B7CCB7, var(--color-primary));
 			border-radius: var(--rounded-corners);
 			padding: 10rem 15rem;

@@ -44,7 +44,52 @@ get_header();
 				<h4><i>“SoilGel is completely environmentally friendly and does not present any toxins or contamination for plants, soil, humans, or the environment.”</i></h4>
 			</div>
 			
-			<div class="section">Applications</div>
+			<div class="section section__application">
+				<div class="copy">
+					<h2>Applications</h2>
+					<p>Soil-Gel is suited for multiple types of application and can benefit any plant</p>
+				</div>
+				<div class="image-grid">
+					
+					<div class="image-grid__grid-item">
+						<img class="image-grid__grid-item--image" src="https://imgs.search.brave.com/JO3zf1oz06ex99qtG24k4kw4BnHScGxYkpSsdBHxSE0/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dHZuaTRsNzR6eXI0/MS5wbmc_YXV0bz13/ZWJwJnM9ZWYyMzhm/NDk1YjAxZmI3Njg5/NDE2OGZiMTFlYTJl/NTM3YTk4MGE5Mw" alt="">
+						<p class="image-grid__grid-item--caption">vegeta</p>
+					</div>
+					<div class="image-grid__grid-item">
+						<img class="image-grid__grid-item--image" src="https://imgs.search.brave.com/JO3zf1oz06ex99qtG24k4kw4BnHScGxYkpSsdBHxSE0/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dHZuaTRsNzR6eXI0/MS5wbmc_YXV0bz13/ZWJwJnM9ZWYyMzhm/NDk1YjAxZmI3Njg5/NDE2OGZiMTFlYTJl/NTM3YTk4MGE5Mw" alt="">
+						<p class="image-grid__grid-item--caption">vegeta</p>
+					</div>
+					<div class="image-grid__grid-item">
+						<img class="image-grid__grid-item--image" src="https://imgs.search.brave.com/JO3zf1oz06ex99qtG24k4kw4BnHScGxYkpSsdBHxSE0/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dHZuaTRsNzR6eXI0/MS5wbmc_YXV0bz13/ZWJwJnM9ZWYyMzhm/NDk1YjAxZmI3Njg5/NDE2OGZiMTFlYTJl/NTM3YTk4MGE5Mw" alt="">
+						<p class="image-grid__grid-item--caption">vegeta</p>
+					</div>
+					<div class="image-grid__grid-item">
+						<img class="image-grid__grid-item--image" src="https://imgs.search.brave.com/JO3zf1oz06ex99qtG24k4kw4BnHScGxYkpSsdBHxSE0/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dHZuaTRsNzR6eXI0/MS5wbmc_YXV0bz13/ZWJwJnM9ZWYyMzhm/NDk1YjAxZmI3Njg5/NDE2OGZiMTFlYTJl/NTM3YTk4MGE5Mw" alt="">
+						<p class="image-grid__grid-item--caption">vegeta</p>
+					</div>
+					<div class="image-grid__grid-item">
+						<img class="image-grid__grid-item--image" src="https://imgs.search.brave.com/JO3zf1oz06ex99qtG24k4kw4BnHScGxYkpSsdBHxSE0/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dHZuaTRsNzR6eXI0/MS5wbmc_YXV0bz13/ZWJwJnM9ZWYyMzhm/NDk1YjAxZmI3Njg5/NDE2OGZiMTFlYTJl/NTM3YTk4MGE5Mw" alt="">
+						<p class="image-grid__grid-item--caption">vegeta</p>
+					</div>
+					<div class="image-grid__grid-item">
+						<img class="image-grid__grid-item--image" src="https://imgs.search.brave.com/JO3zf1oz06ex99qtG24k4kw4BnHScGxYkpSsdBHxSE0/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dHZuaTRsNzR6eXI0/MS5wbmc_YXV0bz13/ZWJwJnM9ZWYyMzhm/NDk1YjAxZmI3Njg5/NDE2OGZiMTFlYTJl/NTM3YTk4MGE5Mw" alt="">
+						<p class="image-grid__grid-item--caption">vegeta</p>
+					</div>
+					<div class="image-grid__grid-item">
+						<img class="image-grid__grid-item--image" src="https://imgs.search.brave.com/JO3zf1oz06ex99qtG24k4kw4BnHScGxYkpSsdBHxSE0/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dHZuaTRsNzR6eXI0/MS5wbmc_YXV0bz13/ZWJwJnM9ZWYyMzhm/NDk1YjAxZmI3Njg5/NDE2OGZiMTFlYTJl/NTM3YTk4MGE5Mw" alt="">
+						<p class="image-grid__grid-item--caption">vegeta</p>
+					</div>
+					<div class="image-grid__grid-item">
+						<img class="image-grid__grid-item--image" src="https://imgs.search.brave.com/JO3zf1oz06ex99qtG24k4kw4BnHScGxYkpSsdBHxSE0/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dHZuaTRsNzR6eXI0/MS5wbmc_YXV0bz13/ZWJwJnM9ZWYyMzhm/NDk1YjAxZmI3Njg5/NDE2OGZiMTFlYTJl/NTM3YTk4MGE5Mw" alt="">
+						<p class="image-grid__grid-item--caption">vegeta</p>
+					</div>
+					<div class="image-grid__grid-item">
+						<img class="image-grid__grid-item--image" src="https://imgs.search.brave.com/JO3zf1oz06ex99qtG24k4kw4BnHScGxYkpSsdBHxSE0/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dHZuaTRsNzR6eXI0/MS5wbmc_YXV0bz13/ZWJwJnM9ZWYyMzhm/NDk1YjAxZmI3Njg5/NDE2OGZiMTFlYTJl/NTM3YTk4MGE5Mw" alt="">
+						<p class="image-grid__grid-item--caption">vegeta</p>
+					</div>
+					
+				</div>
+			</div>
 		</div>
 
 		<div class="container container__3">
