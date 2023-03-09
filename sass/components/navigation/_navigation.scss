@@ -1,4 +1,23 @@
 // Sticky header for desktop
 .main-navigation {
 	background-color: orangered;
+	display: flex;
+	justify-content: space-between;
+
+	.logo-box {
+		background-color: aliceblue;
+		width: 20%;
+	}
+	.menu-box {
+		background-color: aqua;
+		width: 40%;
+		ul {
+			display: flex;
+			justify-content: flex-end;
+			li {
+				background-color: beige;
+				list-style: none;
+			}
+		}
+	}
 }

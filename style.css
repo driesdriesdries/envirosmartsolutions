@@ -573,7 +573,7 @@ big {
         margin-right: 1.5rem; }
         .soil-gel-page .section__benefits .card-section .card ul li {
           vertical-align: middle;
-          text-indent: -1em; }
+          text-indent: -2rem; }
         .soil-gel-page .section__benefits .card-section .card ul li::before {
           content: "";
           display: inline-block;
@@ -600,7 +600,21 @@ big {
 /* Navigation
 --------------------------------------------- */
 .main-navigation {
-  background-color: orangered; }
+  background-color: orangered;
+  display: flex;
+  justify-content: space-between; }
+  .main-navigation .logo-box {
+    background-color: aliceblue;
+    width: 20%; }
+  .main-navigation .menu-box {
+    background-color: aqua;
+    width: 40%; }
+    .main-navigation .menu-box ul {
+      display: flex;
+      justify-content: flex-end; }
+      .main-navigation .menu-box ul li {
+        background-color: beige;
+        list-style: none; }
 
 .footer {
   background-color: #D9D9D9; }

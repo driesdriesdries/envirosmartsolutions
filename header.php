@@ -33,10 +33,25 @@
 
 	<header id="masthead" class="site-header">
 
-	<nav id="site-navigation" class="main-navigation">
-		navigation
-	</nav>
-
+	<div class="container">
+		<div class="section">
+			<nav id="site-navigation" class="main-navigation">
+				<div class="logo-box">
+					<img src="#" alt="envirosmart logo">
+				</div>
+				<div class="menu-box">
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+	
 	</header><!-- #masthead -->
 
 	
