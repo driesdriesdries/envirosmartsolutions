@@ -339,7 +339,6 @@ template {
   --color-text-light: #ffffff;
   --shadow-dark: 0 2rem 6rem rgba(0,0,0, .3);
   --rounded-corners: 20px;
-  --section-margin: 10rem 0;
   --section-padding: 5rem 0; }
 
 * {
@@ -415,7 +414,8 @@ p {
   font-size: 1.6rem; }
 
 li {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  line-height: 1.8; }
 
 dfn,
 cite,
@@ -471,7 +471,9 @@ big {
 
 .section {
   width: 100%;
-  max-width: 1140px; }
+  max-width: 1140px;
+  border: 1px solid black;
+  background-color: cornflowerblue; }
 
 .soil-gel-page .container__1 .section {
   text-align: center; }
@@ -503,7 +505,10 @@ big {
       display: flex;
       flex-direction: column;
       width: 50%;
-      align-items: center; }
+      align-items: center;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      background-color: red; }
 
 .soil-gel-page .section__testimonial {
   text-align: center;
@@ -513,9 +518,7 @@ big {
   display: flex;
   padding: 3rem 3rem;
   border: 3px solid var(--color-primary);
-  border-radius: var(--rounded-corners);
-  margin-bottom: 5rem;
-  margin-top: 5rem; }
+  border-radius: var(--rounded-corners); }
   .soil-gel-page .section__application .copy {
     width: 40%;
     align-self: center;
@@ -526,13 +529,10 @@ big {
     justify-content: space-around;
     flex-wrap: wrap; }
     .soil-gel-page .section__application .image-grid__grid-item {
-      width: 28%;
-      background-color: antiquewhite; }
+      width: 28%; }
       .soil-gel-page .section__application .image-grid__grid-item:nth-child(3) {
-        background-color: yellow;
         margin-bottom: 3rem; }
       .soil-gel-page .section__application .image-grid__grid-item:nth-child(6) {
-        background-color: yellow;
         margin-bottom: 3rem; }
       .soil-gel-page .section__application .image-grid__grid-item--image {
         width: 100%;
@@ -551,17 +551,16 @@ big {
 
 .soil-gel-page .section__benefits {
   text-align: center;
-  margin: var(--section-margin);
   padding-left: 0rem;
   padding-right: 0rem; }
   .soil-gel-page .section__benefits .card-section {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem; }
+    justify-content: space-between; }
     .soil-gel-page .section__benefits .card-section .card {
       width: 32%;
       background-color: var(--canvas-green);
-      border-radius: var(--rounded-corners); }
+      border-radius: var(--rounded-corners);
+      padding-left: 2rem; }
       .soil-gel-page .section__benefits .card-section .card img {
         border-radius: 100%;
         width: 12.5rem;
@@ -570,9 +569,11 @@ big {
       .soil-gel-page .section__benefits .card-section .card ul {
         text-align: left;
         list-style-type: none;
-        margin-left: 1.5rem; }
+        margin-left: 1.5rem;
+        margin-right: 1.5rem; }
         .soil-gel-page .section__benefits .card-section .card ul li {
-          vertical-align: middle; }
+          vertical-align: middle;
+          text-indent: -1em; }
         .soil-gel-page .section__benefits .card-section .card ul li::before {
           content: "";
           display: inline-block;

@@ -37,6 +37,9 @@
 					flex-direction: column;
 					width: 50%;
 					align-items: center;
+					padding-left: 2rem;
+					padding-right: 2rem;
+					background-color: red;
 				}
 			}
 		}
@@ -47,15 +50,11 @@
 		}
 
 		&__application {
-			//background-color: antiquewhite;
 			display: flex;
 			padding: 3rem 3rem;
 			border: 3px solid var(--color-primary);
 			border-radius: var(--rounded-corners);
-			margin-bottom: 5rem;
-			margin-top: 5rem;
 			.copy {
-				//background-color: aquamarine;
 				width: 40%;
 				align-self: center;
 				padding-right: 5rem;
@@ -65,17 +64,13 @@
 				display: flex;
 				justify-content: space-around;
 				flex-wrap: wrap;
-				//background-color: red;
 
 				&__grid-item{
 					width: 28%;
-					background-color: antiquewhite;
 					&:nth-child(3){
-						background-color: yellow;
 						margin-bottom: 3rem;
 					}
 					&:nth-child(6){
-						background-color: yellow;
 						margin-bottom: 3rem;
 					}
 					&--image {
@@ -97,19 +92,19 @@
 				}
 			}
 		}
+
 		&__benefits {
 			text-align: center;
-			margin: var(--section-margin);
 			padding-left: 0rem;
 			padding-right: 0rem;
 			.card-section {
 				display: flex;
 				justify-content: space-between;
-				margin-bottom: 2rem;
 				.card {
 					width: 32%;
 					background-color: var(--canvas-green);
 					border-radius: var(--rounded-corners);
+					padding-left:2rem;
 					img {
 						border-radius: 100%;
 						width: 12.5rem;
@@ -120,8 +115,10 @@
 						text-align: left;
 						list-style-type: none;
 						margin-left: 1.5rem;
+						margin-right: 1.5rem;
 						li {
 							vertical-align: middle;
+							text-indent: -1em;
 						}
 						li::before {
 							content: "";
@@ -139,9 +136,11 @@
 				}
 			}
 		}
+
 		&__faq {
 			
 		}
+
 		&__social-proof {
 		
 			background-image: linear-gradient(to right bottom, #B7CCB7, var(--color-primary));
