@@ -20,6 +20,7 @@ get_header();
 		<div class="container container__1">
 			<div class="section">
 			<h1>Boost crop yield with Soil Gel while saving on valuable resources</h1>
+			<p class="tagline">Grow Smarter, Not Harder with Water-Absorbent Polymers that work in all climates</p>
 			</div>
 		</div>
 		
@@ -53,39 +54,39 @@ get_header();
 					
 					<div class="image-grid__grid-item">
 						<img class="image-grid__grid-item--image" src="https://imgs.search.brave.com/JO3zf1oz06ex99qtG24k4kw4BnHScGxYkpSsdBHxSE0/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dHZuaTRsNzR6eXI0/MS5wbmc_YXV0bz13/ZWJwJnM9ZWYyMzhm/NDk1YjAxZmI3Njg5/NDE2OGZiMTFlYTJl/NTM3YTk4MGE5Mw" alt="">
-						<p class="image-grid__grid-item--caption">vegeta</p>
+						<p class="image-grid__grid-item--caption">Seeds</p>
 					</div>
 					<div class="image-grid__grid-item">
 						<img class="image-grid__grid-item--image" src="https://imgs.search.brave.com/JO3zf1oz06ex99qtG24k4kw4BnHScGxYkpSsdBHxSE0/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dHZuaTRsNzR6eXI0/MS5wbmc_YXV0bz13/ZWJwJnM9ZWYyMzhm/NDk1YjAxZmI3Njg5/NDE2OGZiMTFlYTJl/NTM3YTk4MGE5Mw" alt="">
-						<p class="image-grid__grid-item--caption">vegeta</p>
+						<p class="image-grid__grid-item--caption">Nurseries</p>
 					</div>
 					<div class="image-grid__grid-item">
 						<img class="image-grid__grid-item--image" src="https://imgs.search.brave.com/JO3zf1oz06ex99qtG24k4kw4BnHScGxYkpSsdBHxSE0/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dHZuaTRsNzR6eXI0/MS5wbmc_YXV0bz13/ZWJwJnM9ZWYyMzhm/NDk1YjAxZmI3Njg5/NDE2OGZiMTFlYTJl/NTM3YTk4MGE5Mw" alt="">
-						<p class="image-grid__grid-item--caption">vegeta</p>
+						<p class="image-grid__grid-item--caption">Grasslands</p>
 					</div>
 					<div class="image-grid__grid-item">
 						<img class="image-grid__grid-item--image" src="https://imgs.search.brave.com/JO3zf1oz06ex99qtG24k4kw4BnHScGxYkpSsdBHxSE0/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dHZuaTRsNzR6eXI0/MS5wbmc_YXV0bz13/ZWJwJnM9ZWYyMzhm/NDk1YjAxZmI3Njg5/NDE2OGZiMTFlYTJl/NTM3YTk4MGE5Mw" alt="">
-						<p class="image-grid__grid-item--caption">vegeta</p>
+						<p class="image-grid__grid-item--caption">Herbaceus Crops</p>
 					</div>
 					<div class="image-grid__grid-item">
 						<img class="image-grid__grid-item--image" src="https://imgs.search.brave.com/JO3zf1oz06ex99qtG24k4kw4BnHScGxYkpSsdBHxSE0/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dHZuaTRsNzR6eXI0/MS5wbmc_YXV0bz13/ZWJwJnM9ZWYyMzhm/NDk1YjAxZmI3Njg5/NDE2OGZiMTFlYTJl/NTM3YTk4MGE5Mw" alt="">
-						<p class="image-grid__grid-item--caption">vegeta</p>
+						<p class="image-grid__grid-item--caption">Horticultural Crops</p>
 					</div>
 					<div class="image-grid__grid-item">
 						<img class="image-grid__grid-item--image" src="https://imgs.search.brave.com/JO3zf1oz06ex99qtG24k4kw4BnHScGxYkpSsdBHxSE0/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dHZuaTRsNzR6eXI0/MS5wbmc_YXV0bz13/ZWJwJnM9ZWYyMzhm/NDk1YjAxZmI3Njg5/NDE2OGZiMTFlYTJl/NTM3YTk4MGE5Mw" alt="">
-						<p class="image-grid__grid-item--caption">vegeta</p>
+						<p class="image-grid__grid-item--caption">Cut Flowers</p>
 					</div>
 					<div class="image-grid__grid-item">
 						<img class="image-grid__grid-item--image" src="https://imgs.search.brave.com/JO3zf1oz06ex99qtG24k4kw4BnHScGxYkpSsdBHxSE0/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dHZuaTRsNzR6eXI0/MS5wbmc_YXV0bz13/ZWJwJnM9ZWYyMzhm/NDk1YjAxZmI3Njg5/NDE2OGZiMTFlYTJl/NTM3YTk4MGE5Mw" alt="">
-						<p class="image-grid__grid-item--caption">vegeta</p>
+						<p class="image-grid__grid-item--caption">Reforestation</p>
 					</div>
 					<div class="image-grid__grid-item">
 						<img class="image-grid__grid-item--image" src="https://imgs.search.brave.com/JO3zf1oz06ex99qtG24k4kw4BnHScGxYkpSsdBHxSE0/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dHZuaTRsNzR6eXI0/MS5wbmc_YXV0bz13/ZWJwJnM9ZWYyMzhm/NDk1YjAxZmI3Njg5/NDE2OGZiMTFlYTJl/NTM3YTk4MGE5Mw" alt="">
-						<p class="image-grid__grid-item--caption">vegeta</p>
+						<p class="image-grid__grid-item--caption">Tree Crops</p>
 					</div>
 					<div class="image-grid__grid-item">
 						<img class="image-grid__grid-item--image" src="https://imgs.search.brave.com/JO3zf1oz06ex99qtG24k4kw4BnHScGxYkpSsdBHxSE0/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dHZuaTRsNzR6eXI0/MS5wbmc_YXV0bz13/ZWJwJnM9ZWYyMzhm/NDk1YjAxZmI3Njg5/NDE2OGZiMTFlYTJl/NTM3YTk4MGE5Mw" alt="">
-						<p class="image-grid__grid-item--caption">vegeta</p>
+						<p class="image-grid__grid-item--caption">Protected Crops</p>
 					</div>
 					
 				</div>
@@ -135,7 +136,9 @@ get_header();
 		</div>
 
 		<div class="container container__4">
-			<div class="section">FAQ</div>
+			<div class="section section__faq">
+				<h2>FAQ</h2>
+			</div>
 			
 			<div class="section section__social-proof">
 				<h4>

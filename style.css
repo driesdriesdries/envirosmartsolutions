@@ -524,10 +524,16 @@ big {
     width: 60%;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-    background-color: red; }
+    flex-wrap: wrap; }
     .soil-gel-page .section__application .image-grid__grid-item {
-      width: 31%; }
+      width: 28%;
+      background-color: antiquewhite; }
+      .soil-gel-page .section__application .image-grid__grid-item:nth-child(3) {
+        background-color: yellow;
+        margin-bottom: 3rem; }
+      .soil-gel-page .section__application .image-grid__grid-item:nth-child(6) {
+        background-color: yellow;
+        margin-bottom: 3rem; }
       .soil-gel-page .section__application .image-grid__grid-item--image {
         width: 100%;
         border-radius: var(--rounded-corners);
@@ -535,13 +541,13 @@ big {
       .soil-gel-page .section__application .image-grid__grid-item--caption {
         background-color: #212121;
         text-align: center;
-        margin-top: -2.8rem;
+        margin-top: -2.7rem;
         position: relative;
         z-index: 3;
         border-bottom-left-radius: 2rem;
         border-bottom-right-radius: 2rem;
         color: #ffffff;
-        margin-bottom: 1rem; }
+        margin-bottom: 0; }
 
 .soil-gel-page .section__benefits {
   text-align: center;
@@ -565,6 +571,8 @@ big {
         text-align: left;
         list-style-type: none;
         margin-left: 1.5rem; }
+        .soil-gel-page .section__benefits .card-section .card ul li {
+          vertical-align: middle; }
         .soil-gel-page .section__benefits .card-section .card ul li::before {
           content: "";
           display: inline-block;
