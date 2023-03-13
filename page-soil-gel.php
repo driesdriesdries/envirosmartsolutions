@@ -17,14 +17,16 @@ get_header();
 
 	<main id="primary" class="site-main soil-gel-page">
 		
-		<div class="container container__1" 
-		style="
-		background-image: url(<?php echo get_theme_file_uri("images/hero.png") ?>);
-		">
+		<div class="container container__1" style="background-image: url(<?php echo get_theme_file_uri("images/hero.png") ?>);">
 			<div class="section">
-			<h1>Boost crop yield with Soil Gel while </br> saving on valuable resources</h1>
-			<p class="tagline">Grow Smarter, Not Harder with Water-Absorbent Polymers</br> that work in all climates</p>
+				<h1>Boost crop yield with Soil Gel while </br> saving on valuable resources</h1>
+				<p class="tagline">Grow Smarter, Not Harder with Water-Absorbent Polymers</br> that work in all climates</p>
+				<div class="button-box">
+					<a href="https://www.figma.com/file/xRX58fgG5wDIv7iTmxpDRh/Enviro-UI?node-id=193%3A2&t=PUnjH4XO3GcPG2em-0" class="button button__primary">CONTACT</a>
+					<a href="#" class="button button__secondary">LEARN MORE</a>
+				</div>
 			</div>
+
 		</div>
 		
 		<div class="container container__2">
