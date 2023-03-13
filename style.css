@@ -472,11 +472,26 @@ big {
 .section {
   width: 100%;
   max-width: 1140px;
-  border: 1px solid black;
-  background-color: cornflowerblue; }
+  border: 1px solid black; }
 
-.soil-gel-page .container__1 .section {
-  text-align: center; }
+.soil-gel-page .container__1 {
+  background-size: cover;
+  background-position: center;
+  height: 820px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .soil-gel-page .container__1 .section {
+    text-align: center;
+    transform: translateY(100px);
+    color: #ffffff; }
+    .soil-gel-page .container__1 .section h1 {
+      margin: 0;
+      line-height: 5.5rem; }
+    .soil-gel-page .container__1 .section p {
+      font-size: 2.4rem;
+      margin-bottom: 0;
+      margin-top: 1rem; }
 
 .soil-gel-page .container__2 {
   background-color: var(--canvas-green); }

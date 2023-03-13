@@ -1,9 +1,25 @@
 .soil-gel-page {
 	.container {
 		&__1 {
-			// background-color: var(--canvas-green);
+			background-size: cover;
+			background-position: center;
+			height: 820px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
 			.section {
 				text-align: center;
+				transform: translateY(100px);
+				color: #ffffff;
+				h1 {
+					margin: 0;
+					line-height: 5.5rem;
+				}
+				p {
+					font-size: 2.4rem;
+					margin-bottom: 0;
+					margin-top: 1rem;
+				}
 			}
 		}
 		&__2 {
