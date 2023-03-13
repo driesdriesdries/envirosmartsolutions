@@ -24,150 +24,149 @@
 		}
 		&__2 {
 			background-color: var(--canvas-green);
+			.section {
+				&__how-it-works {
+					background-image: linear-gradient(to right bottom, var(--color-primary), #B7CCB7);
+					background-size: cover;
+					text-align: center;
+					color: var(--color-text-light);
+					border-radius: var(--rounded-corners);
+					margin: var(--section-margin);
+					.content{
+						display: flex;
+						img {
+							width: 300px;
+							height: 300px;
+							border-radius: 100%;
+							margin-bottom: 1.5rem;
+						}
+						> div {
+							display: flex;
+							flex-direction: column;
+							width: 50%;
+							align-items: center;
+							padding-left: 2rem;
+							padding-right: 2rem;
+							background-color: red;
+						}
+					}
+				}
+				&__testimonial {
+					text-align: center;
+					padding: 10rem 15rem;
+				}
+				&__application {
+					display: flex;
+					padding: 3rem 3rem;
+					border: 3px solid var(--color-primary);
+					border-radius: var(--rounded-corners);
+					.copy {
+						width: 40%;
+						align-self: center;
+						padding-right: 5rem;
+					}
+					.image-grid {
+						width: 60%;
+						display: flex;
+						justify-content: space-around;
+						flex-wrap: wrap;
+		
+						&__grid-item{
+							width: 28%;
+							&:nth-child(3){
+								margin-bottom: 3rem;
+							}
+							&:nth-child(6){
+								margin-bottom: 3rem;
+							}
+							&--image {
+								width: 100%;
+								border-radius: var(--rounded-corners);
+								z-index: 2;
+							}
+							&--caption {
+								background-color: #212121;
+								text-align: center;
+								margin-top: -2.7rem;
+								position: relative;
+								z-index: 3;
+								border-bottom-left-radius: 2rem;
+								border-bottom-right-radius: 2rem;
+								color: #ffffff;
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
+			}
 		}
 		&__3 {
 			background-color: #ffffff;
+			.section {
+				&__benefits {
+					text-align: center;
+					padding-left: 0rem;
+					padding-right: 0rem;
+					.card-section {
+						display: flex;
+						justify-content: space-between;
+						.card {
+							width: 32%;
+							background-color: var(--canvas-green);
+							border-radius: var(--rounded-corners);
+							padding-left:2rem;
+							img {
+								border-radius: 100%;
+								width: 12.5rem;
+								height: 12.5rem;
+								margin-top: 2rem;
+							}
+							ul {
+								text-align: left;
+								list-style-type: none;
+								margin-left: 1.5rem;
+								margin-right: 1.5rem;
+								li {
+									vertical-align: middle;
+									text-indent: -2rem;
+								}
+								li::before {
+									content: "";
+									display: inline-block;
+									width: 1rem;
+									height: 1rem;
+									background-color: red;
+									border-radius: 100%;
+									margin-right: 1rem;
+								}
+								li:last-child {
+									margin-bottom: 2rem;
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 		&__4 {
 			background-color: var(--canvas-green);
-		}
-	}
-	.section {
-		&__how-it-works {
-			background-image: linear-gradient(to right bottom, var(--color-primary), #B7CCB7);
-			background-size: cover;
-			text-align: center;
-			color: var(--color-text-light);
-			border-radius: var(--rounded-corners);
-			margin: var(--section-margin);
-			.content{
-				display: flex;
-				img {
-					width: 300px;
-					height: 300px;
-					border-radius: 100%;
-					margin-bottom: 1.5rem;
-				}
-				> div {
-					display: flex;
-					flex-direction: column;
-					width: 50%;
-					align-items: center;
-					padding-left: 2rem;
-					padding-right: 2rem;
-					background-color: red;
-				}
-			}
-		}
-
-		&__testimonial {
-			text-align: center;
-			padding: 10rem 15rem;
-		}
-
-		&__application {
-			display: flex;
-			padding: 3rem 3rem;
-			border: 3px solid var(--color-primary);
-			border-radius: var(--rounded-corners);
-			.copy {
-				width: 40%;
-				align-self: center;
-				padding-right: 5rem;
-			}
-			.image-grid {
-				width: 60%;
-				display: flex;
-				justify-content: space-around;
-				flex-wrap: wrap;
-
-				&__grid-item{
-					width: 28%;
-					&:nth-child(3){
-						margin-bottom: 3rem;
-					}
-					&:nth-child(6){
-						margin-bottom: 3rem;
-					}
-					&--image {
-						width: 100%;
-						border-radius: var(--rounded-corners);
-						z-index: 2;
-					}
-					&--caption {
-						background-color: #212121;
-						text-align: center;
-						margin-top: -2.7rem;
-						position: relative;
-						z-index: 3;
-						border-bottom-left-radius: 2rem;
-						border-bottom-right-radius: 2rem;
-						color: #ffffff;
-						margin-bottom: 0;
-					}
-				}
-			}
-		}
-
-		&__benefits {
-			text-align: center;
-			padding-left: 0rem;
-			padding-right: 0rem;
-			.card-section {
-				display: flex;
-				justify-content: space-between;
-				.card {
-					width: 32%;
-					background-color: var(--canvas-green);
-					border-radius: var(--rounded-corners);
-					padding-left:2rem;
-					img {
-						border-radius: 100%;
-						width: 12.5rem;
-						height: 12.5rem;
-						margin-top: 2rem;
-					}
-					ul {
-						text-align: left;
-						list-style-type: none;
-						margin-left: 1.5rem;
-						margin-right: 1.5rem;
-						li {
-							vertical-align: middle;
-							text-indent: -2rem;
-						}
-						li::before {
-							content: "";
-							display: inline-block;
-							width: 1rem;
-							height: 1rem;
-							background-color: red;
-							border-radius: 100%;
-							margin-right: 1rem;
-						}
-						li:last-child {
-							margin-bottom: 2rem;
-						}
-					}
-				}
-			}
-		}
-
-		&__faq {
+			.section {
+				&__faq {
 			
-		}
-
-		&__social-proof {
+				}
+				&__social-proof {
 		
-			background-image: linear-gradient(to right bottom, #B7CCB7, var(--color-primary));
-			border-radius: var(--rounded-corners);
-			padding: 10rem 15rem;
-			text-align: center;
-			margin: var(--section-margin);
-
-			h4 {
-				color: #ffffff;
+					background-image: linear-gradient(to right bottom, #B7CCB7, var(--color-primary));
+					border-radius: var(--rounded-corners);
+					padding: 10rem 15rem;
+					text-align: center;
+					margin: var(--section-margin);
+					h4 {
+						color: #ffffff;
+					}
+				}
 			}
+			
 		}
 	}
 }
