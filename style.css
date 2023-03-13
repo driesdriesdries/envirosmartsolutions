@@ -557,11 +557,14 @@ a.button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border: 1px solid gold;
+  background-color: teal; }
 
 .section {
   width: 100%;
-  max-width: 1140px; }
+  max-width: 1140px;
+  border: 1px solid black; }
 
 .soil-gel-page .container__1 {
   background-size: cover;
@@ -595,8 +598,7 @@ a.button {
     background-size: cover;
     text-align: center;
     color: var(--color-text-light);
-    border-radius: var(--rounded-corners);
-    margin: var(--section-margin); }
+    border-radius: var(--rounded-corners); }
     .soil-gel-page .container__2 .section__how-it-works .content {
       display: flex; }
       .soil-gel-page .container__2 .section__how-it-works .content img {

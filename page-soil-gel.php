@@ -17,7 +17,7 @@ get_header();
 
 	<main id="primary" class="site-main soil-gel-page">
 		
-		<div class="container container__1" style="background-image: url(<?php echo get_theme_file_uri("images/hero.png") ?>);">
+		<div class="container container__1" style="background-image: url(<?php echo get_theme_file_uri("images/hero-desktop.png") ?>);">
 			<div class="section">
 				<h1>Boost crop yield with Soil Gel while </br> saving on valuable resources</h1>
 				<p class="tagline">Grow Smarter, Not Harder with Water-Absorbent Polymers</br> that work in all climates</p>
@@ -58,39 +58,39 @@ get_header();
 				<div class="image-grid">
 					
 					<div class="image-grid__grid-item">
-						<img class="image-grid__grid-item--image" src="https://imgs.search.brave.com/JO3zf1oz06ex99qtG24k4kw4BnHScGxYkpSsdBHxSE0/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dHZuaTRsNzR6eXI0/MS5wbmc_YXV0bz13/ZWJwJnM9ZWYyMzhm/NDk1YjAxZmI3Njg5/NDE2OGZiMTFlYTJl/NTM3YTk4MGE5Mw" alt="">
+						<img class="image-grid__grid-item--image" src="<?php echo get_theme_file_uri('images/seeds.png'); ?>" alt="">
 						<p class="image-grid__grid-item--caption">Seeds</p>
 					</div>
 					<div class="image-grid__grid-item">
-						<img class="image-grid__grid-item--image" src="https://imgs.search.brave.com/JO3zf1oz06ex99qtG24k4kw4BnHScGxYkpSsdBHxSE0/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dHZuaTRsNzR6eXI0/MS5wbmc_YXV0bz13/ZWJwJnM9ZWYyMzhm/NDk1YjAxZmI3Njg5/NDE2OGZiMTFlYTJl/NTM3YTk4MGE5Mw" alt="">
+						<img class="image-grid__grid-item--image" src="<?php echo get_theme_file_uri('images/nurseries.png'); ?>" alt="">
 						<p class="image-grid__grid-item--caption">Nurseries</p>
 					</div>
 					<div class="image-grid__grid-item">
-						<img class="image-grid__grid-item--image" src="https://imgs.search.brave.com/JO3zf1oz06ex99qtG24k4kw4BnHScGxYkpSsdBHxSE0/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dHZuaTRsNzR6eXI0/MS5wbmc_YXV0bz13/ZWJwJnM9ZWYyMzhm/NDk1YjAxZmI3Njg5/NDE2OGZiMTFlYTJl/NTM3YTk4MGE5Mw" alt="">
+						<img class="image-grid__grid-item--image" src="<?php echo get_theme_file_uri('images/grasslands.png'); ?>" alt="">
 						<p class="image-grid__grid-item--caption">Grasslands</p>
 					</div>
 					<div class="image-grid__grid-item">
-						<img class="image-grid__grid-item--image" src="https://imgs.search.brave.com/JO3zf1oz06ex99qtG24k4kw4BnHScGxYkpSsdBHxSE0/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dHZuaTRsNzR6eXI0/MS5wbmc_YXV0bz13/ZWJwJnM9ZWYyMzhm/NDk1YjAxZmI3Njg5/NDE2OGZiMTFlYTJl/NTM3YTk4MGE5Mw" alt="">
+						<img class="image-grid__grid-item--image" src="<?php echo get_theme_file_uri('images/herbaceus.png'); ?>" alt="">
 						<p class="image-grid__grid-item--caption">Herbaceus Crops</p>
 					</div>
 					<div class="image-grid__grid-item">
-						<img class="image-grid__grid-item--image" src="https://imgs.search.brave.com/JO3zf1oz06ex99qtG24k4kw4BnHScGxYkpSsdBHxSE0/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dHZuaTRsNzR6eXI0/MS5wbmc_YXV0bz13/ZWJwJnM9ZWYyMzhm/NDk1YjAxZmI3Njg5/NDE2OGZiMTFlYTJl/NTM3YTk4MGE5Mw" alt="">
+						<img class="image-grid__grid-item--image" src="<?php echo get_theme_file_uri('images/horticultural.png'); ?>" alt="">
 						<p class="image-grid__grid-item--caption">Horticultural Crops</p>
 					</div>
 					<div class="image-grid__grid-item">
-						<img class="image-grid__grid-item--image" src="https://imgs.search.brave.com/JO3zf1oz06ex99qtG24k4kw4BnHScGxYkpSsdBHxSE0/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dHZuaTRsNzR6eXI0/MS5wbmc_YXV0bz13/ZWJwJnM9ZWYyMzhm/NDk1YjAxZmI3Njg5/NDE2OGZiMTFlYTJl/NTM3YTk4MGE5Mw" alt="">
+						<img class="image-grid__grid-item--image" src="<?php echo get_theme_file_uri('images/cutflowers.png'); ?>" alt="">
 						<p class="image-grid__grid-item--caption">Cut Flowers</p>
 					</div>
 					<div class="image-grid__grid-item">
-						<img class="image-grid__grid-item--image" src="https://imgs.search.brave.com/JO3zf1oz06ex99qtG24k4kw4BnHScGxYkpSsdBHxSE0/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dHZuaTRsNzR6eXI0/MS5wbmc_YXV0bz13/ZWJwJnM9ZWYyMzhm/NDk1YjAxZmI3Njg5/NDE2OGZiMTFlYTJl/NTM3YTk4MGE5Mw" alt="">
+						<img class="image-grid__grid-item--image" src="<?php echo get_theme_file_uri('images/reforestation.png'); ?>" alt="">
 						<p class="image-grid__grid-item--caption">Reforestation</p>
 					</div>
 					<div class="image-grid__grid-item">
-						<img class="image-grid__grid-item--image" src="https://imgs.search.brave.com/JO3zf1oz06ex99qtG24k4kw4BnHScGxYkpSsdBHxSE0/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dHZuaTRsNzR6eXI0/MS5wbmc_YXV0bz13/ZWJwJnM9ZWYyMzhm/NDk1YjAxZmI3Njg5/NDE2OGZiMTFlYTJl/NTM3YTk4MGE5Mw" alt="">
+						<img class="image-grid__grid-item--image" src="<?php echo get_theme_file_uri('images/treecrops.png'); ?>" alt="">
 						<p class="image-grid__grid-item--caption">Tree Crops</p>
 					</div>
 					<div class="image-grid__grid-item">
-						<img class="image-grid__grid-item--image" src="https://imgs.search.brave.com/JO3zf1oz06ex99qtG24k4kw4BnHScGxYkpSsdBHxSE0/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/dHZuaTRsNzR6eXI0/MS5wbmc_YXV0bz13/ZWJwJnM9ZWYyMzhm/NDk1YjAxZmI3Njg5/NDE2OGZiMTFlYTJl/NTM3YTk4MGE5Mw" alt="">
+						<img class="image-grid__grid-item--image" src="<?php echo get_theme_file_uri('images/protectedcrops.png'); ?>" alt="">
 						<p class="image-grid__grid-item--caption">Protected Crops</p>
 					</div>
 					
@@ -103,7 +103,7 @@ get_header();
 				<h2>Benefits</h2>
 				<div class="card-section">
 					<div class="card">
-						<img src="https://imgs.search.brave.com/qNgeVwKOZ3LaCyLZzAhdt-FW1ZzIuPsVnpUsQIX_efw/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5Z/aFlSdUtYSjVPSnVy/N2VkYm81QkRBSGFI/YSZwaWQ9QXBp" alt="">
+						<img src="<?php echo get_theme_file_uri('images/users.png'); ?>" alt="">
 						<h3>Users</h3>
 						<ul>
 							<li>Save Water</li>
@@ -114,7 +114,7 @@ get_header();
 						</ul>
 					</div>
 					<div class="card">
-					<img src="https://imgs.search.brave.com/qNgeVwKOZ3LaCyLZzAhdt-FW1ZzIuPsVnpUsQIX_efw/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5Z/aFlSdUtYSjVPSnVy/N2VkYm81QkRBSGFI/YSZwaWQ9QXBp" alt="">
+					<img src="<?php echo get_theme_file_uri('images/plants.png'); ?>" alt="">
 						<h3>Plants</h3>
 						<ul>
 							<li>Increase production</li>
@@ -127,7 +127,7 @@ get_header();
 						</ul>
 					</div>
 					<div class="card">
-					<img src="https://imgs.search.brave.com/qNgeVwKOZ3LaCyLZzAhdt-FW1ZzIuPsVnpUsQIX_efw/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5Z/aFlSdUtYSjVPSnVy/N2VkYm81QkRBSGFI/YSZwaWQ9QXBp" alt="">
+					<img src="<?php echo get_theme_file_uri('images/soil.png'); ?>" alt="">
 						<h3>Soil</h3>
 						<ul>
 							<li>Improve Soil Structure Soil activator</li>
