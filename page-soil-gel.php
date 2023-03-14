@@ -22,7 +22,7 @@ get_header();
 				<h1>Boost crop yield with Soil Gel while </br> saving on valuable resources</h1>
 				<p class="tagline">Grow Smarter, Not Harder with Water-Absorbent Polymers</br> that work in all climates</p>
 				<div class="button-box">
-					<a href="https://www.figma.com/file/xRX58fgG5wDIv7iTmxpDRh/Enviro-UI?node-id=193%3A2&t=PUnjH4XO3GcPG2em-0" class="button button__primary">CONTACT</a>
+					<a href="#" class="button button__primary">CONTACT</a>
 					<a href="#" class="button button__secondary">LEARN MORE</a>
 				</div>
 			</div>
@@ -35,12 +35,12 @@ get_header();
 				
 				<div class="content">
 					<div class="left">
-						<img src="https://imgs.search.brave.com/2MSPcuxK4EgCzZh-ZzAj1CbSWp3_GBmc0qlQ4-YMQGM/rs:fit:900:1030:1/g:ce/aHR0cHM6Ly93d3cu/Y2xpcGFydGtleS5j/b20vbXBuZ3MvbS8y/Mi0yMjE1MjRfbWFy/aW8tcG5nLXN1cGVy/LW1hcmlvLXZlY3Rv/ci1wbmcucG5n" alt="image of polymers on a plate">
-						<p>Soil-Gel is a Potassium based Super Absorbent Polymer for Agriculture.</p>
+						<img src="<?php echo get_theme_file_uri("images/polymerplate.png") ?>" alt="image of polymers on a plate">
+						<p>Soil-Gel is a Potassium based </br> Super Absorbent Polymer for Agriculture.</p>
 					</div>
 					<div class="right">
-						<img src="https://imgs.search.brave.com/2MSPcuxK4EgCzZh-ZzAj1CbSWp3_GBmc0qlQ4-YMQGM/rs:fit:900:1030:1/g:ce/aHR0cHM6Ly93d3cu/Y2xpcGFydGtleS5j/b20vbXBuZ3MvbS8y/Mi0yMjE1MjRfbWFy/aW8tcG5nLXN1cGVy/LW1hcmlvLXZlY3Rv/ci1wbmcucG5n" alt="image of polymer mixed into soil">
-						<p>It acts as a water-retaining agent for plants by absorbing, storing and releasing water at the roots when needed.</p>
+						<img src="<?php echo get_theme_file_uri("images/polymerroot.png") ?>" alt="image of polymer mixed into soil">
+						<p>It acts as a water-retaining agent for plants by </br> absorbing, storing and releasing water at the roots when needed.</p>
 					</div>
 				</div>
 
@@ -48,6 +48,7 @@ get_header();
 			
 			<div class="section section__testimonial">
 				<h4><i>“SoilGel is completely environmentally friendly and does not present any toxins or contamination for plants, soil, humans, or the environment.”</i></h4>
+				<a href="#" class="button button__primary">CONTACT</a>
 			</div>
 			
 			<div class="section section__application">
@@ -149,6 +150,7 @@ get_header();
 				<h4>
 					<i>Soil Gel is Utilised worldwide: Europe, North America, China, India, Japan, Australia, Indonesia, Malaysia, South Korea, Brazil, Mexico, South Africa and Middle East</i>
 				</h4>
+				<a href="#" class="button button__primary">CONTACT</a>
 			</div>
 		</div>
 
