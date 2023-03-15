@@ -144,6 +144,84 @@ get_header();
 		<div class="container container__4">
 			<div class="section section__faq">
 				<h2>FAQ</h2>
+
+
+<!-- Testing -->
+<script>
+	// Listen for click on the document
+document.addEventListener('click', function (event) {
+  
+  //Bail if our clicked element doesn't have the class
+  if (!event.target.classList.contains('accordion-toggle')) return;
+  
+  // Get the target content
+  var content = document.querySelector(event.target.hash);
+  if (!content) return;
+  
+  // Prevent default link behavior
+  event.preventDefault();
+  
+  // If the content is already expanded, collapse it and quit
+  if (content.classList.contains('active')) {
+    content.classList.remove('active');
+    return;
+  }
+  
+  // Get all open accordion content, loop through it, and close it
+  var accordions = document.querySelectorAll('.accordion-content.active');
+  for (var i = 0; i < accordions.length; i++) {
+    accordions[i].classList.remove('active');
+  }
+  
+  // Toggle our content
+  content.classList.toggle('active');
+})
+</script>
+
+<style>
+	.accordion-toggle {
+  display: block;
+}
+
+.accordion-content {
+  display: none;
+}
+
+.accordion-content.active {
+  display: block;
+}
+</style>
+
+<h3>
+	<a href="#content-1" class="accordion-toggle">Show more 1</a>
+</h3>
+<div class="accordion-content" id="content-1">
+	<p>
+		Content1 goes here...
+	</p>
+</div>
+
+<h3>
+	<a href="#content-2" class="accordion-toggle">Show more 2</a>
+</h3>
+<div class="accordion-content" id="content-2">
+	<p>
+		Content2 goes here...
+	</p>
+</div>
+
+<h3>
+	<a href="#content-3" class="accordion-toggle">Show more 3</a>
+</h3>
+<div class="accordion-content" id="content-3">
+	<p>
+		Content3 goes here...
+	</p>
+</div>
+<!-- Testing Ends -->
+
+
+
 			</div>
 			
 			<div class="section section__social-proof">
