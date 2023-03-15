@@ -22,8 +22,8 @@ get_header();
 				<h1>Boost crop yield with Soil Gel while </br> saving on valuable resources</h1>
 				<p class="tagline">Grow Smarter, Not Harder with Water-Absorbent Polymers</br> that work in all climates</p>
 				<div class="button-box">
-					<a href="#" class="button button__primary">CONTACT</a>
-					<a href="#" class="button button__secondary">LEARN MORE</a>
+					<a href="javascript:void(0)" class="modaltrigger button button__primary">CONTACT</a>
+					<a href="#" class="learn-more button button__secondary">LEARN MORE</a>
 				</div>
 			</div>
 
@@ -48,7 +48,7 @@ get_header();
 			
 			<div class="section section__testimonial">
 				<h4><i>“SoilGel is completely environmentally friendly and does not present any toxins or contamination for plants, soil, humans, or the environment.”</i></h4>
-				<a href="#" class="button button__primary">CONTACT</a>
+				<a href="javascript:void(0)" class="modaltrigger button button__primary">CONTACT</a>
 			</div>
 			
 			<div class="section section__application">
@@ -149,7 +149,7 @@ get_header();
 					<h3><a href="#content-1" class="accordion-toggle">Show more 1</a></h3>
 				</div>
 				
-				<div class="accordion-content" id="content-1">
+				<div class="accordion-content active" id="content-1">
 					<p>
 						Content1 goes here...
 					</p>
@@ -180,11 +180,25 @@ get_header();
 				<h4>
 					<i>Soil Gel is Utilised worldwide: Europe, North America, China, India, Japan, Australia, Indonesia, Malaysia, South Korea, Brazil, Mexico, South Africa and Middle East</i>
 				</h4>
-				<a href="#" class="button button__primary">CONTACT</a>
+				<a href="javascript:void(0)" class="modaltrigger button button__primary">CONTACT</a>
 			</div>
 		</div>
 
 	</main><!-- #main -->
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+	<!-- Modal content -->
+	<div class="modal-content">
+		<span class="close">&times;</span>
+		
+		<h3>Contact Us</h3>
+		<p>Some text in the Modal..</p>
+	</div>
+
+	</div>
+	<!-- Modal Ends -->
 
 <?php
 //get_sidebar();

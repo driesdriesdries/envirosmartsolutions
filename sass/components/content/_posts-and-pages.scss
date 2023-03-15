@@ -22,6 +22,44 @@
 	margin: 0 0 1.5em;
 }
 
+//Modal Content
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	
+	&-content {
+		background-color: var(--canvas-green);
+		margin: auto;
+		padding: 20px;
+		border: 5px solid var(--color-primary);
+		width: 30%;
+	}
+}
+
+/* The Close Button */
+.close {
+	color: var(--color-secondary);
+	float: right;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
 //Accordion
 .accordion {
 	&-heading {
