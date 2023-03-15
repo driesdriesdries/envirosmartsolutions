@@ -21,7 +21,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
-
+	<script language="JavaScript" type="text/javascript" src="<?php echo get_theme_file_uri('js/accordion.js'); ?>"></script>
 
 	<?php wp_head(); ?>
 </head>

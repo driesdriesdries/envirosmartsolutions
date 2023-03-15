@@ -557,15 +557,11 @@ a.button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
-  border: 1px solid gold;
-  background-color: teal; }
+  margin: 0 auto; }
 
 .section {
   width: 100%;
-  max-width: 1140px;
-  border: 1px solid black;
-  background-color: cornflowerblue; }
+  max-width: 1140px; }
 
 .soil-gel-page .container__1 {
   background-size: cover;
@@ -703,12 +699,18 @@ a.button {
 
 .soil-gel-page .container__4 {
   background-color: var(--canvas-green); }
+  .soil-gel-page .container__4 .section__faq {
+    padding-top: 3rem;
+    padding-bottom: 6rem; }
+    .soil-gel-page .container__4 .section__faq h2 {
+      text-align: center;
+      padding-bottom: 2rem; }
   .soil-gel-page .container__4 .section__social-proof {
     background-image: linear-gradient(to right bottom, #B7CCB7, var(--color-primary));
     border-radius: var(--rounded-corners);
     padding: 10rem 15rem;
     text-align: center;
-    margin-bottom: 8rem; }
+    margin-bottom: 6rem; }
     .soil-gel-page .container__4 .section__social-proof h4 {
       color: #ffffff; }
 
@@ -763,6 +765,29 @@ a.button {
 .page-links {
   clear: both;
   margin: 0 0 1.5em; }
+
+.accordion-heading {
+  padding: 2rem;
+  background-color: #ffffff;
+  border: 2px solid var(--color-text-primary);
+  margin-top: 1rem; }
+  .accordion-heading a {
+    text-decoration: none;
+    color: var(--color-text-primary); }
+
+.accordion-toggle {
+  display: block; }
+
+.accordion-content {
+  display: none; }
+
+.accordion-content.active {
+  display: block;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-bottom: 2px solid var(--color-text-primary);
+  border-left: 2px solid var(--color-text-primary);
+  border-right: 2px solid var(--color-text-primary); }
 
 /* Comments
 --------------------------------------------- */

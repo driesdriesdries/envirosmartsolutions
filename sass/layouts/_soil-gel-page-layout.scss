@@ -173,14 +173,19 @@
 			background-color: var(--canvas-green);
 			.section {
 				&__faq {
-			
+					padding-top: 3rem;
+					padding-bottom: 6rem;
+					h2 {
+						text-align: center;
+						padding-bottom: 2rem;
+					}
 				}
 				&__social-proof {
 					background-image: linear-gradient(to right bottom, #B7CCB7, var(--color-primary));
 					border-radius: var(--rounded-corners);
 					padding: 10rem 15rem;
 					text-align: center;
-					margin-bottom: 8rem;
+					margin-bottom: 6rem;
 					h4 {
 						color: #ffffff;
 					}
