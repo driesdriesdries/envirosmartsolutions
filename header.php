@@ -32,18 +32,19 @@
 	<header id="masthead" class="site-header">
 
 	<div class="container">
-		<div class="section">
+		<div class="section section__navbar">
 			<nav id="site-navigation" class="main-navigation">
 				<div class="logo-box">
-					<img src="#" alt="envirosmart logo">
+					<!-- <img src="#" alt="envirosmart logo"> -->
+					<h4>EnviroSmart <span>Solutions</span></h4>
 				</div>
 				<div class="menu-box">
 					<ul>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
+						<li><a href="#">How it works</a></li>
+						<li><a href="#">Applications</a></li>
+						<li><a href="#">Benefits</a></li>
+						<li><a href="#">Faq</a></li>
+						<li><a class="modaltrigger" href="#">Contact</a></li>
 					</ul>
 				</div>
 			</nav>

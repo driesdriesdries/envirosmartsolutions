@@ -720,22 +720,39 @@ a.button {
 --------------------------------------------------------------*/
 /* Navigation
 --------------------------------------------- */
+.section__navbar {
+  padding: 1rem 0rem; }
+
 .main-navigation {
-  background-color: orangered;
   display: flex;
-  justify-content: space-between; }
-  .main-navigation .logo-box {
-    background-color: aliceblue;
-    width: 20%; }
-  .main-navigation .menu-box {
-    background-color: aqua;
-    width: 40%; }
-    .main-navigation .menu-box ul {
-      display: flex;
-      justify-content: flex-end; }
-      .main-navigation .menu-box ul li {
-        background-color: beige;
-        list-style: none; }
+  justify-content: space-between;
+  align-items: center; }
+
+.logo-box span {
+  color: var(--color-secondary); }
+
+.menu-box ul {
+  display: flex; }
+  .menu-box ul li {
+    list-style-type: none;
+    margin-left: 2rem; }
+    .menu-box ul li a {
+      display: inline-block;
+      padding: 1rem 2rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--color-text-primary);
+      font-size: 1.4rem;
+      font-weight: 700; }
+      .menu-box ul li a:hover {
+        color: var(--color-secondary); }
+    .menu-box ul li:last-child {
+      background-color: var(--color-secondary);
+      border-radius: 10px; }
+      .menu-box ul li:last-child:hover {
+        opacity: 0.75; }
+      .menu-box ul li:last-child a {
+        color: #ffffff; }
 
 .footer {
   background-color: #D9D9D9; }
