@@ -40,8 +40,8 @@
 				</div>
 				<div class="menu-box">
 					<ul>
-						<li><a href="#">How it works</a></li>
-						<li><a href="#">Applications</a></li>
+						<li><a href="#">how-it works</a></li>
+						<li><a href="#">Application</a></li>
 						<li><a href="#">Benefits</a></li>
 						<li><a href="#">Faq</a></li>
 						<li><a class="modaltrigger" href="#">Contact</a></li>
