@@ -20,10 +20,12 @@ navLinks.forEach(link => {
     e.preventDefault();
 
     // Get the name of the section to scroll to
-    const sectionName = link.textContent.toLowerCase().replace(' ', '-');
+    const sectionName = link.textContent.toLowerCase().replaceAll(' ', '-');
 
     // Get the section element by its class name
     const section = document.querySelector(`.section__${sectionName}`);
+
+    console.log(sectionName);
 
     // Scroll smoothly to the section
     section.scrollIntoView({ behavior: 'smooth' });
