@@ -51,7 +51,7 @@ get_header();
 				<a href="javascript:void(0)" class="modaltrigger button button__primary">CONTACT</a>
 			</div>
 			
-			<div class="section section__application">
+			<div class="section section__applications">
 				<div class="copy">
 					<h2>Applications</h2>
 					<p>Soil-Gel is suited for multiple types of application and can benefit any plant</p>
@@ -188,15 +188,14 @@ get_header();
 
 	<!-- The Modal -->
 	<div id="myModal" class="modal">
-
-	<!-- Modal content -->
-	<div class="modal-content">
-		<span class="close">&times;</span>
-		
-		<h3>Contact Us</h3>
-		<p>Some text in the Modal..</p>
-	</div>
-
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			
+			<h3>Contact Us</h3>
+			<p>We appreciate your interest! Please fill out the form below and we will get back to you as soon as possible.</p>
+			<?php echo do_shortcode( '[contact-form-7 id="7" title="Contact form 1"]' ); ?>
+		</div>
 	</div>
 	<!-- Modal Ends -->
 
