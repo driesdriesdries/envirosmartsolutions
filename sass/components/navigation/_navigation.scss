@@ -8,6 +8,24 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	@media only screen and (max-width: $bp-medium) {
+		flex-direction: column;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+}
+.menuToggle {
+	@media only screen and (min-width: $bp-medium) {
+		display: none;
+	
+		top: 6rem;
+		right: 1rem;
+	}
+}
+.main-navigation.toggled {
+	* {
+		color: red !important;
+	}
 }
 .logo-box {
 	span {
@@ -17,6 +35,10 @@
 .menu-box {
 	ul {
 		display: flex;
+		@media only screen and (max-width: $bp-medium) {
+			flex-direction: column;
+			align-items: center;
+		}
 		li {
 			a {
 				//background-color: crimson;

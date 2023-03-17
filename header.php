@@ -46,6 +46,7 @@
 						<li><a href="#">Faq</a></li>
 						<li><a class="modaltrigger" href="#">Contact</a></li>
 					</ul>
+					<button class="menuToggle">Menu</button>
 				</div>
 			</nav>
 		</div>

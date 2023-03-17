@@ -42,6 +42,10 @@
 		padding: 20px;
 		border: 5px solid var(--color-primary);
 		width: 50%;
+		@media only screen and (max-width: $bp-medium) {
+			width: 85%;
+			margin-top: 10rem;
+		}
 	}
 }
 
@@ -69,6 +73,7 @@
 		text-transform: uppercase;
 		font-weight: 700;
 		border: 2px solid var(--color-secondary);
+		cursor: pointer;
 	}
 	.wpcf7-response-output {
 		font-size: 1.6rem;

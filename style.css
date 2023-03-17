@@ -553,15 +553,19 @@ a.button {
 # Layouts
 --------------------------------------------------------------*/
 .container {
-  max-width: 1447px;
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 0 !important; }
+  margin: 0 auto;
+  border: 2px solid gold;
+  background-color: teal; }
 
 .section {
   width: 100%;
-  max-width: 1140px; }
+  max-width: 1140px;
+  border: 1px solid black;
+  background-color: cornflowerblue; }
 
 .soil-gel-page .container__1 {
   background-size: cover;
@@ -603,11 +607,19 @@ a.button {
     .soil-gel-page .container__2 .section__how-it-works .content {
       display: flex;
       margin-bottom: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .soil-gel-page .container__2 .section__how-it-works .content {
+          flex-direction: column;
+          align-items: center; } }
       .soil-gel-page .container__2 .section__how-it-works .content img {
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
         border-radius: 100%;
         margin-bottom: 1.5rem; }
+        @media only screen and (max-width: 56.25em) {
+          .soil-gel-page .container__2 .section__how-it-works .content img {
+            width: 200px;
+            height: 200px; } }
       .soil-gel-page .container__2 .section__how-it-works .content > div {
         display: flex;
         flex-direction: column;
@@ -618,21 +630,35 @@ a.button {
   .soil-gel-page .container__2 .section__testimonial {
     text-align: center;
     padding: 10rem 15rem; }
+    @media only screen and (max-width: 56.25em) {
+      .soil-gel-page .container__2 .section__testimonial {
+        padding: 10rem 3rem; } }
   .soil-gel-page .container__2 .section__applications {
     display: flex;
     padding: 3rem 3rem;
     border: 3px solid var(--color-primary);
     border-radius: var(--rounded-corners);
     margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .soil-gel-page .container__2 .section__applications {
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 0;
+        text-align: center; } }
     .soil-gel-page .container__2 .section__applications .copy {
       width: 40%;
-      align-self: center;
-      padding-right: 5rem; }
+      align-self: center; }
+      @media only screen and (max-width: 56.25em) {
+        .soil-gel-page .container__2 .section__applications .copy {
+          width: 80%; } }
     .soil-gel-page .container__2 .section__applications .image-grid {
       width: 60%;
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap; }
+      @media only screen and (max-width: 56.25em) {
+        .soil-gel-page .container__2 .section__applications .image-grid {
+          width: 80%; } }
       .soil-gel-page .container__2 .section__applications .image-grid__grid-item {
         width: 28%; }
         .soil-gel-page .container__2 .section__applications .image-grid__grid-item:nth-child(3) {
@@ -667,13 +693,22 @@ a.button {
       display: flex;
       justify-content: space-between;
       margin-bottom: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .soil-gel-page .container__3 .section__benefits .card-section {
+          flex-direction: column;
+          align-items: center; } }
       .soil-gel-page .container__3 .section__benefits .card-section .card {
         width: 32%;
         background-color: var(--canvas-green);
         border-radius: var(--rounded-corners);
         padding-left: 2rem; }
+        @media only screen and (max-width: 56.25em) {
+          .soil-gel-page .container__3 .section__benefits .card-section .card {
+            width: 60%;
+            margin-bottom: 2rem; } }
         .soil-gel-page .container__3 .section__benefits .card-section .card h3 {
-          margin-bottom: 2rem; }
+          margin-top: 1rem;
+          margin-bottom: 1rem; }
         .soil-gel-page .container__3 .section__benefits .card-section .card img {
           border-radius: 100%;
           width: 12.5rem;
@@ -712,6 +747,9 @@ a.button {
     padding: 10rem 15rem;
     text-align: center;
     margin-bottom: 6rem; }
+    @media only screen and (max-width: 56.25em) {
+      .soil-gel-page .container__4 .section__social-proof {
+        padding: 10rem 3rem; } }
     .soil-gel-page .container__4 .section__social-proof h4 {
       color: #ffffff; }
 
@@ -727,12 +765,30 @@ a.button {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    .main-navigation {
+      flex-direction: column;
+      padding-top: 1rem;
+      padding-bottom: 1rem; } }
+
+@media only screen and (min-width: 56.25em) {
+  .menuToggle {
+    display: none;
+    top: 6rem;
+    right: 1rem; } }
+
+.main-navigation.toggled * {
+  color: red !important; }
 
 .logo-box span {
   color: var(--color-secondary); }
 
 .menu-box ul {
   display: flex; }
+  @media only screen and (max-width: 56.25em) {
+    .menu-box ul {
+      flex-direction: column;
+      align-items: center; } }
   .menu-box ul li {
     list-style-type: none;
     margin-left: 2rem; }
@@ -811,6 +867,10 @@ a.button {
     padding: 20px;
     border: 5px solid var(--color-primary);
     width: 50%; }
+    @media only screen and (max-width: 56.25em) {
+      .modal-content {
+        width: 85%;
+        margin-top: 10rem; } }
 
 #myModal {
   background-color: white;
@@ -831,7 +891,8 @@ a.button {
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 700;
-    border: 2px solid var(--color-secondary); }
+    border: 2px solid var(--color-secondary);
+    cursor: pointer; }
   #myModal .wpcf7-response-output {
     font-size: 1.6rem;
     border-color: crimson; }
