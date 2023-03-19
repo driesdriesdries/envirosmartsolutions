@@ -7,27 +7,27 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-			@import "soil-gel/hero";
+			@import "hero";
 		}
 		&__2 {
 			background-color: var(--canvas-green);
 			.section {
-				@import "soil-gel/how-it-works";
-				@import "soil-gel/testimonial";
-				@import "soil-gel/applications";
+				@import "how-it-works";
+				@import "testimonial";
+				@import "applications";
 			}
 		}
 		&__3 {
 			background-color: #ffffff;
 			.section {
-				@import "soil-gel/benefits";
+				@import "benefits";
 			}
 		}
 		&__4 {
 			background-color: var(--canvas-green);
 			.section {
-				@import "soil-gel/faq";
-				@import "soil-gel/social-proof";
+				@import "faq";
+				@import "social-proof";
 			}
 		}
 	}

@@ -34,6 +34,7 @@
 }
 .menu-box {
 	ul {
+		margin: 0;
 		display: flex;
 		@media only screen and (max-width: $bp-medium) {
 			flex-direction: column;

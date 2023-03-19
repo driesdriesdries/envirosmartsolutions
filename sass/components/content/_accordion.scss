@@ -1,0 +1,27 @@
+//Accordion
+.accordion {
+	&-heading {
+		padding: 2rem;
+		background-color: #ffffff;
+		border: 2px solid var(--color-text-primary);
+		margin-top: 1rem;
+		a {
+			text-decoration: none;
+			color: var(--color-text-primary);
+		}
+	}
+	&-toggle {
+		display: block;
+	}
+	&-content {
+		display: none;
+	}
+	&-content.active {
+		display: block;
+		padding: 2rem;
+		background-color: #ffffff;
+		border-bottom: 2px solid var(--color-text-primary);
+		border-left: 2px solid var(--color-text-primary);
+		border-right: 2px solid var(--color-text-primary);
+	}
+}

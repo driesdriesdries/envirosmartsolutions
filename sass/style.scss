@@ -66,14 +66,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Base
 --------------------------------------------------------------*/
 @import "base/base";
-@import "base/typography/typography";
-@import "base/elements/buttons";
 
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
-@import "layouts/global-layout-styles";
-@import "layouts/soil-gel-page-layout";
+@import "layouts/layouts";
 
 /*--------------------------------------------------------------
 # Components

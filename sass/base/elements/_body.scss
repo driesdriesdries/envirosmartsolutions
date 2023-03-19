@@ -1,3 +1,8 @@
 body {
-	background: $color__background-body; // Fallback for when there is no custom background color defined.
+    font-weight: 100;
+    line-height: 1.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: var(--color-text-primary);
 }

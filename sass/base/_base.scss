@@ -11,12 +11,6 @@
     --section-padding: 5rem 0;
 }
 
-$bp-largest:75em; //1200/16
-$bp-large:68.75em; //1100/16
-$bp-medium:56.25em; //900/16
-$bp-small:37.5em; //600/16
-$bp-smallest:31.25em; //600/16
-
 * {
     margin: 0;
     padding: 0;
@@ -43,13 +37,15 @@ html {
     }
 }
 
-body {
-    font-weight: 100;
-    line-height: 1.6;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    color: var(--color-text-primary);
-}
-
+@import "elements/links";
+@import "elements/lists";
+@import "elements/body";
 @import "elements/buttons";
+@import "elements/fields";
+@import "elements/hr";
+@import "elements/media";
+@import "elements/tables";
+
+@import "typography/copy";
+@import "typography/headings";
+@import "typography/typography";
