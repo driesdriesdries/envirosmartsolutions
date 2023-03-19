@@ -1,0 +1,38 @@
+&__how-it-works {
+    background-image: linear-gradient(to right bottom, var(--color-primary), #B7CCB7);
+    background-size: cover;
+    text-align: center;
+    color: var(--color-text-light);
+    border-radius: var(--rounded-corners);
+    margin-top: 8rem;
+    h2 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .content{
+        display: flex;
+        margin-bottom: 6rem;
+        @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            width: 250px;
+            height: 250px;
+            border-radius: 100%;
+            margin-bottom: 1.5rem;
+            @media only screen and (max-width: $bp-medium) {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        > div {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            align-items: center;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+}

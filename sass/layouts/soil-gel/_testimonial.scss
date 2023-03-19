@@ -1,0 +1,7 @@
+&__testimonial {
+    text-align: center;
+    padding: 10rem 15rem;
+    @media only screen and (max-width: $bp-medium) {
+        padding: 10rem 3rem;
+    }
+}

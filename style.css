@@ -353,6 +353,9 @@ template {
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 55%; } }
@@ -392,27 +395,6 @@ input[type="submit"] {
   input[type="submit"]:active,
   input[type="submit"]:focus {
     border-color: #aaa #bbb #bbb; }
-
-a.button {
-  color: #ffffff;
-  padding: 1rem 5rem;
-  display: inline-block;
-  border: 3px solid var(--color-secondary);
-  margin-top: 2rem;
-  cursor: pointer;
-  border-radius: 1rem;
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: bold;
-  text-decoration: none; }
-  a.button__primary {
-    background-color: var(--color-secondary); }
-    a.button__primary:hover {
-      opacity: .7; }
-  a.button__secondary {
-    background-color: transparent; }
-    a.button__secondary:hover {
-      opacity: .7; }
 
 body,
 button,
@@ -528,27 +510,6 @@ input[type="submit"] {
   input[type="submit"]:focus {
     border-color: #aaa #bbb #bbb; }
 
-a.button {
-  color: #ffffff;
-  padding: 1rem 5rem;
-  display: inline-block;
-  border: 3px solid var(--color-secondary);
-  margin-top: 2rem;
-  cursor: pointer;
-  border-radius: 1rem;
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: bold;
-  text-decoration: none; }
-  a.button__primary {
-    background-color: var(--color-secondary); }
-    a.button__primary:hover {
-      opacity: .7; }
-  a.button__secondary {
-    background-color: transparent; }
-    a.button__secondary:hover {
-      opacity: .7; }
-
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
@@ -658,7 +619,7 @@ a.button {
       flex-wrap: wrap; }
       @media only screen and (max-width: 56.25em) {
         .soil-gel-page .container__2 .section__applications .image-grid {
-          width: 80%; } }
+          width: 90%; } }
       .soil-gel-page .container__2 .section__applications .image-grid__grid-item {
         width: 28%; }
         .soil-gel-page .container__2 .section__applications .image-grid__grid-item:nth-child(3) {
@@ -828,6 +789,10 @@ a.button {
 .sticky {
   display: block; }
 
+.post,
+.page {
+  margin: 0 0 1.5em; }
+
 .updated:not(.published) {
   display: none; }
 
@@ -839,6 +804,29 @@ a.button {
 .page-links {
   clear: both;
   margin: 0 0 1.5em; }
+
+.accordion-heading {
+  padding: 2rem;
+  background-color: #ffffff;
+  border: 2px solid var(--color-text-primary);
+  margin-top: 1rem; }
+  .accordion-heading a {
+    text-decoration: none;
+    color: var(--color-text-primary); }
+
+.accordion-toggle {
+  display: block; }
+
+.accordion-content {
+  display: none; }
+
+.accordion-content.active {
+  display: block;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-bottom: 2px solid var(--color-text-primary);
+  border-left: 2px solid var(--color-text-primary);
+  border-right: 2px solid var(--color-text-primary); }
 
 .modal {
   display: none;
@@ -909,29 +897,6 @@ a.button {
   color: #000;
   text-decoration: none;
   cursor: pointer; }
-
-.accordion-heading {
-  padding: 2rem;
-  background-color: #ffffff;
-  border: 2px solid var(--color-text-primary);
-  margin-top: 1rem; }
-  .accordion-heading a {
-    text-decoration: none;
-    color: var(--color-text-primary); }
-
-.accordion-toggle {
-  display: block; }
-
-.accordion-content {
-  display: none; }
-
-.accordion-content.active {
-  display: block;
-  padding: 2rem;
-  background-color: #ffffff;
-  border-bottom: 2px solid var(--color-text-primary);
-  border-left: 2px solid var(--color-text-primary);
-  border-right: 2px solid var(--color-text-primary); }
 
 /* Comments
 --------------------------------------------- */
