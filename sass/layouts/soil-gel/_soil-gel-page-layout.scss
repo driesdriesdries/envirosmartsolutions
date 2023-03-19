@@ -3,10 +3,10 @@
 		&__1 {
 			background-size: cover;
 			background-position: center;
-			height: 820px;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
+			padding-top: 22rem;
 			@import "hero";
 		}
 		&__2 {

@@ -1,10 +1,10 @@
-.section {
+.section__hero {
     text-align: center;
-    transform: translateY(100px);
     color: #ffffff;
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 10rem;
     h1 {
         margin: 0;
         line-height: 5.5rem;

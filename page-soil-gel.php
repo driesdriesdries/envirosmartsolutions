@@ -18,8 +18,8 @@ get_header();
 	<main id="primary" class="site-main soil-gel-page">
 		
 		<div class="container container__1" style="background-image: url(<?php echo get_theme_file_uri("images/hero-desktop.png") ?>);">
-			<div class="section">
-				<h1>Boost crop yield with Soil Gel while </br> saving on valuable resources</h1>
+			<div class="section section__hero">
+				<h1>Boost crop yield with Soil Gel while saving on valuable resources</h1>
 				<p class="tagline">Grow Smarter, Not Harder with Water-Absorbent Polymers</br> that work in all climates</p>
 				<div class="button-box">
 					<a href="javascript:void(0)" class="modaltrigger button button__primary">CONTACT</a>

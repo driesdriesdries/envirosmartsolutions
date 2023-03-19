@@ -622,25 +622,25 @@ textarea {
 .soil-gel-page .container__1 {
   background-size: cover;
   background-position: center;
-  height: 820px;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
-  .soil-gel-page .container__1 .section {
+  justify-content: center;
+  padding-top: 22rem; }
+  .soil-gel-page .container__1 .section__hero {
     text-align: center;
-    transform: translateY(100px);
     color: #ffffff;
     display: flex;
     align-items: center;
-    flex-direction: column; }
-    .soil-gel-page .container__1 .section h1 {
+    flex-direction: column;
+    padding: 10rem; }
+    .soil-gel-page .container__1 .section__hero h1 {
       margin: 0;
       line-height: 5.5rem; }
-    .soil-gel-page .container__1 .section p {
+    .soil-gel-page .container__1 .section__hero p {
       font-size: 2.4rem;
       margin-bottom: 0;
       margin-top: 1rem; }
-    .soil-gel-page .container__1 .section .button-box a:first-child {
+    .soil-gel-page .container__1 .section__hero .button-box a:first-child {
       margin-left: 1rem;
       margin-right: 1rem; }
 
@@ -942,7 +942,8 @@ textarea {
     margin: auto;
     padding: 20px;
     border: 5px solid var(--color-primary);
-    width: 50%; }
+    width: 50%;
+    box-shadow: var(--shadow-dark); }
     @media only screen and (max-width: 56.25em) {
       .modal-content {
         width: 85%;
