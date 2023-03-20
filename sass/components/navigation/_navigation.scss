@@ -2,9 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 2rem 1rem;
     .nav-left {
         .logo-box{
-            //background-color: green;
+           //background-color: orange;
         }
     }
     .nav-right {
@@ -53,17 +54,14 @@
             padding-bottom: 1rem;
             position: absolute;
             width: 100vw;
-            top: 3.655rem;
+            top: 7.6rem;
             left: 0;
             padding-bottom: 0;
             .menu-box-list {
                 flex-direction: column;
                 margin: 0;
-                // box-shadow: var(--shadow-dark);
                 &--item{
-                    //background-color: aqua;
                     width: 100%;
-                    border-bottom: 2px solid var(--color-primary);
                     padding: 0;
                     a {
                         display: block;

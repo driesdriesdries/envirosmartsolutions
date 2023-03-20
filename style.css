@@ -807,7 +807,8 @@ textarea {
 .main-navigation {
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 2rem 1rem; }
   .main-navigation .nav-right {
     display: flex; }
     .main-navigation .nav-right .menu-box {
@@ -844,7 +845,7 @@ textarea {
     padding-bottom: 1rem;
     position: absolute;
     width: 100vw;
-    top: 3.655rem;
+    top: 7.6rem;
     left: 0;
     padding-bottom: 0; }
     .main-navigation.toggled .menu-box .menu-box-list {
@@ -852,7 +853,6 @@ textarea {
       margin: 0; }
       .main-navigation.toggled .menu-box .menu-box-list--item {
         width: 100%;
-        border-bottom: 2px solid var(--color-primary);
         padding: 0; }
         .main-navigation.toggled .menu-box .menu-box-list--item a {
           display: block;
