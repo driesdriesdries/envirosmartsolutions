@@ -6,11 +6,13 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		padding: 1rem 3rem;
 		p {
 			margin-bottom: 0;
 			font-style: italic;
 			font-weight: 700;
 			color: var(--color-text-primary);
+			text-align: center;
 		}
 	}
 }

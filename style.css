@@ -664,14 +664,8 @@ textarea {
           flex-direction: column;
           align-items: center; } }
       .soil-gel-page .container__2 .section__how-it-works .content img {
-        width: 250px;
-        height: 250px;
         border-radius: 100%;
         margin-bottom: 1.5rem; }
-        @media only screen and (max-width: 56.25em) {
-          .soil-gel-page .container__2 .section__how-it-works .content img {
-            width: 200px;
-            height: 200px; } }
       .soil-gel-page .container__2 .section__how-it-works .content > div {
         display: flex;
         flex-direction: column;
@@ -756,7 +750,7 @@ textarea {
         padding-left: 2rem; }
         @media only screen and (max-width: 56.25em) {
           .soil-gel-page .container__3 .section__benefits .card-section .card {
-            width: 60%;
+            width: 70%;
             margin-bottom: 2rem; } }
         .soil-gel-page .container__3 .section__benefits .card-section .card h3 {
           margin-top: 1rem;
@@ -810,71 +804,20 @@ textarea {
 --------------------------------------------------------------*/
 /* Navigation
 --------------------------------------------- */
-.section__navbar {
-  padding: 1rem 0rem; }
-
-.main-navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  @media only screen and (max-width: 56.25em) {
-    .main-navigation {
-      flex-direction: column;
-      padding-top: 1rem;
-      padding-bottom: 1rem; } }
-
-@media only screen and (min-width: 56.25em) {
-  .menuToggle {
-    display: none;
-    top: 6rem;
-    right: 1rem; } }
-
-.main-navigation.toggled * {
-  color: red !important; }
-
-.logo-box span {
-  color: var(--color-secondary); }
-
-.menu-box ul {
-  margin: 0;
-  display: flex; }
-  @media only screen and (max-width: 56.25em) {
-    .menu-box ul {
-      flex-direction: column;
-      align-items: center; } }
-  .menu-box ul li {
-    list-style-type: none;
-    margin-left: 2rem; }
-    .menu-box ul li a {
-      display: inline-block;
-      padding: 1rem 2rem;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: var(--color-text-primary);
-      font-size: 1.4rem;
-      font-weight: 700; }
-      .menu-box ul li a:hover {
-        color: var(--color-secondary); }
-    .menu-box ul li:last-child {
-      background-color: var(--color-secondary);
-      border-radius: 10px; }
-      .menu-box ul li:last-child:hover {
-        opacity: 0.75; }
-      .menu-box ul li:last-child a {
-        color: #ffffff; }
-
 .footer {
   background-color: #D9D9D9; }
   .footer .section {
     height: 10rem;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    padding: 1rem 3rem; }
     .footer .section p {
       margin-bottom: 0;
       font-style: italic;
       font-weight: 700;
-      color: var(--color-text-primary); }
+      color: var(--color-text-primary);
+      text-align: center; }
 
 /* Posts and pages
 --------------------------------------------- */

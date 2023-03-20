@@ -31,11 +31,10 @@
 
 	<header id="masthead" class="site-header">
 
-	<div class="container">
+	<!-- <div class="container">
 		<div class="section section__navbar">
 			<nav id="site-navigation" class="main-navigation">
 				<div class="logo-box">
-					<!-- <img src="#" alt="envirosmart logo"> -->
 					<h4>EnviroSmart <span>Solutions</span></h4>
 				</div>
 				<div class="menu-box">
@@ -49,7 +48,7 @@
 				</div>
 			</nav>
 		</div>
-	</div>
+	</div> -->
 	
 	</header><!-- #masthead -->
 
