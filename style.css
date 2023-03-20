@@ -804,6 +804,60 @@ textarea {
 --------------------------------------------------------------*/
 /* Navigation
 --------------------------------------------- */
+.main-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .main-navigation .nav-right {
+    display: flex; }
+    .main-navigation .nav-right .menu-box {
+      text-transform: uppercase;
+      display: block; }
+      @media only screen and (max-width: 56.25em) {
+        .main-navigation .nav-right .menu-box {
+          display: none; } }
+      .main-navigation .nav-right .menu-box ul {
+        margin: 0; }
+      .main-navigation .nav-right .menu-box-list {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        list-style: none; }
+        .main-navigation .nav-right .menu-box-list--item {
+          padding: 1rem 2rem;
+          font-weight: 700; }
+          .main-navigation .nav-right .menu-box-list--item a {
+            text-decoration: none;
+            color: var(--color-text-primary); }
+            .main-navigation .nav-right .menu-box-list--item a:hover {
+              color: var(--color-secondary);
+              text-decoration: underline; }
+    .main-navigation .nav-right .button-box {
+      background-color: orangered;
+      display: none; }
+      @media only screen and (max-width: 56.25em) {
+        .main-navigation .nav-right .button-box {
+          display: block; } }
+  .main-navigation.toggled .menu-box {
+    display: block;
+    background-color: #ffffff;
+    padding-bottom: 1rem;
+    position: absolute;
+    width: 100vw;
+    top: 3.655rem;
+    left: 0;
+    padding-bottom: 0; }
+    .main-navigation.toggled .menu-box .menu-box-list {
+      flex-direction: column;
+      margin: 0; }
+      .main-navigation.toggled .menu-box .menu-box-list--item {
+        width: 100%;
+        border-bottom: 2px solid var(--color-primary);
+        padding: 0; }
+        .main-navigation.toggled .menu-box .menu-box-list--item a {
+          display: block;
+          padding: 2rem 2rem; }
+
 .footer {
   background-color: #D9D9D9; }
   .footer .section {

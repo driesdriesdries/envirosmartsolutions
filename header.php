@@ -31,24 +31,49 @@
 
 	<header id="masthead" class="site-header">
 
-	<!-- <div class="container">
-		<div class="section section__navbar">
+	<div class="container">
+		
+	<script>
+		// get references to the button and the menu-box element
+const menuToggleBtn = document.querySelector('.menutoggle');
+const menuBox = document.querySelector('.menu-box');
+
+// add a click event listener to the button
+menuToggleBtn.addEventListener('click', function() {
+  // toggle the 'expanded' class on the menu-box element
+  menuBox.classList.toggle('expanded');
+});
+	</script>
+	<div class="section section__navbar">
 			<nav id="site-navigation" class="main-navigation">
-				<div class="logo-box">
-					<h4>EnviroSmart <span>Solutions</span></h4>
+				
+				<div class="nav-left">
+					<div class="logo-box">
+						<h4>EnviroSmart <span>Solutions</span></h4>
+					</div>
 				</div>
-				<div class="menu-box">
-					<ul>
-						<li><a href="#">How it works</a></li>
-						<li><a href="#">Applications</a></li>
-						<li><a href="#">Benefits</a></li>
-						<li><a href="#">Faq</a></li>
-						<li><a class="modaltrigger" href="#">Contact</a></li>
-					</ul>
+
+				<div class="nav-right">
+					<div class="menu-box">
+						<ul class="menu-box-list">
+							<li class="menu-box-list--item"><a href="#">How it works</a></li>
+							<li class="menu-box-list--item"><a href="#">Applications</a></li>
+							<li class="menu-box-list--item"><a href="#">Benefits</a></li>
+							<li class="menu-box-list--item"><a href="#">Faq</a></li>
+							<li class="menu-box-list--item modaltrigger"><a href="#">Contact</a></li>
+						</ul>
+					</div>
+					<div class="button-box">
+						<button class="menutoggle">MENU</button>
+					</div>
 				</div>
+
+				
+				
+				
 			</nav>
 		</div>
-	</div> -->
+	</div>
 	
 	</header><!-- #masthead -->
 
