@@ -31,3 +31,14 @@ navLinks.forEach(link => {
     section.scrollIntoView({ behavior: 'smooth' });
   });
 });
+
+
+//Close menu after link is clicked
+const nav = document.getElementById('site-navigation');
+const menuLinks = document.querySelectorAll('.menu-box-list--item a');
+
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('toggled');
+  });
+});

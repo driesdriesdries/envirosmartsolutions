@@ -40,8 +40,10 @@
             }
         }
         .button-box{
-            background-color: orangered;
             display: none;
+            button {
+                font-size: 1.5rem;
+            }
             @media only screen and (max-width: $bp-medium) {
                 display: block;    		
             }

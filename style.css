@@ -834,8 +834,9 @@ textarea {
               color: var(--color-secondary);
               text-decoration: underline; }
     .main-navigation .nav-right .button-box {
-      background-color: orangered;
       display: none; }
+      .main-navigation .nav-right .button-box button {
+        font-size: 1.5rem; }
       @media only screen and (max-width: 56.25em) {
         .main-navigation .nav-right .button-box {
           display: block; } }

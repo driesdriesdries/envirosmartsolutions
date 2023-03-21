@@ -64,12 +64,9 @@ menuToggleBtn.addEventListener('click', function() {
 						</ul>
 					</div>
 					<div class="button-box">
-						<button class="menutoggle">MENU</button>
+						<button class="menutoggle">Menu</button>
 					</div>
 				</div>
-
-				
-				
 				
 			</nav>
 		</div>
