@@ -5,7 +5,12 @@
     padding: 2rem 1rem;
     .nav-left {
         .logo-box{
-           //background-color: orange;
+            h4 {
+                letter-spacing: -2px;
+            }
+            span{
+                color: var(--color-secondary);
+            }
         }
     }
     .nav-right {
@@ -33,7 +38,6 @@
                         color: var(--color-text-primary);
                         &:hover {
                             color: var(--color-secondary);
-                            text-decoration: underline;
                         }
                     }
                 }
@@ -43,6 +47,12 @@
             display: none;
             button {
                 font-size: 1.5rem;
+                border: 2px solid var(--color-secondary);
+                background-color: var(--color-secondary);
+                color: #ffffff;
+                &:active, &:hover {
+                    opacity: .5;
+                }
             }
             @media only screen and (max-width: $bp-medium) {
                 display: block;    		

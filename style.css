@@ -809,6 +809,10 @@ textarea {
   align-items: center;
   justify-content: space-between;
   padding: 2rem 1rem; }
+  .main-navigation .nav-left .logo-box h4 {
+    letter-spacing: -2px; }
+  .main-navigation .nav-left .logo-box span {
+    color: var(--color-secondary); }
   .main-navigation .nav-right {
     display: flex; }
     .main-navigation .nav-right .menu-box {
@@ -831,12 +835,16 @@ textarea {
             text-decoration: none;
             color: var(--color-text-primary); }
             .main-navigation .nav-right .menu-box-list--item a:hover {
-              color: var(--color-secondary);
-              text-decoration: underline; }
+              color: var(--color-secondary); }
     .main-navigation .nav-right .button-box {
       display: none; }
       .main-navigation .nav-right .button-box button {
-        font-size: 1.5rem; }
+        font-size: 1.5rem;
+        border: 2px solid var(--color-secondary);
+        background-color: var(--color-secondary);
+        color: #ffffff; }
+        .main-navigation .nav-right .button-box button:active, .main-navigation .nav-right .button-box button:hover {
+          opacity: .5; }
       @media only screen and (max-width: 56.25em) {
         .main-navigation .nav-right .button-box {
           display: block; } }
