@@ -16,7 +16,7 @@
 	
 </div><!-- #page -->
 <script language="JavaScript" type="text/javascript" src="<?php echo get_theme_file_uri('js/modal.js'); ?>"></script>
-<script language="JavaScript" type="text/javascript" src="<?php echo get_theme_file_uri('js/scroll.js'); ?>"></script>
+<script language="JavaScript" type="text/javascript" src="<?php echo get_theme_file_uri('js/navigation.js'); ?>"></script>
 <script language="JavaScript" type="text/javascript" src="<?php echo get_theme_file_uri('js/accordion.js'); ?>"></script>
 <?php wp_footer(); ?>
 

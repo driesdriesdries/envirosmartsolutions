@@ -1,99 +1,51 @@
-/**
- * File navigation.js.
- *
- * Handles toggling the navigation menu for small screens and enables TAB key
- * navigation support for dropdown menus.
- */
-( function() {
-	const siteNavigation = document.getElementById( 'site-navigation' );
+const menuToggleBtn = document.querySelector('.menutoggle');
+const siteNav = document.getElementById('site-navigation');
 
-	// Return early if the navigation doesn't exist.
-	if ( ! siteNavigation ) {
-		return;
-	}
+menuToggleBtn.addEventListener('click', () => {
+  siteNav.classList.toggle('toggled');
+});
 
-	const button = siteNavigation.getElementsByTagName( 'button' )[ 0 ];
+// Get the link with class name "learn-more"
+var learnMoreLink = document.querySelector(".learn-more");
 
-	// Return early if the button doesn't exist.
-	if ( 'undefined' === typeof button ) {
-		return;
-	}
+// When the link is clicked, scroll to the container with class name "container__2"
+learnMoreLink.addEventListener("click", function(event) {
+  event.preventDefault();
+  var container2 = document.querySelector(".container__2");
+  container2.scrollIntoView({ behavior: "smooth" });
+});
 
-	const menu = siteNavigation.getElementsByTagName( 'ul' )[ 0 ];
+//Navigation Scrolling
+// Select all navigation links
+const navLinks = document.querySelectorAll('#site-navigation .menu-box a');
 
-	// Hide menu toggle button if menu is empty and return early.
-	if ( 'undefined' === typeof menu ) {
-		button.style.display = 'none';
-		return;
-	}
+// Loop through each navigation link
+navLinks.forEach(link => {
+  // Add a click event listener to each link
+  link.addEventListener('click', e => {
+    // Prevent the default behavior of the link
+    e.preventDefault();
 
-	if ( ! menu.classList.contains( 'nav-menu' ) ) {
-		menu.classList.add( 'nav-menu' );
-	}
+    // Get the name of the section to scroll to
+    const sectionName = link.textContent.toLowerCase().replaceAll(' ', '-');
 
-	// Toggle the .toggled class and the aria-expanded value each time the button is clicked.
-	button.addEventListener( 'click', function() {
-		siteNavigation.classList.toggle( 'toggled' );
+    // Get the section element by its class name
+    const section = document.querySelector(`.section__${sectionName}`);
 
-		if ( button.getAttribute( 'aria-expanded' ) === 'true' ) {
-			button.setAttribute( 'aria-expanded', 'false' );
-		} else {
-			button.setAttribute( 'aria-expanded', 'true' );
-		}
-	} );
+    console.log(sectionName);
 
-	// Remove the .toggled class and set aria-expanded to false when the user clicks outside the navigation.
-	document.addEventListener( 'click', function( event ) {
-		const isClickInside = siteNavigation.contains( event.target );
+    // Scroll smoothly to the section
+    section.scrollIntoView({ behavior: 'smooth' });
+  });
+});
 
-		if ( ! isClickInside ) {
-			siteNavigation.classList.remove( 'toggled' );
-			button.setAttribute( 'aria-expanded', 'false' );
-		}
-	} );
 
-	// Get all the link elements within the menu.
-	const links = menu.getElementsByTagName( 'a' );
+//Close menu after link is clicked
+const nav = document.getElementById('site-navigation');
+const menuLinks = document.querySelectorAll('.menu-box-list--item a');
 
-	// Get all the link elements with children within the menu.
-	const linksWithChildren = menu.querySelectorAll( '.menu-item-has-children > a, .page_item_has_children > a' );
-
-	// Toggle focus each time a menu link is focused or blurred.
-	for ( const link of links ) {
-		link.addEventListener( 'focus', toggleFocus, true );
-		link.addEventListener( 'blur', toggleFocus, true );
-	}
-
-	// Toggle focus each time a menu link with children receive a touch event.
-	for ( const link of linksWithChildren ) {
-		link.addEventListener( 'touchstart', toggleFocus, false );
-	}
-
-	/**
-	 * Sets or removes .focus class on an element.
-	 */
-	function toggleFocus() {
-		if ( event.type === 'focus' || event.type === 'blur' ) {
-			let self = this;
-			// Move up through the ancestors of the current link until we hit .nav-menu.
-			while ( ! self.classList.contains( 'nav-menu' ) ) {
-				// On li elements toggle the class .focus.
-				if ( 'li' === self.tagName.toLowerCase() ) {
-					self.classList.toggle( 'focus' );
-				}
-				self = self.parentNode;
-			}
-		}
-
-		if ( event.type === 'touchstart' ) {
-			const menuItem = this.parentNode;
-			event.preventDefault();
-			for ( const link of menuItem.parentNode.children ) {
-				if ( menuItem !== link ) {
-					link.classList.remove( 'focus' );
-				}
-			}
-			menuItem.classList.toggle( 'focus' );
-		}
-	}
-}() );
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('toggled');
+  });
+});
