@@ -1,16 +1,17 @@
+#page {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
 .container {
 	max-width: 1440px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin: 0 auto;
-	// border: 2px solid gold;
-	// background-color: teal;
 }
 
 .section {
 	width: 100%;
 	max-width: 1140px;
-	// border: 1px solid black;
-	// background-color: cornflowerblue;
 }

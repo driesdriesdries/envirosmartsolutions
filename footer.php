@@ -11,11 +11,7 @@
 
 ?>
 
-	<footer class="container footer">
-		<div class="section">
-			<p>Copyright Notice: All content © 2023 EnviroSmart Solutions unless otherwise stated. All rights reserved.</p>
-		</div>
-	</footer>
+<?php  get_template_part( 'template-parts/footer' ); ?>
 
 	
 </div><!-- #page -->
