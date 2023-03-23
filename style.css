@@ -48,6 +48,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -639,14 +645,27 @@ textarea {
     padding: 10rem; }
     .soil-gel-page .container__1 .section__hero h1 {
       margin: 0;
-      line-height: 5.5rem; }
+      line-height: 5.5rem;
+      opacity: 0;
+      animation-delay: .5s;
+      animation: fadeIn 1.5s;
+      animation-fill-mode: forwards; }
     .soil-gel-page .container__1 .section__hero p {
       font-size: 2.4rem;
       margin-bottom: 0;
-      margin-top: 1rem; }
-    .soil-gel-page .container__1 .section__hero .button-box a:first-child {
-      margin-left: 1rem;
-      margin-right: 1rem; }
+      margin-top: 1rem;
+      opacity: 0;
+      animation: fadeIn 1.5s;
+      animation-delay: 1s;
+      animation-fill-mode: forwards; }
+    .soil-gel-page .container__1 .section__hero .button-box {
+      opacity: 0;
+      animation: fadeIn 1.5s;
+      animation-delay: 2s;
+      animation-fill-mode: forwards; }
+      .soil-gel-page .container__1 .section__hero .button-box a:first-child {
+        margin-left: 1rem;
+        margin-right: 1rem; }
 
 .soil-gel-page .container__2 {
   background-color: var(--canvas-green); }
@@ -790,7 +809,9 @@ textarea {
     padding-bottom: 6rem; }
     .soil-gel-page .container__4 .section__faq h2 {
       text-align: center;
-      padding-bottom: 2rem; }
+      padding-bottom: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem; }
     .soil-gel-page .container__4 .section__faq .accordion__item {
       background-color: #ffffff;
       margin-bottom: 1rem;
@@ -964,7 +985,8 @@ textarea {
     padding: 20px;
     border: 5px solid var(--color-primary);
     width: 50%;
-    box-shadow: var(--shadow-dark); }
+    box-shadow: var(--shadow-dark);
+    animation: fadeIn 1s; }
     @media only screen and (max-width: 56.25em) {
       .modal-content {
         width: 85%;
@@ -1173,6 +1195,12 @@ Theme Name: EnviroSmartSolutions
 
 WooCommerce styles override
 */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 /**
  * Shop tables
  */
