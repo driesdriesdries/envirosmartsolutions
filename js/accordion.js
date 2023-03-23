@@ -1,28 +1,23 @@
-// Listen for click on the document
-document.addEventListener('click', function (event) {
+// get all the accordion headings and content sections
+const headings = document.querySelectorAll('.accordion__item--heading');
+const contents = document.querySelectorAll('.accordion__item--content');
 
-//Bail if our clicked element doesn't have the class
-if (!event.target.classList.contains('accordion-toggle')) return;
+// add event listener to each heading
+headings.forEach((heading, index) => {
+  heading.addEventListener('click', (event) => {
+    event.preventDefault(); // prevent default link behavior
 
-// Get the target content
-var content = document.querySelector(event.target.hash);
-if (!content) return;
+    // check if clicked content section already has "active" class
+    if (contents[index].classList.contains('active')) {
+      contents[index].classList.remove('active'); // remove "active" class
+    } else {
+      // remove "active" class from all content sections
+      contents.forEach(content => {
+        content.classList.remove('active');
+      });
 
-// Prevent default link behavior
-event.preventDefault();
-
-// If the content is already expanded, collapse it and quit
-if (content.classList.contains('active')) {
-content.classList.remove('active');
-return;
-}
-
-// Get all open accordion content, loop through it, and close it
-var accordions = document.querySelectorAll('.accordion-content.active');
-for (var i = 0; i < accordions.length; i++) {
-accordions[i].classList.remove('active');
-}
-
-// Toggle our content
-content.classList.toggle('active');
-})
+      // toggle "active" class on the clicked content section
+      contents[index].classList.toggle('active');
+    }
+  });
+});
