@@ -182,3 +182,19 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+//Accordion Component
+function generateAccordion($items) {
+    echo '<div class="accordion">';
+    foreach ($items as $item) {
+        echo '<div class="accordion__item">';
+        echo '<div class="accordion__item--heading">';
+        echo '<h3><a href="#" class="accordion-toggle">' . $item['heading'] . '</a></h3>';
+        echo '</div>';
+        echo '<div class="accordion__item--content">';
+        echo '<p>' . $item['content'] . '</p>';
+        echo '</div>';
+        echo '</div>';
+    }
+    echo '</div>';
+}

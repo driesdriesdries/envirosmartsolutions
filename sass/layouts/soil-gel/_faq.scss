@@ -7,49 +7,4 @@
         margin-top: 1rem;
         margin-bottom: 2rem;
     }
-    .accordion {
-        &__item {
-            background-color: #ffffff;
-            margin-bottom: 1rem;
-            border-bottom: 1px solid var(--color-text-primary);
-            & > div {
-                //background-color: teal;
-            }
-            &--heading {
-                h3 {
-                    border: 2px solid var(--color-text-primary);
-                    padding: 2rem 2rem;
-                }
-                h3 a {
-                    text-decoration: none;
-                    color: var(----color-text-primary);
-                    display: block;
-                    &:hover {
-                        opacity: .75;
-                        cursor: pointer;
-                    }
-                }
-            }
-            &--content {
-                height: 0px;
-                visibility: hidden;
-                opacity: 0;
-                p {
-                    padding: 1rem 0rem;
-                    margin-bottom: 0;
-                }
-            }
-            &--content.active {
-                padding: 2rem 2rem;
-                visibility: visible;
-                width: 100%;
-                height: inherit;
-                transition: all .2s;
-                opacity: 1;
-                border-left: 2px solid var(--color-text-primary) ;
-                border-right: 2px solid var(--color-text-primary) ;
-                border-bottom: 2px solid var(--color-text-primary) ;
-            }
-        }
-    }
 }

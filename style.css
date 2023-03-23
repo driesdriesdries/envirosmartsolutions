@@ -812,37 +812,6 @@ textarea {
       padding-bottom: 2rem;
       margin-top: 1rem;
       margin-bottom: 2rem; }
-    .soil-gel-page .container__4 .section__faq .accordion__item {
-      background-color: #ffffff;
-      margin-bottom: 1rem;
-      border-bottom: 1px solid var(--color-text-primary); }
-      .soil-gel-page .container__4 .section__faq .accordion__item--heading h3 {
-        border: 2px solid var(--color-text-primary);
-        padding: 2rem 2rem; }
-      .soil-gel-page .container__4 .section__faq .accordion__item--heading h3 a {
-        text-decoration: none;
-        color: var(----color-text-primary);
-        display: block; }
-        .soil-gel-page .container__4 .section__faq .accordion__item--heading h3 a:hover {
-          opacity: .75;
-          cursor: pointer; }
-      .soil-gel-page .container__4 .section__faq .accordion__item--content {
-        height: 0px;
-        visibility: hidden;
-        opacity: 0; }
-        .soil-gel-page .container__4 .section__faq .accordion__item--content p {
-          padding: 1rem 0rem;
-          margin-bottom: 0; }
-      .soil-gel-page .container__4 .section__faq .accordion__item--content.active {
-        padding: 2rem 2rem;
-        visibility: visible;
-        width: 100%;
-        height: inherit;
-        transition: all .2s;
-        opacity: 1;
-        border-left: 2px solid var(--color-text-primary);
-        border-right: 2px solid var(--color-text-primary);
-        border-bottom: 2px solid var(--color-text-primary); }
   .soil-gel-page .container__4 .section__social-proof {
     background-image: linear-gradient(to right bottom, #B7CCB7, var(--color-primary));
     border-radius: var(--rounded-corners);
@@ -1029,6 +998,38 @@ textarea {
   color: #000;
   text-decoration: none;
   cursor: pointer; }
+
+.accordion__item {
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--color-text-primary); }
+  .accordion__item--heading h3 {
+    border: 2px solid var(--color-text-primary);
+    padding: 2rem 2rem; }
+  .accordion__item--heading h3 a {
+    text-decoration: none;
+    color: var(----color-text-primary);
+    display: block; }
+    .accordion__item--heading h3 a:hover {
+      opacity: .75;
+      cursor: pointer; }
+  .accordion__item--content {
+    height: 0px;
+    visibility: hidden;
+    opacity: 0; }
+    .accordion__item--content p {
+      padding: 1rem 0rem;
+      margin-bottom: 0; }
+  .accordion__item--content.active {
+    padding: 2rem 2rem;
+    visibility: visible;
+    width: 100%;
+    height: inherit;
+    transition: all .2s;
+    opacity: 1;
+    border-left: 2px solid var(--color-text-primary);
+    border-right: 2px solid var(--color-text-primary);
+    border-bottom: 2px solid var(--color-text-primary); }
 
 /* Comments
 --------------------------------------------- */
