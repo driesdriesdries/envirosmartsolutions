@@ -2,7 +2,7 @@
     <nav id="site-navigation" class="main-navigation">	
         <div class="nav-left">
             <div class="logo-box">
-                <h4>EnviroSmart <span>Solutions</span></h4>
+                <h4><a href="<?php echo site_url(); ?>">EnviroSmart <span>Solutions</span></a></h4>
             </div>
         </div>
 

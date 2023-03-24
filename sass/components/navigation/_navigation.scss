@@ -8,10 +8,19 @@
     padding: 2rem 1rem;
     .nav-left {
         .logo-box{
+            a {
+                text-decoration: none;
+                &:visited {
+                    color: currentColor;
+                }
+                &:hover {
+                    opacity: .75;
+                }
+            }
             h4 {
                 letter-spacing: -2px;
             }
-            span{
+            span {
                 color: var(--color-secondary);
             }
         }

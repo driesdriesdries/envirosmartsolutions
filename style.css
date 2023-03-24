@@ -837,6 +837,12 @@ textarea {
   align-items: center;
   justify-content: space-between;
   padding: 2rem 1rem; }
+  .main-navigation .nav-left .logo-box a {
+    text-decoration: none; }
+    .main-navigation .nav-left .logo-box a:visited {
+      color: currentColor; }
+    .main-navigation .nav-left .logo-box a:hover {
+      opacity: .75; }
   .main-navigation .nav-left .logo-box h4 {
     letter-spacing: -2px; }
   .main-navigation .nav-left .logo-box span {
