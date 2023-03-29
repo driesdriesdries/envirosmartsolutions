@@ -183,6 +183,25 @@ if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
 
+//Hero Function
+function createHeroSection($h1Text, $pText, $bgImageURL) {
+    $themeFileURI = get_theme_file_uri($bgImageURL);
+    $output = <<<HTML
+	<div class="container container__1" style="background-image: url({$themeFileURI});">
+		<div class="section section__hero">
+			<h1>{$h1Text}</h1>
+			<p class="tagline">{$pText}</p>
+			<div class="button-box">
+				<a href="javascript:void(0)" class="modaltrigger button button__primary">CONTACT</a>
+				<a href="#" class="learn-more button button__secondary">LEARN MORE</a>
+			</div>
+		</div>
+	</div>
+	HTML;
+
+    return $output;
+}
+
 //Accordion Component
 function generateAccordion($items) {
     echo '<div class="accordion">';

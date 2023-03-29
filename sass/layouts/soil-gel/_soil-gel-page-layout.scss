@@ -1,14 +1,13 @@
 .soil-gel-page {
 	.container {
 		&__1 {
-			// margin-top: 100rem;
 			background-size: cover;
 			background-position: center;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-			padding-top: 22rem;
-			@import "hero";
+			padding-top: 15rem;
+			padding-bottom: 10rem;
 		}
 		&__2 {
 			background-color: var(--canvas-green);
