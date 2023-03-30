@@ -13,15 +13,21 @@
                 &:visited {
                     color: currentColor;
                 }
-                &:hover {
-                    opacity: .75;
-                }
+                // &:hover {
+                //     opacity: .75;
+                // }
             }
             h4 {
                 letter-spacing: -2px;
+                transition: transform 0.2s ease-out;
+                &:hover {
+                    transform: translateY(-1px);
+                    transition-delay: 0.2s;
+                    transition: transform 0.2s ease-in-out;
+                }
             }
             span {
-                color: var(--color-secondary);
+                color: var(--color-text-primary);
             }
         }
     }
@@ -59,8 +65,8 @@
             display: none;
             button {
                 font-size: 1.5rem;
-                border: 2px solid var(--color-secondary);
-                background-color: var(--color-secondary);
+                border: 2px solid var(--color-primary);
+                background-color: var(--color-primary);
                 color: #ffffff;
                 &:active, &:hover {
                     opacity: .5;
@@ -81,9 +87,11 @@
             top: 8.6rem;
             left: 0;
             padding-bottom: 0;
+            z-index: 1000;
             .menu-box-list {
                 flex-direction: column;
                 margin: 0;
+                z-index: 999;
                 &--item{
                     width: 100%;
                     padding: 0;
