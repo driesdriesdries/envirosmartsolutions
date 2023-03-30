@@ -13,14 +13,13 @@
     .single-content-card {
         display: flex;
         flex-direction: column;
-        
+        box-shadow: var(--shadow-dark);
         border-radius: 2rem;
         overflow: hidden;
         flex-basis: 40rem;
         background-color: white;
         transition: transform 0.3s ease-out;
         &:hover {
-            box-shadow: var(--shadow-dark);
             transform: translateY(-2px);
             transition-delay: 0.3s;
             transition: transform 0.2s ease-in-out;

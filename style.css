@@ -340,13 +340,12 @@ template {
 :root {
   --color-green-dark: #4f704f;
   --color-green-light: #bcdabc;
-  --canvas-green: #c0dfbb;
+  --canvas-green: #F4FBF3;
   --color-primary: #F0821F;
   --color-text-primary: #1E1E1E;
   --color-text-light: #ffffff;
-  --shadow-dark: 0 2rem 6rem rgba(0,0,0, .3);
-  --rounded-corners: 20px;
-  --section-padding: 5rem 0; }
+  --shadow-dark: 0 1rem 3rem rgba(0,0,0, .3);
+  --rounded-corners: 20px; }
 
 * {
   margin: 0;
@@ -369,6 +368,9 @@ html {
   @media only screen and (max-width: 37.5em) {
     html {
       font-size: 40%; } }
+
+::selection {
+  background-color: var(--color-primary); }
 
 a {
   color: #F0821F; }
@@ -647,7 +649,8 @@ textarea {
     text-align: center;
     color: var(--color-text-light);
     border-radius: var(--rounded-corners);
-    margin-top: 8rem; }
+    margin-top: 8rem;
+    box-shadow: var(--shadow-dark); }
     .soil-gel-page .container__2 .section__how-it-works h2 {
       padding-top: 2rem;
       padding-bottom: 2rem; }
@@ -679,7 +682,8 @@ textarea {
     padding: 3rem 3rem;
     border: 3px solid var(--color-green-dark);
     border-radius: var(--rounded-corners);
-    margin-bottom: 8rem; }
+    margin-bottom: 8rem;
+    box-shadow: var(--shadow-dark); }
     @media only screen and (max-width: 56.25em) {
       .soil-gel-page .container__2 .section__applications {
         flex-direction: column;
@@ -742,7 +746,8 @@ textarea {
         width: 32%;
         background-color: var(--canvas-green);
         border-radius: var(--rounded-corners);
-        padding-left: 2rem; }
+        padding-left: 2rem;
+        box-shadow: var(--shadow-dark); }
         @media only screen and (max-width: 56.25em) {
           .soil-gel-page .container__3 .section__benefits .card-section .card {
             width: 70%;
@@ -768,7 +773,7 @@ textarea {
             display: inline-block;
             width: 1rem;
             height: 1rem;
-            background-color: var(--color-secondary);
+            background-color: var(--color-primary);
             border-radius: 100%;
             margin-right: 1rem; }
           .soil-gel-page .container__3 .section__benefits .card-section .card ul li:last-child {
@@ -911,7 +916,8 @@ textarea {
 .accordion__item {
   background-color: #ffffff;
   margin-bottom: 1rem;
-  border-bottom: 1px solid var(--color-text-primary); }
+  border-bottom: 1px solid var(--color-text-primary);
+  box-shadow: var(--shadow-dark); }
   .accordion__item--heading h3 {
     border: 2px solid var(--color-text-primary);
     padding: 2rem 2rem; }
@@ -955,13 +961,13 @@ textarea {
   .card-section .single-content-card {
     display: flex;
     flex-direction: column;
+    box-shadow: var(--shadow-dark);
     border-radius: 2rem;
     overflow: hidden;
     flex-basis: 40rem;
     background-color: white;
     transition: transform 0.3s ease-out; }
     .card-section .single-content-card:hover {
-      box-shadow: var(--shadow-dark);
       transform: translateY(-2px);
       transition-delay: 0.3s;
       transition: transform 0.2s ease-in-out; }
@@ -1113,7 +1119,8 @@ textarea {
   border-radius: var(--rounded-corners);
   padding: 10rem 15rem;
   text-align: center;
-  margin-bottom: 6rem; }
+  margin-bottom: 6rem;
+  box-shadow: var(--shadow-dark); }
   @media only screen and (max-width: 56.25em) {
     .section__social-proof {
       padding: 10rem 3rem; } }
