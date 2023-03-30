@@ -230,3 +230,21 @@ function generate_social_proof($countries) {
     </div>';
     return $html;
 }
+
+//Single Content Card
+function generate_single_content_card($image_url, $heading, $copy, $cta_url, $cta_text) {
+    ?>
+    <div class="single-content-card">
+        <div class="single-content-card__header" style="background-image: url('<?php echo $image_url; ?>'); background-position: center center; background-size: cover;">
+        </div>
+        <div class="single-content-card__body">
+            <h3><?php echo $heading; ?></h3>
+            <p><?php echo $copy; ?></p>
+        </div>
+
+        <div class="single-content-card__cta">
+            <a href="<?php echo $cta_url; ?>" class="primary-button-medium"><?php echo $cta_text; ?></a>
+        </div>
+    </div>
+    <?php
+}

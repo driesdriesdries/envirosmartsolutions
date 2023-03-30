@@ -13,13 +13,14 @@
 	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 	
 	&-content {
-		background-color: var(--canvas-green);
+		background-image: linear-gradient(to right bottom, var(--color-green-dark), var(--color-green-light));
 		margin: auto;
 		padding: 20px;
 		border: 5px solid var(--color-green-dark);
 		width: 50%;
 		box-shadow: var(--shadow-dark);
 		animation: fadeIn 1s;
+		color: white;
 		@media only screen and (max-width: $bp-medium) {
 			width: 85%;
 			margin-top: 10rem;
@@ -52,6 +53,9 @@
 		font-weight: 700;
 		border: 2px solid var(--color-primary);
 		cursor: pointer;
+		&:hover {
+			opacity: .75;
+		}
 	}
 	.wpcf7-response-output {
 		font-size: 1.6rem;

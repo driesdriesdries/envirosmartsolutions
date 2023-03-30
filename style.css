@@ -791,46 +791,9 @@ textarea {
     padding: 3rem 2rem; }
     .home-page .home-banner__copy {
       text-align: center;
-      color: white; }
-
-.card-section {
-  display: flex;
-  justify-content: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  flex-wrap: wrap;
-  gap: 2rem; }
-  @media only screen and (max-width: 56.25em) {
-    .card-section {
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 2rem; } }
-  .card-section .single-content-card {
-    border: 5px solid black;
-    border-radius: 2rem;
-    overflow: hidden;
-    flex-basis: 40rem;
-    background-color: white; }
-    .card-section .single-content-card:last-child {
-      margin-right: 0; }
-    @media only screen and (max-width: 56.25em) {
-      .card-section .single-content-card {
-        margin-bottom: 2rem;
-        overflow: visible; } }
-    .card-section .single-content-card__header {
-      background-color: red;
-      height: 20rem; }
-    .card-section .single-content-card__body {
-      background-color: blue;
-      color: var(--color-text-primary);
-      padding: 2rem 3rem; }
-      .card-section .single-content-card__body h3 {
-        margin-bottom: 1.8rem; }
-      .card-section .single-content-card__body p {
-        margin-bottom: 2rem; }
-    .card-section .single-content-card__cta {
-      background-color: yellow;
-      padding: 0.5rem 3rem 2rem 3rem; }
+      color: white;
+      padding-left: 10rem;
+      padding-right: 10rem; }
 
 .primary-button-medium {
   background-color: var(--color-primary);
@@ -972,6 +935,46 @@ textarea {
     border-right: 2px solid var(--color-text-primary);
     border-bottom: 2px solid var(--color-text-primary); }
 
+.card-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  flex-wrap: wrap;
+  gap: 2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .card-section {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem; } }
+  .card-section .single-content-card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--color-text-primary);
+    box-shadow: var(--shadow-dark);
+    border-radius: 2rem;
+    overflow: hidden;
+    flex-basis: 40rem;
+    background-color: white; }
+    .card-section .single-content-card:last-child {
+      margin-right: 0; }
+    @media only screen and (max-width: 56.25em) {
+      .card-section .single-content-card {
+        margin-bottom: 2rem;
+        overflow: visible; } }
+    .card-section .single-content-card__header {
+      height: 20rem; }
+    .card-section .single-content-card__body {
+      color: var(--color-text-primary);
+      padding: 2rem 3rem; }
+      .card-section .single-content-card__body h3 {
+        margin-bottom: 1.8rem; }
+      .card-section .single-content-card__body p {
+        margin-bottom: 2rem; }
+    .card-section .single-content-card__cta {
+      padding: 0.5rem 3rem 2rem 3rem;
+      margin-top: auto; }
+
 .modal {
   display: none;
   /* Hidden by default */
@@ -994,13 +997,14 @@ textarea {
   background-color: rgba(0, 0, 0, 0.4);
   /* Black w/ opacity */ }
   .modal-content {
-    background-color: var(--canvas-green);
+    background-image: linear-gradient(to right bottom, var(--color-green-dark), var(--color-green-light));
     margin: auto;
     padding: 20px;
     border: 5px solid var(--color-green-dark);
     width: 50%;
     box-shadow: var(--shadow-dark);
-    animation: fadeIn 1s; }
+    animation: fadeIn 1s;
+    color: white; }
     @media only screen and (max-width: 56.25em) {
       .modal-content {
         width: 85%;
@@ -1027,6 +1031,8 @@ textarea {
     font-weight: 700;
     border: 2px solid var(--color-primary);
     cursor: pointer; }
+    #myModal .wpcf7-submit:hover {
+      opacity: .75; }
   #myModal .wpcf7-response-output {
     font-size: 1.6rem;
     border-color: crimson; }

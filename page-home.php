@@ -22,35 +22,23 @@ get_header();
 				<p>Eco-Friendly Solutions and Practices for a Greener Future.We are focused on environmentally friendly, sustainable, and smart solutions or technologies. We cover topics such as green living, renewable energy, waste management, sustainable products, and eco-friendly practices, with the goal of promoting a more sustainable lifestyle and helping to preserve the environment.</p>
 			</div>
 			<div class="card-section">
-				
-		
+				<?php 
+					generate_single_content_card(
+						get_theme_file_uri('/images/hero-desktop.png'), // Image URL
+						'Soil Gel', // Heading
+						'Soil Gel is a water-absorbent polymer that increases crop yield by retaining and releasing water at the roots when needed. This eco-friendly product benefits plants of all types, promoting healthy growth and reducing water and fertilizer usage. Grow smarter with Soil Gel', // Copy
+						site_url('/soil-gel'), // CTA URL
+						'Learn More' // CTA Text
+					);
 
-				<div class="single-content-card">
-					<div class="single-content-card__header" style="background-image: url('<?php echo get_theme_file_uri('/images/hero-desktop.png'); ?>'); background-position: center center; background-size: cover;">
-						
-					</div>
-					<div class="single-content-card__body">
-						<h3>card heading</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe id maiores quasi reiciendis, ducimus rem placeat tenetur suscipit qui, nostrum cum molestias vero deleniti distinctio, tempore repudiandae reprehenderit labore totam.</p>
-					</div>
-					<div class="single-content-card__cta">
-						<a href="<?php echo site_url('/water-treatment'); ?>" class="primary-button-medium">Learn More</a>
-					</div>
-				</div>
-
-				<div class="single-content-card">
-					<div class="single-content-card__header" style="background-image: url('<?php echo get_theme_file_uri('/images/hero-desktop.png'); ?>'); background-position: center center; background-size: cover;">
-						
-					</div>
-					<div class="single-content-card__body">
-						<h3>card heading</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe id maiores quasi reiciendis, ducimus rem placeat tenetur suscipit qui, nostrum cum molestias vero deleniti distinctio, tempore repudiandae reprehenderit labore totam.</p>
-					</div>
-					<div class="single-content-card__cta">
-						<a href="<?php echo site_url('/water-treatment'); ?>" class="primary-button-medium">Learn More</a>
-					</div>
-				</div>
-				
+					generate_single_content_card(
+						get_theme_file_uri('/images/hero-desktop.png'), // Image URL
+						'Water Treatment', // Heading
+						'Efficient and sustainable water treatment solutions for any water source. Protect the environment and meet regulations with custom solutions that save resources and improve water quality. Explore our options today.', // Copy
+						site_url('/water-treatment'), // CTA URL
+						'Learn More' // CTA Text
+					);
+				?>
 			</div>
 		</div>
 	</main><!-- #main -->
