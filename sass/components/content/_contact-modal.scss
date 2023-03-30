@@ -16,7 +16,7 @@
 		background-color: var(--canvas-green);
 		margin: auto;
 		padding: 20px;
-		border: 5px solid var(--color-primary);
+		border: 5px solid var(--color-green-dark);
 		width: 50%;
 		box-shadow: var(--shadow-dark);
 		animation: fadeIn 1s;
@@ -46,11 +46,11 @@
 	}
 	.wpcf7-submit {
 		padding-bottom: 3.5rem;
-		background-color: var(--color-secondary);
+		background-color: var(--color-primary);
 		color: #ffffff;
 		text-transform: uppercase;
 		font-weight: 700;
-		border: 2px solid var(--color-secondary);
+		border: 2px solid var(--color-primary);
 		cursor: pointer;
 	}
 	.wpcf7-response-output {
@@ -61,7 +61,7 @@
 
 /* The Close Button */
 .close {
-	color: var(--color-secondary);
+	color: var(--color-primary);
 	float: right;
 	font-size: 3rem;
 	font-weight: bold;

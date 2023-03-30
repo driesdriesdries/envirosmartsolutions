@@ -25,7 +25,7 @@ a.button {
 	color: #ffffff;
 	padding: 1rem 5rem;
 	display: inline-block;
-	border: 3px solid var(--color-secondary);
+	border: 3px solid var(--color-primary);
 	margin-top: 2rem;
 	cursor: pointer;
 	border-radius: 1rem;
@@ -34,7 +34,7 @@ a.button {
 	font-weight: bold;
 	text-decoration: none;
 	&__primary {
-		background-color: var(--color-secondary);
+		background-color: var(--color-primary);
 		&:hover {
 			opacity: .7;
 		}

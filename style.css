@@ -338,9 +338,10 @@ template {
 # Base
 --------------------------------------------------------------*/
 :root {
-  --color-primary: #5A825A;
-  --canvas-green: #F4FBF3;
-  --color-secondary: #F0821F;
+  --color-green-dark: #4f704f;
+  --color-green-light: #bcdabc;
+  --canvas-green: #c0dfbb;
+  --color-primary: #F0821F;
   --color-text-primary: #1E1E1E;
   --color-text-light: #ffffff;
   --shadow-dark: 0 2rem 6rem rgba(0,0,0, .3);
@@ -384,7 +385,7 @@ a.button {
   color: #ffffff;
   padding: 1rem 5rem;
   display: inline-block;
-  border: 3px solid var(--color-secondary);
+  border: 3px solid var(--color-primary);
   margin-top: 2rem;
   cursor: pointer;
   border-radius: 1rem;
@@ -393,7 +394,7 @@ a.button {
   font-weight: bold;
   text-decoration: none; }
   a.button__primary {
-    background-color: var(--color-secondary); }
+    background-color: var(--color-primary); }
     a.button__primary:hover {
       opacity: .7; }
   a.button__secondary {
@@ -641,7 +642,7 @@ textarea {
 .soil-gel-page .container__2 {
   background-color: var(--canvas-green); }
   .soil-gel-page .container__2 .section__how-it-works {
-    background-image: linear-gradient(to right bottom, var(--color-primary), #B7CCB7);
+    background-image: linear-gradient(to right bottom, var(--color-green-dark), var(--color-green-light));
     background-size: cover;
     text-align: center;
     color: var(--color-text-light);
@@ -676,7 +677,7 @@ textarea {
   .soil-gel-page .container__2 .section__applications {
     display: flex;
     padding: 3rem 3rem;
-    border: 3px solid var(--color-primary);
+    border: 3px solid var(--color-green-dark);
     border-radius: var(--rounded-corners);
     margin-bottom: 8rem; }
     @media only screen and (max-width: 56.25em) {
@@ -785,7 +786,7 @@ textarea {
       margin-bottom: 2rem; }
 
 .home-page {
-  background-image: linear-gradient(to right bottom, var(--color-primary), #B7CCB7); }
+  background-image: linear-gradient(to right bottom, var(--color-green-dark), var(--color-green-light)); }
   .home-page .home-banner {
     padding: 3rem 2rem; }
     .home-page .home-banner__copy {
@@ -793,22 +794,57 @@ textarea {
       color: white; }
 
 .card-section {
-  background-color: pink;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  flex-wrap: wrap;
+  gap: 2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .card-section {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem; } }
   .card-section .single-content-card {
     border: 5px solid black;
-    margin-right: 2rem;
-    flex-basis: 40rem; }
+    border-radius: 2rem;
+    overflow: hidden;
+    flex-basis: 40rem;
+    background-color: white; }
+    .card-section .single-content-card:last-child {
+      margin-right: 0; }
+    @media only screen and (max-width: 56.25em) {
+      .card-section .single-content-card {
+        margin-bottom: 2rem;
+        overflow: visible; } }
     .card-section .single-content-card__header {
       background-color: red;
-      height: 15rem; }
+      height: 20rem; }
     .card-section .single-content-card__body {
-      background-color: blue; }
+      background-color: blue;
+      color: var(--color-text-primary);
+      padding: 2rem 3rem; }
+      .card-section .single-content-card__body h3 {
+        margin-bottom: 1.8rem; }
       .card-section .single-content-card__body p {
-        margin-bottom: 0; }
+        margin-bottom: 2rem; }
     .card-section .single-content-card__cta {
-      background-color: yellow; }
+      background-color: yellow;
+      padding: 0.5rem 3rem 2rem 3rem; }
+
+.primary-button-medium {
+  background-color: var(--color-primary);
+  display: inline-block;
+  color: white;
+  font-size: 1.6rem;
+  border-radius: .5rem;
+  padding: 1rem 1.5rem;
+  text-decoration: none; }
+  .primary-button-medium:visited {
+    color: white;
+    text-decoration: underline; }
+  .primary-button-medium:hover {
+    opacity: .75; }
 
 /*--------------------------------------------------------------
 # Components
@@ -855,7 +891,7 @@ textarea {
             text-decoration: none;
             color: var(--color-text-primary); }
             .main-navigation .nav-right .menu-box-list--item a:hover {
-              color: var(--color-secondary); }
+              color: var(--color-primary); }
     .main-navigation .nav-right .button-box {
       display: none; }
       .main-navigation .nav-right .button-box button {
@@ -961,7 +997,7 @@ textarea {
     background-color: var(--canvas-green);
     margin: auto;
     padding: 20px;
-    border: 5px solid var(--color-primary);
+    border: 5px solid var(--color-green-dark);
     width: 50%;
     box-shadow: var(--shadow-dark);
     animation: fadeIn 1s; }
@@ -985,11 +1021,11 @@ textarea {
     height: 10rem; }
   #myModal .wpcf7-submit {
     padding-bottom: 3.5rem;
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 700;
-    border: 2px solid var(--color-secondary);
+    border: 2px solid var(--color-primary);
     cursor: pointer; }
   #myModal .wpcf7-response-output {
     font-size: 1.6rem;
@@ -997,7 +1033,7 @@ textarea {
 
 /* The Close Button */
 .close {
-  color: var(--color-secondary);
+  color: var(--color-primary);
   float: right;
   font-size: 3rem;
   font-weight: bold; }
@@ -1059,7 +1095,7 @@ textarea {
   margin: 0 0 1.5em; }
 
 .section__social-proof {
-  background-image: linear-gradient(to right bottom, #B7CCB7, var(--color-primary));
+  background-image: linear-gradient(to right bottom, var(--color-green-dark), var(--color-green-light));
   border-radius: var(--rounded-corners);
   padding: 10rem 15rem;
   text-align: center;
