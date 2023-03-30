@@ -68,7 +68,11 @@ get_header();
 				?>
 			</div>
 		
-			<?php  get_template_part( 'template-parts/soil-gel/social-proof' ); ?>
+			<!-- //Calling the social proof function -->
+			<?php 
+				$countries = 'Europe, North America, China, India, Japan, Australia, Indonesia, Malaysia, South Korea, Brazil, Mexico, South Africa and Middle East';
+				echo generate_social_proof($countries);				
+			?>
 		</div>
 	</main><!-- #main -->
 <?php

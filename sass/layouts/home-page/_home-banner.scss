@@ -1,0 +1,35 @@
+.home-page {
+    background-image: linear-gradient(to right bottom, var(--color-primary), #B7CCB7);
+    .home-banner {
+        padding: 3rem 2rem;
+        &__copy {
+            text-align: center;
+            color: white;
+        }
+    }
+}
+
+
+.card-section {
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    .single-content-card {
+        border: 5px solid black;
+        margin-right: 2rem;
+        flex-basis: 40rem;
+        &__header {
+            background-color: red;
+            height: 15rem;
+        }
+        &__body {
+            background-color: blue;
+            p {
+                margin-bottom: 0;
+            }
+        }
+        &__cta {
+            background-color: yellow;
+        }
+    }
+}

@@ -187,7 +187,8 @@ if ( class_exists( 'WooCommerce' ) ) {
 function createHeroSection($h1Text, $pText, $bgImageURL) {
     $themeFileURI = get_theme_file_uri($bgImageURL);
     $output = <<<HTML
-	<div class="container container__1" style="background-image: url({$themeFileURI});">
+	<div class="container container__1" style="
+	background-image: url({$themeFileURI});">
 		<div class="section section__hero">
 			<h1>{$h1Text}</h1>
 			<p class="tagline">{$pText}</p>
@@ -216,4 +217,16 @@ function generateAccordion($items) {
         echo '</div>';
     }
     echo '</div>';
+}
+
+//Social Proof Component
+function generate_social_proof($countries) {
+    $html = '
+    <div class="section section__social-proof">
+        <h4>
+            <i>'.$countries.'</i>
+        </h4>
+        <a href="javascript:void(0)" class="modaltrigger button button__primary">CONTACT</a>
+    </div>';
+    return $html;
 }

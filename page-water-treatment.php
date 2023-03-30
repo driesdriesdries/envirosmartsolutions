@@ -19,7 +19,7 @@ get_header();
 		<?php
 			$h1Text = 'Comprehensive Water Treatment Solutions for a Cleaner Future';
 			$pText = "Purifying Today's Water for Tomorrow's World";
-			$bgImageURL = 'images/water-treatment/hero.png';
+			$bgImageURL = 'images/water-treatment/hero3.png';
 
 			echo createHeroSection($h1Text, $pText, $bgImageURL);
 		?>
@@ -36,8 +36,8 @@ get_header();
 		</div>
 
 		<div class="container container__4">
-		<div class="section section__faq">
-			<h2>FAQ</h2>
+			<div class="section section__faq">
+				<h2>FAQ</h2>
 				<!-- //Calling the accorion function -->
 				<?php 
 					$items = array(
@@ -57,9 +57,12 @@ get_header();
 					);
 
 					generateAccordion($items); 
-				?>
+				?>	
 			</div>
-			<?php  get_template_part( 'template-parts/soil-gel/social-proof' ); ?>
+			<?php 
+				$countries = 'Whatever proof';
+				echo generate_social_proof($countries);				
+			?>
 		</div>
 	</main><!-- #main -->
 <?php

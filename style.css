@@ -783,17 +783,32 @@ textarea {
       padding-bottom: 2rem;
       margin-top: 1rem;
       margin-bottom: 2rem; }
-  .soil-gel-page .container__4 .section__social-proof {
-    background-image: linear-gradient(to right bottom, #B7CCB7, var(--color-primary));
-    border-radius: var(--rounded-corners);
-    padding: 10rem 15rem;
-    text-align: center;
-    margin-bottom: 6rem; }
-    @media only screen and (max-width: 56.25em) {
-      .soil-gel-page .container__4 .section__social-proof {
-        padding: 10rem 3rem; } }
-    .soil-gel-page .container__4 .section__social-proof h4 {
-      color: #ffffff; }
+
+.home-page {
+  background-image: linear-gradient(to right bottom, var(--color-primary), #B7CCB7); }
+  .home-page .home-banner {
+    padding: 3rem 2rem; }
+    .home-page .home-banner__copy {
+      text-align: center;
+      color: white; }
+
+.card-section {
+  background-color: pink;
+  display: flex;
+  justify-content: center; }
+  .card-section .single-content-card {
+    border: 5px solid black;
+    margin-right: 2rem;
+    flex-basis: 40rem; }
+    .card-section .single-content-card__header {
+      background-color: red;
+      height: 15rem; }
+    .card-section .single-content-card__body {
+      background-color: blue; }
+      .card-section .single-content-card__body p {
+        margin-bottom: 0; }
+    .card-section .single-content-card__cta {
+      background-color: yellow; }
 
 /*--------------------------------------------------------------
 # Components
@@ -873,7 +888,7 @@ textarea {
           padding: 2rem 2rem; }
 
 .footer {
-  background-color: #D9D9D9; }
+  border: 2px solid var(--color-text-primary); }
   .footer .section {
     height: 10rem;
     display: flex;
@@ -1042,6 +1057,18 @@ textarea {
 .page-links {
   clear: both;
   margin: 0 0 1.5em; }
+
+.section__social-proof {
+  background-image: linear-gradient(to right bottom, #B7CCB7, var(--color-primary));
+  border-radius: var(--rounded-corners);
+  padding: 10rem 15rem;
+  text-align: center;
+  margin-bottom: 6rem; }
+  @media only screen and (max-width: 56.25em) {
+    .section__social-proof {
+      padding: 10rem 3rem; } }
+  .section__social-proof h4 {
+    color: #ffffff; }
 
 /* Comments
 --------------------------------------------- */
