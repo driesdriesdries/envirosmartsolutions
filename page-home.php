@@ -14,7 +14,6 @@
 
 get_header();
 ?>
-
 	<main id="primary" class="site-main container home-page">
 		<div class="section home-banner">
 			<div class="home-banner__copy">
@@ -32,7 +31,7 @@ get_header();
 					);
 
 					generate_single_content_card(
-						get_theme_file_uri('/images/hero-desktop.png'), // Image URL
+						get_theme_file_uri('/images/water-treatment/hero3.png'), // Image URL
 						'Water Treatment', // Heading
 						'Efficient and sustainable water treatment solutions for any water source. Protect the environment and meet regulations with custom solutions that save resources and improve water quality. Explore our options today.', // Copy
 						site_url('/water-treatment'), // CTA URL

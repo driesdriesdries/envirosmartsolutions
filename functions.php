@@ -232,6 +232,7 @@ function generate_social_proof($countries) {
 }
 
 //Single Content Card
+//This function must be used within a element with a class of .card-section
 function generate_single_content_card($image_url, $heading, $copy, $cta_url, $cta_text) {
     ?>
     <div class="single-content-card">
@@ -243,7 +244,7 @@ function generate_single_content_card($image_url, $heading, $copy, $cta_url, $ct
         </div>
 
         <div class="single-content-card__cta">
-            <a href="<?php echo $cta_url; ?>" class="primary-button-medium"><?php echo $cta_text; ?></a>
+            <a href="<?php echo $cta_url; ?>" class="primary-button-medium single-card-cta"><?php echo $cta_text; ?></a>
         </div>
     </div>
     <?php

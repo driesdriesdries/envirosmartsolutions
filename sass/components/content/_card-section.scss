@@ -13,18 +13,23 @@
     .single-content-card {
         display: flex;
         flex-direction: column;
-        border: 2px solid var(--color-text-primary);
-        box-shadow: var(--shadow-dark);
+        
         border-radius: 2rem;
         overflow: hidden;
         flex-basis: 40rem;
         background-color: white;
+        transition: transform 0.3s ease-out;
+        &:hover {
+            box-shadow: var(--shadow-dark);
+            transform: translateY(-2px);
+            transition-delay: 0.3s;
+            transition: transform 0.2s ease-in-out;
+        }
         &:last-child {
             margin-right: 0;
         }
         @media only screen and (max-width: $bp-medium) {
             margin-bottom: 2rem;
-            overflow:visible;
         }
         &__header {
             height: 20rem;
