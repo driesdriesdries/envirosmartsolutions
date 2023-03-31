@@ -21,23 +21,23 @@ get_header();
 				<p>Eco-Friendly Solutions and Practices for a Greener Future.We are focused on environmentally friendly, sustainable, and smart solutions or technologies. We cover topics such as green living, renewable energy, waste management, sustainable products, and eco-friendly practices, with the goal of promoting a more sustainable lifestyle and helping to preserve the environment.</p>
 			</div>
 			<div class="card-section">
-				<?php 
-					generate_single_content_card(
-						get_theme_file_uri('/images/soil-gel/hero-desktop.png'), // Image URL
-						'Soil Gel', // Heading
-						'Soil Gel is a water-absorbent polymer that increases crop yield by retaining and releasing water at the roots when needed. This eco-friendly product benefits plants of all types, promoting healthy growth and reducing water and fertilizer usage. Grow smarter with Soil Gel', // Copy
-						site_url('/soil-gel'), // CTA URL
-						'Learn More' // CTA Text
-					);
 
-					generate_single_content_card(
-						get_theme_file_uri('/images/water-treatment/hero3.png'), // Image URL
-						'Water Treatment', // Heading
-						'Efficient and sustainable water treatment solutions for any water source. Protect the environment and meet regulations with custom solutions that save resources and improve water quality. Explore our options today.', // Copy
-						site_url('/water-treatment'), // CTA URL
-						'Learn More' // CTA Text
-					);
+				<?php 
+					$categories = get_categories();
+					foreach ($categories as $category) {
+						echo '<div class="single-content-card">';
+						echo '<div class="single-content-card__header" style="background-image: url('.get_theme_file_uri('images/soil-gel/hero-desktop.png').'); background-position: center center; background-size: cover;"></div>';
+						echo '<div class="single-content-card__body">';
+						echo '<h3>'.$category->name.'</h3>';
+						echo '<p>'.$category->description.'</p>';
+						echo '</div>';
+						echo '<div class="single-content-card__cta">';
+						echo '<a href="'.get_category_link($category->term_id).'" class="primary-button-medium single-card-cta">Learn More</a>';
+						echo '</div>';
+						echo '</div>';
+					}
 				?>
+				
 			</div>
 		</div>
 	</main><!-- #main -->
