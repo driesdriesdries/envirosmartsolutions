@@ -2,7 +2,7 @@
     <h2>Benefits</h2>
     <div class="card-section">
         <div class="card">
-            <img src="<?php echo get_theme_file_uri('images/users.png'); ?>" alt="">
+            <img src="<?php echo get_theme_file_uri('images/soil-gel/users.png'); ?>" alt="">
             <h3>Users</h3>
             <ul>
                 <li>Save Water</li>
@@ -13,7 +13,7 @@
             </ul>
         </div>
         <div class="card">
-        <img src="<?php echo get_theme_file_uri('images/plants.png'); ?>" alt="">
+        <img src="<?php echo get_theme_file_uri('images/soil-gel/plants.png'); ?>" alt="">
             <h3>Plants</h3>
             <ul>
                 <li>Increase production</li>
@@ -26,7 +26,7 @@
             </ul>
         </div>
         <div class="card">
-        <img src="<?php echo get_theme_file_uri('images/soil.png'); ?>" alt="">
+        <img src="<?php echo get_theme_file_uri('images/soil-gel/soil.png'); ?>" alt="">
             <h3>Soil</h3>
             <ul>
                 <li>Improve Soil Structure Soil activator</li>

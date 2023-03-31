@@ -5,39 +5,39 @@
     </div>
     <div class="image-grid">
         <div class="image-grid__grid-item">
-            <img class="image-grid__grid-item--image" src="<?php echo get_theme_file_uri('images/seeds.png'); ?>" alt="">
+            <img class="image-grid__grid-item--image" src="<?php echo get_theme_file_uri('images/soil-gel/seeds.png'); ?>" alt="">
             <p class="image-grid__grid-item--caption">Seeds</p>
         </div>
         <div class="image-grid__grid-item">
-            <img class="image-grid__grid-item--image" src="<?php echo get_theme_file_uri('images/nurseries.png'); ?>" alt="">
+            <img class="image-grid__grid-item--image" src="<?php echo get_theme_file_uri('images/soil-gel/nurseries.png'); ?>" alt="">
             <p class="image-grid__grid-item--caption">Nurseries</p>
         </div>
         <div class="image-grid__grid-item">
-            <img class="image-grid__grid-item--image" src="<?php echo get_theme_file_uri('images/grasslands.png'); ?>" alt="">
+            <img class="image-grid__grid-item--image" src="<?php echo get_theme_file_uri('images/soil-gel/grasslands.png'); ?>" alt="">
             <p class="image-grid__grid-item--caption">Grasslands</p>
         </div>
         <div class="image-grid__grid-item">
-            <img class="image-grid__grid-item--image" src="<?php echo get_theme_file_uri('images/herbaceus.png'); ?>" alt="">
+            <img class="image-grid__grid-item--image" src="<?php echo get_theme_file_uri('images/soil-gel/herbaceus.png'); ?>" alt="">
             <p class="image-grid__grid-item--caption">Herbaceus Crops</p>
         </div>
         <div class="image-grid__grid-item">
-            <img class="image-grid__grid-item--image" src="<?php echo get_theme_file_uri('images/horticultural.png'); ?>" alt="">
+            <img class="image-grid__grid-item--image" src="<?php echo get_theme_file_uri('images/soil-gel/horticultural.png'); ?>" alt="">
             <p class="image-grid__grid-item--caption">Horticultural Crops</p>
         </div>
         <div class="image-grid__grid-item">
-            <img class="image-grid__grid-item--image" src="<?php echo get_theme_file_uri('images/cutflowers.png'); ?>" alt="">
+            <img class="image-grid__grid-item--image" src="<?php echo get_theme_file_uri('images/soil-gel/cutflowers.png'); ?>" alt="">
             <p class="image-grid__grid-item--caption">Cut Flowers</p>
         </div>
         <div class="image-grid__grid-item">
-            <img class="image-grid__grid-item--image" src="<?php echo get_theme_file_uri('images/reforestation.png'); ?>" alt="">
+            <img class="image-grid__grid-item--image" src="<?php echo get_theme_file_uri('images/soil-gel/reforestation.png'); ?>" alt="">
             <p class="image-grid__grid-item--caption">Reforestation</p>
         </div>
         <div class="image-grid__grid-item">
-            <img class="image-grid__grid-item--image" src="<?php echo get_theme_file_uri('images/treecrops.png'); ?>" alt="">
+            <img class="image-grid__grid-item--image" src="<?php echo get_theme_file_uri('images/soil-gel/treecrops.png'); ?>" alt="">
             <p class="image-grid__grid-item--caption">Tree Crops</p>
         </div>
         <div class="image-grid__grid-item">
-            <img class="image-grid__grid-item--image" src="<?php echo get_theme_file_uri('images/protectedcrops.png'); ?>" alt="">
+            <img class="image-grid__grid-item--image" src="<?php echo get_theme_file_uri('images/soil-gel/protectedcrops.png'); ?>" alt="">
             <p class="image-grid__grid-item--caption">Protected Crops</p>
         </div>
     </div>

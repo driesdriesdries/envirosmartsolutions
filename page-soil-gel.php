@@ -19,7 +19,7 @@ get_header();
 		<?php
 			$h1Text = 'Boost crop yield with Soil Gel while saving on valuable resources';
 			$pText = 'Grow Smarter, Not Harder with Water-Absorbent Polymers</br> that work in all climates';
-			$bgImageURL = 'images/hero-desktop.png';
+			$bgImageURL = 'images/soil-gel/hero-desktop.png';
 
 			echo createHeroSection($h1Text, $pText, $bgImageURL);
 		?>

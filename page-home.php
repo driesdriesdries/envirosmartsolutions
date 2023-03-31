@@ -23,7 +23,7 @@ get_header();
 			<div class="card-section">
 				<?php 
 					generate_single_content_card(
-						get_theme_file_uri('/images/hero-desktop.png'), // Image URL
+						get_theme_file_uri('/images/soil-gel/hero-desktop.png'), // Image URL
 						'Soil Gel', // Heading
 						'Soil Gel is a water-absorbent polymer that increases crop yield by retaining and releasing water at the roots when needed. This eco-friendly product benefits plants of all types, promoting healthy growth and reducing water and fertilizer usage. Grow smarter with Soil Gel', // Copy
 						site_url('/soil-gel'), // CTA URL

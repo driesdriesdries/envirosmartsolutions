@@ -26,7 +26,7 @@ get_header();
 
 		
 		<div class="container container__2">
-			<?php  get_template_part( 'template-parts/soil-gel/how-it-works' ); ?>
+			<?php  //get_template_part( 'template-parts/soil-gel/how-it-works' ); ?>
 			<?php //  get_template_part( 'template-parts/soil-gel/testimonial' ); ?>
 			<?php // get_template_part( 'template-parts/soil-gel/applications' ); ?>
 		</div>
