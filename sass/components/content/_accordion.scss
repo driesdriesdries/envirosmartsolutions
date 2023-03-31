@@ -2,14 +2,10 @@
     &__item {
         background-color: #ffffff;
         margin-bottom: 1rem;
-        border-bottom: 1px solid var(--color-text-primary);
-        box-shadow: var(--shadow-dark);
-        & > div {
-            //background-color: teal;
-        }
+        border: 1px solid var(--color-text-primary);
+        box-shadow: var(--shadow-light);
         &--heading {
             h3 {
-                border: 2px solid var(--color-text-primary);
                 padding: 2rem 2rem;
             }
             h3 a {
@@ -38,9 +34,7 @@
             height: inherit;
             transition: all .2s;
             opacity: 1;
-            border-left: 2px solid var(--color-text-primary) ;
-            border-right: 2px solid var(--color-text-primary) ;
-            border-bottom: 2px solid var(--color-text-primary) ;
+            border-top: 1px solid var(--color-text-primary) ;
         }
     }
 }

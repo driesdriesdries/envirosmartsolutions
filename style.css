@@ -345,6 +345,7 @@ template {
   --color-text-primary: #1E1E1E;
   --color-text-light: #ffffff;
   --shadow-dark: 0 1rem 3rem rgba(0,0,0, .3);
+  --shadow-light: 0 .5rem 1rem rgba(0,0,0, .1);
   --rounded-corners: 20px; }
 
 * {
@@ -588,14 +589,16 @@ h1 {
   font-size: 5rem; }
 
 h2 {
-  font-size: 4rem; }
+  font-size: 4rem;
+  font-weight: 100; }
 
 h3 {
-  font-size: 3rem; }
+  font-size: 2.2rem;
+  font-weight: 100; }
 
 h4 {
   font-size: 2.4rem;
-  font-weight: 700; }
+  font-weight: 100; }
 
 h5 {
   font-size: 1.5rem; }
@@ -650,7 +653,7 @@ textarea {
     color: var(--color-text-light);
     border-radius: var(--rounded-corners);
     margin-top: 8rem;
-    box-shadow: var(--shadow-dark); }
+    box-shadow: var(--shadow-light); }
     .soil-gel-page .container__2 .section__how-it-works h2 {
       padding-top: 2rem;
       padding-bottom: 2rem; }
@@ -683,7 +686,7 @@ textarea {
     border: 3px solid var(--color-green-dark);
     border-radius: var(--rounded-corners);
     margin-bottom: 8rem;
-    box-shadow: var(--shadow-dark); }
+    box-shadow: var(--shadow-light); }
     @media only screen and (max-width: 56.25em) {
       .soil-gel-page .container__2 .section__applications {
         flex-direction: column;
@@ -747,7 +750,7 @@ textarea {
         background-color: var(--canvas-green);
         border-radius: var(--rounded-corners);
         padding-left: 2rem;
-        box-shadow: var(--shadow-dark); }
+        box-shadow: var(--shadow-light); }
         @media only screen and (max-width: 56.25em) {
           .soil-gel-page .container__3 .section__benefits .card-section .card {
             width: 70%;
@@ -923,7 +926,7 @@ textarea {
       margin-top: 2rem;
       padding-bottom: 3rem;
       font-style: italic;
-      font-weight: 700;
+      font-size: 1.4rem;
       color: var(--color-text-primary);
       text-align: center; }
 
@@ -932,10 +935,9 @@ textarea {
 .accordion__item {
   background-color: #ffffff;
   margin-bottom: 1rem;
-  border-bottom: 1px solid var(--color-text-primary);
-  box-shadow: var(--shadow-dark); }
+  border: 1px solid var(--color-text-primary);
+  box-shadow: var(--shadow-light); }
   .accordion__item--heading h3 {
-    border: 2px solid var(--color-text-primary);
     padding: 2rem 2rem; }
   .accordion__item--heading h3 a {
     text-decoration: none;
@@ -958,9 +960,7 @@ textarea {
     height: inherit;
     transition: all .2s;
     opacity: 1;
-    border-left: 2px solid var(--color-text-primary);
-    border-right: 2px solid var(--color-text-primary);
-    border-bottom: 2px solid var(--color-text-primary); }
+    border-top: 1px solid var(--color-text-primary); }
 
 .card-section {
   display: flex;
@@ -1089,7 +1089,6 @@ textarea {
   padding: 10rem; }
   .section__hero h1 {
     color: #ffffff;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     margin: 0;
     line-height: 5.5rem;
     opacity: 0;
@@ -1098,7 +1097,6 @@ textarea {
     animation-fill-mode: forwards; }
   .section__hero p {
     color: #ffffff;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     font-size: 2.4rem;
     margin-bottom: 0;
     margin-top: 1rem;

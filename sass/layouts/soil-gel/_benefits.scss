@@ -19,7 +19,7 @@
             background-color: var(--canvas-green);
             border-radius: var(--rounded-corners);
             padding-left:2rem;
-            box-shadow: var(--shadow-dark);
+            box-shadow: var(--shadow-light);
             @media only screen and (max-width: $bp-medium) {
                 width: 70%;
                 margin-bottom: 2rem;
