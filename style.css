@@ -915,7 +915,9 @@ textarea {
     justify-content: center;
     padding: 1rem 3rem; }
     .footer .section__footer img {
-      padding-top: 5rem; }
+      padding-top: 5rem;
+      width: 15rem;
+      height: 15rem; }
     .footer .section__footer p {
       margin-bottom: 1rem;
       margin-top: 2rem;
