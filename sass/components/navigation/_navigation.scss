@@ -8,10 +8,19 @@
     padding: 2rem 1rem;
     .nav-left {
         .logo-box{
+            display: flex;
+            align-items: center;
+            img {
+                width: 5rem;
+                height: 5rem;
+                margin-right: .5rem;
+            }
             a {
                 text-decoration: none;
+                font-weight: 100;
+                color: var(--color-text-primary);
                 &:visited {
-                    color: currentColor;
+                    color: var(--color-text-primary);
                 }
             }
             h4 {
@@ -24,7 +33,8 @@
                 }
             }
             span {
-                color: var(--color-text-primary);
+                color: var(--color-primary);
+                font-weight: 700;
             }
         }
     }

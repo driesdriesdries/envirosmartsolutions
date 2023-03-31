@@ -2,6 +2,7 @@
     <nav id="site-navigation" class="main-navigation">	
         <div class="nav-left">
             <div class="logo-box">
+                <a href="<?php echo site_url();?>"><img src="<?php echo get_theme_file_uri('images/logo.png'); ?>" alt="EnviroSmart Logo"></a>
                 <h4><a href="<?php echo site_url(); ?>">EnviroSmart <span>Solutions</span></a></h4>
             </div>
         </div>
