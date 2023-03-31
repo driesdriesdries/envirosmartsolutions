@@ -13,14 +13,15 @@
 	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 	
 	&-content {
-		background-image: linear-gradient(to right bottom, var(--color-green-dark), var(--color-green-light));
+		//background-image: linear-gradient(to right bottom, var(--color-green-dark), var(--color-green-light));
+		background-color: var(--canvas-green);
 		margin: auto;
 		padding: 20px;
 		border: 5px solid var(--color-green-dark);
 		width: 50%;
 		box-shadow: var(--shadow-dark);
 		animation: fadeIn 1s;
-		color: white;
+		color: var(--color-text-primary);
 		@media only screen and (max-width: $bp-medium) {
 			width: 85%;
 			margin-top: 10rem;
