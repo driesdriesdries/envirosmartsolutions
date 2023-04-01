@@ -236,6 +236,8 @@ function my_custom_breadcrumbs() {
     if (is_home() || is_front_page()) {
         return;
     }
+
+    echo '<div class="section section__breadcrumbs">';
     echo '<nav aria-label="breadcrumb"><ol class="breadcrumb">';
     echo '<li class="breadcrumb-item"><a href="' . get_home_url() . '">Home</a></li>';
 
@@ -255,4 +257,5 @@ function my_custom_breadcrumbs() {
     }
 
     echo '</ol></nav>';
+    echo '</div>';
 }

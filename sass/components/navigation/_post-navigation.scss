@@ -1,0 +1,10 @@
+.post-navigation {
+    border: 1px solid var(--color-text-primary);
+    display: flex;
+    justify-content: space-between;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    a {
+        font-size: 1.4rem;
+    }
+}

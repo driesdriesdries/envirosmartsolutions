@@ -343,6 +343,7 @@ template {
   --canvas-green: #F4FBF3;
   --color-primary: #F0821F;
   --color-text-primary: #1E1E1E;
+  --color-text-primary-light: #707070;
   --color-text-light: #ffffff;
   --shadow-dark: 0 1rem 3rem rgba(0,0,0, .3);
   --shadow-light: 0 .5rem 1rem rgba(0,0,0, .1);
@@ -630,6 +631,15 @@ textarea {
   flex-direction: column;
   align-items: center;
   margin: 0 auto; }
+  .container__archive main {
+    display: flex; }
+    .container__archive main .card-section {
+      width: 80%;
+      border: 1px solid var(--color-text-primary); }
+    .container__archive main .categories-widget {
+      width: 20%;
+      padding-top: 2.5rem;
+      border: 1px solid var(--color-text-primary); }
 
 .section {
   width: 100%;
@@ -822,6 +832,56 @@ textarea {
 --------------------------------------------------------------*/
 /* Navigation
 --------------------------------------------- */
+.section__breadcrumbs {
+  border: 1px solid var(--color-text-primary);
+  display: flex; }
+  .section__breadcrumbs ol.breadcrumb {
+    display: flex;
+    list-style-type: none;
+    border: 1px solid var(--color-primary);
+    margin-bottom: 0;
+    margin-left: 0; }
+    .section__breadcrumbs ol.breadcrumb .breadcrumb-item {
+      margin-right: 1rem;
+      font-size: 1.4rem; }
+      .section__breadcrumbs ol.breadcrumb .breadcrumb-item a {
+        color: var(--color-primary);
+        text-decoration: none; }
+    .section__breadcrumbs ol.breadcrumb :not(:last-child).breadcrumb-item::after {
+      display: inline-block;
+      content: ">";
+      margin-left: 1rem; }
+
+.footer {
+  border: 1px solid var(--color-text-primary); }
+  .footer .section__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 3rem; }
+    .footer .section__footer img {
+      padding-top: 5rem;
+      width: 15rem;
+      height: 15rem; }
+    .footer .section__footer p {
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+      padding-bottom: 3rem;
+      font-style: italic;
+      font-size: 1.4rem;
+      color: var(--color-text-primary);
+      text-align: center; }
+
+.post-navigation {
+  border: 1px solid var(--color-text-primary);
+  display: flex;
+  justify-content: space-between;
+  padding-top: .8rem;
+  padding-bottom: .8rem; }
+  .post-navigation a {
+    font-size: 1.4rem; }
+
 .container-navbar {
   border: 1px solid var(--color-text-primary); }
 
@@ -908,27 +968,6 @@ textarea {
         .main-navigation.toggled .menu-box .menu-box-list--item a {
           display: block;
           padding: 2rem 2rem; }
-
-.footer {
-  border: 1px solid var(--color-text-primary); }
-  .footer .section__footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 3rem; }
-    .footer .section__footer img {
-      padding-top: 5rem;
-      width: 15rem;
-      height: 15rem; }
-    .footer .section__footer p {
-      margin-bottom: 1rem;
-      margin-top: 2rem;
-      padding-bottom: 3rem;
-      font-style: italic;
-      font-size: 1.4rem;
-      color: var(--color-text-primary);
-      text-align: center; }
 
 /* Posts and pages
 --------------------------------------------- */

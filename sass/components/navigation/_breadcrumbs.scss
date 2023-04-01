@@ -1,0 +1,24 @@
+.section__breadcrumbs {
+    border: 1px solid var(--color-text-primary);
+    display: flex;
+    ol.breadcrumb {
+        display: flex;
+        list-style-type: none;
+        border: 1px solid var(--color-primary);
+        margin-bottom: 0;
+        margin-left: 0;
+        .breadcrumb-item{
+            margin-right: 1rem;
+            font-size: 1.4rem;
+            a {
+                color: var(--color-primary);
+                text-decoration: none;
+            }
+        }
+        :not(:last-child).breadcrumb-item::after{
+            display: inline-block;
+            content: ">";
+            margin-left: 1rem;
+        }
+    }
+}
