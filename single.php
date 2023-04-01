@@ -13,7 +13,7 @@ get_header();
 	<main id="primary" class="site-main">
 		<div class="container">
 			<?php my_custom_breadcrumbs(); ?>
-			
+
 			<div class="section">
 				<?php
 					if (have_posts()) :
@@ -23,6 +23,19 @@ get_header();
 						endwhile;
 					endif;
 				?>
+			</div>
+			
+			<div class="section section__tag-section">
+				<?php
+					$tags = get_the_tags();
+					if ( $tags ) :
+				?>
+				<div class="tags-list">
+					<?php foreach ( $tags as $tag ) : ?>
+						Article Tags:<a href="<?php echo esc_url( get_tag_link( $tag->term_id ) ); ?>" class="tag-link"><?php echo esc_html( $tag->name ); ?></a>
+					<?php endforeach; ?>
+				</div>
+				<?php endif; ?>
 			</div>
 			
 			<div class="section section__post-navigation">
