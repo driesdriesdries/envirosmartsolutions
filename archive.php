@@ -13,7 +13,7 @@ get_header();
 	<main id="primary" class="site-main">
 		<div class="container container__archive">
 			<?php my_custom_breadcrumbs(); ?>
-			<main class="section">
+			<main>
 				<div class="section card-section">
 					<?php
 						// Get the current category ID
