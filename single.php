@@ -15,6 +15,7 @@ get_header();
 			<div class="section">
 				<?php my_custom_breadcrumbs(); ?>
 			</div>
+
 			<div class="section">
 			<?php
 				if (have_posts()) :
