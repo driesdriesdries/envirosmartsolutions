@@ -1,23 +1,24 @@
 .card-section {
+    background-color: orangered;
     display: flex;
     justify-content: center;
     padding-top: 3rem;
     padding-bottom: 3rem;
     flex-wrap: wrap;   
     gap: 2rem; 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: $bp-medium) {
         flex-direction: column;
         align-items: center;
         margin-bottom: 2rem;
     }
     .single-content-card {
         display: flex;
+        flex: 1 0 20rem;
+        min-width: 20rem;
+        max-width: 35rem;
         flex-direction: column;
         box-shadow: var(--shadow-dark);
         border-radius: 2rem;
-        overflow: hidden;
-        flex-basis: 36rem;
-        flex-grow: 0;
         background-color: white;
         transition: transform 0.3s ease-out;
         &:hover {
@@ -33,6 +34,7 @@
         }
         &__header {
             height: 20rem;
+            overflow: hidden;
         }
         &__body {
             color: var(--color-text-primary);
@@ -42,6 +44,7 @@
             }
             p {
                 margin-bottom: 2rem;
+                font-size: 1.4rem;
             }
         }
         &__cta {

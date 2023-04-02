@@ -1,0 +1,41 @@
+.section__blog-navigation {
+    background-color: teal;
+    display: flex;
+    align-items: center;
+    //height: 6rem;
+    & > div {
+        margin-right: 3px;
+    }
+    .categories-list {
+        background-color: beige;
+        flex: 1 0 auto;
+        max-width: 60%;
+        ul {
+            display: flex;
+            margin-left: 0;
+            margin-bottom: 0;
+            li {
+                list-style: none;
+                margin-right: 1rem;
+                span {
+                    text-decoration: underline;
+                    font-style: italic;
+                }
+                a {
+                    text-decoration: none;
+                    &.active-category {
+                     //   text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    .tag-dropdown {
+        background-color: aquamarine;
+    }
+    .search-box {
+        background-color: blanchedalmond;
+        flex: 1 0 auto;
+        height: 7rem;
+    }
+}

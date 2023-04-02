@@ -46,3 +46,20 @@ a.button {
 		}
 	}
 }
+
+a.primary-button-medium {
+    background-color: var(--color-primary);
+    display: inline-block;
+    color: white;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    &:visited {
+        color: white;
+        text-decoration: underline;
+    }
+    &:hover {
+        opacity: .75;
+    }
+}

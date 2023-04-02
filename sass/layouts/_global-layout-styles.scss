@@ -1,40 +1,20 @@
 #page {
-	max-width: 1440px;
+	//max-width: 1440px;
 	margin: 0 auto;
 }
 
 .container {
-	max-width: 1440px;
+	//max-width: 1440px;
+	//background-color: orange;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin: 0 auto;
-	&__archive {
-		//background-color: orangered;
-		main {
-			//background-color: orchid;
-			display: flex;
-			.card-section {
-				//background-color: teal;
-				width: 80%;
-				border: 1px solid var(--color-text-primary);
-			}
-			.categories-widget {
-				//background-color: lightcoral;
-				width: 20%;
-				padding-top: 2.5rem;
-				border: 1px solid var(--color-text-primary);
-			}
-		}
-	}
 }
 
 .section {
-	width: 100%;
-	//max-width: 1140px;
-	//background-color: beige;
+	width: 1140px;
 	border: 1px solid crimson;
-	//padding-left: .1rem;
-	// padding-right: 1rem;
+	//background-color: grey;
 }
 

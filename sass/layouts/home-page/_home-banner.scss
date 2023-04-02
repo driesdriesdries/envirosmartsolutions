@@ -1,17 +1,14 @@
 .home-page {
     background-image: linear-gradient(to right bottom, var(--color-green-dark), var(--color-green-light));
     .home-banner {
-        padding: 3rem 2rem;
         &__copy {
             text-align: center;
             color: white;
-            padding-left: 10rem;
-            padding-right: 10rem;
         }
     }
 }
 
-.primary-button-medium {
+a.primary-button-medium {
     background-color: var(--color-primary);
     display: inline-block;
     color: white;

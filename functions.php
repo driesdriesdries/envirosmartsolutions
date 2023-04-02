@@ -183,6 +183,12 @@ if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
 
+add_action( 'after_setup_theme', 'custom_image_sizes' );
+function custom_image_sizes() {
+    add_image_size( 'card-image-thumbnail', 350, 200, array( 'center', 'center' ) );
+    add_image_size( 'banner-image', 1140, 350, array( 'center', 'center' ) );
+}
+
 //Hero Function
 function createHeroSection($h1Text, $pText, $bgImageURL) {
     $themeFileURI = get_theme_file_uri($bgImageURL);

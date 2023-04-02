@@ -26,16 +26,17 @@ get_header();
 			</div>
 			
 			<div class="section section__tag-section">
-				<?php
-					$tags = get_the_tags();
-					if ( $tags ) :
-				?>
+			<?php
+				$tags = get_the_tags();
+				if ( $tags ) :
+			?>
 				<div class="tags-list">
+					<span>Article Tags:</span>
 					<?php foreach ( $tags as $tag ) : ?>
-						Article Tags:<a href="<?php echo esc_url( get_tag_link( $tag->term_id ) ); ?>" class="tag-link"><?php echo esc_html( $tag->name ); ?></a>
+						<a href="<?php echo esc_url( get_tag_link( $tag->term_id ) ); ?>" class="tag-link"><?php echo esc_html( $tag->name ); ?></a>
 					<?php endforeach; ?>
 				</div>
-				<?php endif; ?>
+			<?php endif; ?>
 			</div>
 			
 			<div class="section section__post-navigation">
