@@ -639,14 +639,14 @@ textarea {
   margin: 0 auto; }
 
 .container {
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto; }
 
 .section {
-  width: 1140px;
-  border: 1px solid crimson; }
+  width: 100%; }
 
 .soil-gel-page .container__1 {
   background-size: cover;
@@ -832,14 +832,17 @@ a.primary-button-medium {
 /* Navigation
 --------------------------------------------- */
 .section__blog-navigation {
-  background-color: teal;
+  background-color: beige;
   display: flex;
   align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .section__blog-navigation {
+      flex-direction: column;
+      align-items: center; } }
   .section__blog-navigation > div {
-    margin-right: 3px; }
+    margin-right: 3px;
+    border: 1px solid black; }
   .section__blog-navigation .categories-list {
-    background-color: beige;
-    flex: 1 0 auto;
     max-width: 60%; }
     .section__blog-navigation .categories-list ul {
       display: flex;
@@ -853,11 +856,7 @@ a.primary-button-medium {
           font-style: italic; }
         .section__blog-navigation .categories-list ul li a {
           text-decoration: none; }
-  .section__blog-navigation .tag-dropdown {
-    background-color: aquamarine; }
   .section__blog-navigation .search-box {
-    background-color: blanchedalmond;
-    flex: 1 0 auto;
     height: 7rem; }
 
 .section__breadcrumbs {
@@ -1042,7 +1041,6 @@ a.primary-button-medium {
     border-top: 1px solid var(--color-text-primary); }
 
 .card-section {
-  background-color: orangered;
   display: flex;
   justify-content: center;
   padding-top: 3rem;

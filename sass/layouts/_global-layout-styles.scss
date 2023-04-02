@@ -1,10 +1,9 @@
 #page {
-	//max-width: 1440px;
 	margin: 0 auto;
 }
 
 .container {
-	//max-width: 1440px;
+	max-width: 1440px;
 	//background-color: orange;
 	display: flex;
 	flex-direction: column;
@@ -13,8 +12,8 @@
 }
 
 .section {
-	width: 1140px;
-	border: 1px solid crimson;
+	//border: 1px solid crimson;
 	//background-color: grey;
+	width: 100%;
 }
 
