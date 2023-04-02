@@ -35,7 +35,7 @@ get_header();
 				echo '<p>'. wp_trim_words($category->description, 35) .'</p>';
 				echo '</div>';
 				echo '<div class="single-content-card__cta">';
-				echo '<a href="'.get_category_link($category->term_id).'" class="primary-button-medium single-card-cta">Learn More</a>';
+				echo '<a href="'.get_category_link($category->term_id).'" class="primary-button primary-button--medium single-card-cta">Learn More</a>';
 				echo '</div>';
 				echo '</div>';
 			}

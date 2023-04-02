@@ -49,7 +49,7 @@ get_header();
 								</div>
 
 								<div class="single-content-card__cta">
-									<a href="<?php the_permalink(); ?>" class="primary-button-medium single-card-cta">Learn More</a>
+									<a href="<?php the_permalink(); ?>" class="primary-button primary-button--medium single-card-cta">Learn More</a>
 								</div>
 							</div>
 

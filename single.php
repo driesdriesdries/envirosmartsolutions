@@ -31,9 +31,9 @@ get_header();
 				if ( $tags ) :
 			?>
 				<div class="tags-list">
-					<span>Article Tags: </span>
+					<span><i>Tagged With:</i></span>
 					<?php foreach ( $tags as $index => $tag ) : ?>
-						<a href="<?php echo esc_url( get_tag_link( $tag->term_id ) ); ?>" class="tag-link"><?php echo esc_html( $tag->name ); ?></a><?php if ( $index !== count( $tags ) - 1 ) { echo ', '; } ?>
+						<a href="<?php echo esc_url( get_tag_link( $tag->term_id ) ); ?>" class="tag-link ghost-button ghost-button--small"><?php echo esc_html( $tag->name ); ?></a><?php if ( $index !== count( $tags ) - 1 )  ?>
 					<?php endforeach; ?>
 				</div>
 			<?php endif; ?>
@@ -55,13 +55,13 @@ get_header();
 
 						if ( $prev_post ) {
 							echo '<div class="previous-post-link">';
-							echo '<a href="' . get_permalink( $prev_post->ID ) . '">&laquo; ' . esc_html( $prev_post->post_title ) . '</a>';
+							echo '<a class="ghost-button ghost-button--small" href="' . get_permalink( $prev_post->ID ) . '">&laquo; ' . esc_html( $prev_post->post_title ) . '</a>';
 							echo '</div>';
 						}
 
 						if ( $next_post ) {
 							echo '<div class="next-post-link">';
-							echo '<a href="' . get_permalink( $next_post->ID ) . '">' . esc_html( $next_post->post_title ) . ' &raquo;</a>';
+							echo '<a class="ghost-button ghost-button--small" href="' . get_permalink( $next_post->ID ) . '">' . esc_html( $next_post->post_title ) . ' &raquo;</a>';
 							echo '</div>';
 						}
 

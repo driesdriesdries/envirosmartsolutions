@@ -384,41 +384,42 @@ a {
     outline: thin dotted; }
   a:hover, a:active {
     outline: 0; }
-
-a.button {
-  color: #ffffff;
-  padding: 1rem 5rem;
-  display: inline-block;
-  border: 3px solid var(--color-primary);
-  margin-top: 2rem;
-  cursor: pointer;
-  border-radius: 1rem;
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: bold;
-  text-decoration: none; }
-  a.button__primary {
-    background-color: var(--color-primary); }
-    a.button__primary:hover {
-      opacity: .7; }
-  a.button__secondary {
-    background-color: transparent; }
-    a.button__secondary:hover {
-      opacity: .7; }
-
-a.primary-button-medium {
-  background-color: var(--color-primary);
-  display: inline-block;
-  color: white;
-  font-size: 1.6rem;
-  border-radius: .5rem;
-  padding: 1rem 1.5rem;
-  text-decoration: none; }
-  a.primary-button-medium:visited {
+  a.primary-button {
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    display: inline-block;
     color: white;
-    text-decoration: underline; }
-  a.primary-button-medium:hover {
-    opacity: .75; }
+    border-radius: .5rem;
+    text-decoration: none; }
+    a.primary-button:visited {
+      color: white;
+      text-decoration: underline; }
+    a.primary-button:hover {
+      opacity: .75; }
+    a.primary-button--medium {
+      padding: .5rem 1rem;
+      font-size: 1.6rem; }
+    a.primary-button--small {
+      padding: .1rem .6rem;
+      font-size: 1.2rem; }
+  a.ghost-button {
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
+    display: inline-block;
+    color: var(--color-primary);
+    border-radius: .5rem;
+    text-decoration: none; }
+    a.ghost-button:visited {
+      color: var(--color-primary);
+      text-decoration: underline; }
+    a.ghost-button:hover {
+      opacity: .75; }
+    a.ghost-button--medium {
+      padding: .5rem 1rem;
+      font-size: 1.6rem; }
+    a.ghost-button--small {
+      padding: .1rem .6rem;
+      font-size: 1.2rem; }
 
 ul,
 ol {
@@ -1002,8 +1003,8 @@ a.primary-button-medium {
   display: flex;
   justify-content: center;
   font-size: 1.6rem; }
-  .section__tag-section .tags-list span {
-    margin-right: .5rem; }
+  .section__tag-section .tags-list .tag-link {
+    margin-left: .5rem; }
 
 /* Posts and pages
 --------------------------------------------- */
