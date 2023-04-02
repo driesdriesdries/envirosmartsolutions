@@ -835,29 +835,30 @@ a.primary-button-medium {
   background-color: beige;
   display: flex;
   align-items: center; }
-  @media only screen and (max-width: 37.5em) {
-    .section__blog-navigation {
-      flex-direction: column;
-      align-items: center; } }
   .section__blog-navigation > div {
     margin-right: 3px;
-    border: 1px solid black; }
-  .section__blog-navigation .categories-list {
-    max-width: 60%; }
-    .section__blog-navigation .categories-list ul {
-      display: flex;
-      margin-left: 0;
-      margin-bottom: 0; }
-      .section__blog-navigation .categories-list ul li {
-        list-style: none;
-        margin-right: 1rem; }
-        .section__blog-navigation .categories-list ul li span {
-          text-decoration: underline;
-          font-style: italic; }
-        .section__blog-navigation .categories-list ul li a {
-          text-decoration: none; }
+    border: 1px solid crimson; }
+  .section__blog-navigation .categories-list ul {
+    display: flex;
+    margin-left: 0;
+    margin-bottom: 0; }
+    .section__blog-navigation .categories-list ul li {
+      list-style: none;
+      margin-right: 1rem; }
+      .section__blog-navigation .categories-list ul li span {
+        text-decoration: underline;
+        font-style: italic; }
+      .section__blog-navigation .categories-list ul li a {
+        text-decoration: none; }
+  .section__blog-navigation .tag-dropdown {
+    background-color: aquamarine;
+    flex: 0 0 auto; }
   .section__blog-navigation .search-box {
-    height: 7rem; }
+    background-color: blanchedalmond;
+    flex: 1 2 auto;
+    max-width: 20rem;
+    min-width: 10rem;
+    margin-left: auto; }
 
 .section__breadcrumbs {
   padding-top: 2rem;
@@ -1001,12 +1002,8 @@ a.primary-button-medium {
   display: flex;
   justify-content: center;
   font-size: 1.6rem; }
-  .section__tag-section .tags-list a {
-    margin-right: 1rem; }
-    .section__tag-section .tags-list a:first-child {
-      margin-left: .5rem; }
-    .section__tag-section .tags-list a:last-child {
-      margin-right: 0; }
+  .section__tag-section .tags-list span {
+    margin-right: .5rem; }
 
 /* Posts and pages
 --------------------------------------------- */
@@ -1050,8 +1047,7 @@ a.primary-button-medium {
   @media only screen and (max-width: 56.25em) {
     .card-section {
       flex-direction: column;
-      align-items: center;
-      margin-bottom: 2rem; } }
+      align-items: center; } }
   .card-section .single-content-card {
     display: flex;
     flex: 1 0 20rem;

@@ -31,9 +31,9 @@ get_header();
 				if ( $tags ) :
 			?>
 				<div class="tags-list">
-					<span>Article Tags:</span>
-					<?php foreach ( $tags as $tag ) : ?>
-						<a href="<?php echo esc_url( get_tag_link( $tag->term_id ) ); ?>" class="tag-link"><?php echo esc_html( $tag->name ); ?></a>
+					<span>Article Tags: </span>
+					<?php foreach ( $tags as $index => $tag ) : ?>
+						<a href="<?php echo esc_url( get_tag_link( $tag->term_id ) ); ?>" class="tag-link"><?php echo esc_html( $tag->name ); ?></a><?php if ( $index !== count( $tags ) - 1 ) { echo ', '; } ?>
 					<?php endforeach; ?>
 				</div>
 			<?php endif; ?>
