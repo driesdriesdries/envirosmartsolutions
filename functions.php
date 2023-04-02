@@ -231,21 +231,31 @@ function generate_social_proof($countries) {
     return $html;
 }
 
-//Single Content Card
-//This function must be used within a element with a class of .card-section
-function generate_single_content_card($image_url, $heading, $copy, $cta_url, $cta_text) {
-    ?>
-    <div class="single-content-card">
-        <div class="single-content-card__header" style="background-image: url('<?php echo $image_url; ?>'); background-position: center center; background-size: cover;">
-        </div>
-        <div class="single-content-card__body">
-            <h3><?php echo $heading; ?></h3>
-            <p><?php echo $copy; ?></p>
-        </div>
+//Breadcrumbs
+function my_custom_breadcrumbs() {
+    if (is_home() || is_front_page()) {
+        return;
+    }
 
-        <div class="single-content-card__cta">
-            <a href="<?php echo $cta_url; ?>" class="primary-button-medium single-card-cta"><?php echo $cta_text; ?></a>
-        </div>
-    </div>
-    <?php
+    echo '<div class="section section__breadcrumbs">';
+    echo '<nav aria-label="breadcrumb"><ol class="breadcrumb">';
+    echo '<li class="breadcrumb-item"><a href="' . get_home_url() . '">Home</a></li>';
+
+    if (is_category() || is_single()) {
+        $category = get_the_category();
+        if ($category) {
+            if (is_single()) {
+                echo '<li class="breadcrumb-item"><a href="' . get_category_link($category[0]->term_id) . '">' . $category[0]->cat_name . '</a></li>';
+            } else {
+                echo '<li class="breadcrumb-item">' . $category[0]->cat_name . '</li>';
+            }
+        }
+    }
+
+    if (is_single()) {
+        echo '<li class="breadcrumb-item active" aria-current="page">' . get_the_title() . '</li>';
+    }
+
+    echo '</ol></nav>';
+    echo '</div>';
 }

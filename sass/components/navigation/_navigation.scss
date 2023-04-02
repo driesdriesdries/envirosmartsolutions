@@ -5,14 +5,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 1rem;
+    padding: 2rem 0rem;
     .nav-left {
         .logo-box{
             display: flex;
             align-items: center;
             img {
-                width: 5rem;
-                height: 5rem;
+                width: 3.5rem;
+                height: 3.5rem;
                 margin-right: .5rem;
             }
             a {

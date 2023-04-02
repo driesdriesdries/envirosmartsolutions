@@ -343,6 +343,7 @@ template {
   --canvas-green: #F4FBF3;
   --color-primary: #F0821F;
   --color-text-primary: #1E1E1E;
+  --color-text-primary-light: #707070;
   --color-text-light: #ffffff;
   --shadow-dark: 0 1rem 3rem rgba(0,0,0, .3);
   --shadow-light: 0 .5rem 1rem rgba(0,0,0, .1);
@@ -630,10 +631,19 @@ textarea {
   flex-direction: column;
   align-items: center;
   margin: 0 auto; }
+  .container__archive main {
+    display: flex; }
+    .container__archive main .card-section {
+      width: 80%;
+      border: 1px solid var(--color-text-primary); }
+    .container__archive main .categories-widget {
+      width: 20%;
+      padding-top: 2.5rem;
+      border: 1px solid var(--color-text-primary); }
 
 .section {
   width: 100%;
-  max-width: 1140px; }
+  border: 1px solid crimson; }
 
 .soil-gel-page .container__1 {
   background-size: cover;
@@ -822,6 +832,47 @@ textarea {
 --------------------------------------------------------------*/
 /* Navigation
 --------------------------------------------- */
+.section__breadcrumbs {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex; }
+  .section__breadcrumbs ol.breadcrumb {
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-left: 0; }
+    .section__breadcrumbs ol.breadcrumb .breadcrumb-item {
+      margin-right: 1rem;
+      font-size: 1.4rem; }
+      .section__breadcrumbs ol.breadcrumb .breadcrumb-item a {
+        color: var(--color-primary);
+        text-decoration: none; }
+    .section__breadcrumbs ol.breadcrumb :not(:last-child).breadcrumb-item::after {
+      display: inline-block;
+      content: ">";
+      margin-left: 1rem; }
+
+.footer {
+  border: 1px solid var(--color-text-primary); }
+  .footer .section__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 3rem; }
+    .footer .section__footer img {
+      padding-top: 5rem;
+      width: 10rem;
+      height: 10rem; }
+    .footer .section__footer p {
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+      padding-bottom: 3rem;
+      font-style: italic;
+      font-size: 1.4rem;
+      color: var(--color-text-primary);
+      text-align: center; }
+
 .container-navbar {
   border: 1px solid var(--color-text-primary); }
 
@@ -829,13 +880,13 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 1rem; }
+  padding: 2rem 0rem; }
   .main-navigation .nav-left .logo-box {
     display: flex;
     align-items: center; }
     .main-navigation .nav-left .logo-box img {
-      width: 5rem;
-      height: 5rem;
+      width: 3.5rem;
+      height: 3.5rem;
       margin-right: .5rem; }
     .main-navigation .nav-left .logo-box a {
       text-decoration: none;
@@ -909,26 +960,26 @@ textarea {
           display: block;
           padding: 2rem 2rem; }
 
-.footer {
-  border: 1px solid var(--color-text-primary); }
-  .footer .section__footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 3rem; }
-    .footer .section__footer img {
-      padding-top: 5rem;
-      width: 15rem;
-      height: 15rem; }
-    .footer .section__footer p {
-      margin-bottom: 1rem;
-      margin-top: 2rem;
-      padding-bottom: 3rem;
-      font-style: italic;
-      font-size: 1.4rem;
-      color: var(--color-text-primary);
-      text-align: center; }
+.post-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: .8rem;
+  padding-bottom: .8rem; }
+  .post-navigation a {
+    font-size: 1.4rem; }
+
+.section__tag-section .tags-list {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem; }
+  .section__tag-section .tags-list a {
+    margin-right: 1rem; }
+    .section__tag-section .tags-list a:first-child {
+      margin-left: .5rem; }
+    .section__tag-section .tags-list a:last-child {
+      margin-right: 0; }
 
 /* Posts and pages
 --------------------------------------------- */
@@ -969,7 +1020,7 @@ textarea {
   padding-bottom: 3rem;
   flex-wrap: wrap;
   gap: 2rem; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 37.5em) {
     .card-section {
       flex-direction: column;
       align-items: center;
@@ -980,7 +1031,8 @@ textarea {
     box-shadow: var(--shadow-dark);
     border-radius: 2rem;
     overflow: hidden;
-    flex-basis: 40rem;
+    flex-basis: 36rem;
+    flex-grow: 0;
     background-color: white;
     transition: transform 0.3s ease-out; }
     .card-section .single-content-card:hover {
