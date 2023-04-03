@@ -1,5 +1,5 @@
 .card-section {
-    //background-color: orangered;
+    border: var(--rails);
     display: flex;
     justify-content: center;
     padding-top: 3rem;
@@ -13,8 +13,8 @@
     .single-content-card {
         display: flex;
         flex: 1 0 20rem;
-        min-width: 20rem;
-        max-width: 35rem;
+        min-width: 27rem;
+        max-width: 27rem;
         flex-direction: column;
         box-shadow: var(--shadow-dark);
         border-radius: 2rem;
@@ -29,7 +29,7 @@
             margin-right: 0;
         }
         @media only screen and (max-width: $bp-medium) {
-            margin-bottom: 2rem;
+            //margin-bottom: 2rem;
         }
         &__header {
             height: 20rem;

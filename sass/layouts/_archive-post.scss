@@ -1,0 +1,10 @@
+.section{
+	&__category-description {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		border: var(--rails);
+		p {
+			margin-bottom: 0;
+		}
+	}
+}

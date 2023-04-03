@@ -19,7 +19,7 @@ get_header();
 			$current_category = get_queried_object();
 			if ( $current_category->description ) {
 				echo '<div class="section section__category-description">';
-				echo '<div class="category-description">' . $current_category->description . '</div>';
+				echo '<div class="category-description">' . '<p>' . $current_category->description . '</p>' . '</div>';
 				echo '</div class>';
 			}
 		?>

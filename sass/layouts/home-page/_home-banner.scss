@@ -1,26 +1,11 @@
+// Home Page -> home-banner
 .home-page {
-   background-image: linear-gradient(to right bottom, var(--color-green-dark), var(--color-green-light));
+   //background-image: linear-gradient(to right bottom, var(--color-green-dark), var(--color-green-light));
     .home-banner {
+        border: var(--rails);
         &__copy {
             text-align: center;
-            color: white;
+            //color: white;
         }
-    }
-}
-
-a.primary-button-medium {
-    background-color: var(--color-primary);
-    display: inline-block;
-    color: white;
-    font-size: 1.6rem;
-    border-radius: .5rem;
-    padding: 1rem 1.5rem;
-    text-decoration: none;
-    &:visited {
-        color: white;
-        text-decoration: underline;
-    }
-    &:hover {
-        opacity: .75;
     }
 }

@@ -1,11 +1,15 @@
+// Blog Navigation.scss
 .section__blog-navigation {
-    background-color: beige;
+    //background-color: beige;
     display: flex;
     align-items: center;
     border: var(--rails);
+    span {
+        color: orange;
+    }
     & > div {
         margin-right: 3px;
-        //border: 1px solid crimson;
+        border: var(--rails);
     }
     .categories-list {
         ul {
@@ -26,11 +30,11 @@
         }
     }
     .tag-dropdown {
-        //background-color: aquamarine;
         flex: 0 0 auto;
+        border: var(--rails);
     }
     .search-box {
-        //background-color: blanchedalmond;
+        border: var(--rails);
         flex: 1 2 auto;
         max-width: 20rem;
         min-width: 10rem;
