@@ -34,12 +34,17 @@
         &__header {
             height: 20rem;
             overflow: hidden;
+            border-top-right-radius: 2rem;
+            border-top-left-radius: 2rem;
         }
         &__body {
             color: var(--color-text-primary);
             padding: 2rem 3rem;
             h3 {
                 margin-bottom: 1.8rem;
+                a {
+                    text-decoration: none;
+                }
             }
             p {
                 margin-bottom: 2rem;

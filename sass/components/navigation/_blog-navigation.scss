@@ -2,9 +2,10 @@
     background-color: beige;
     display: flex;
     align-items: center;
+    border: var(--rails);
     & > div {
         margin-right: 3px;
-        border: 1px solid crimson;
+        //border: 1px solid crimson;
     }
     .categories-list {
         ul {
@@ -25,11 +26,11 @@
         }
     }
     .tag-dropdown {
-        background-color: aquamarine;
+        //background-color: aquamarine;
         flex: 0 0 auto;
     }
     .search-box {
-        background-color: blanchedalmond;
+        //background-color: blanchedalmond;
         flex: 1 2 auto;
         max-width: 20rem;
         min-width: 10rem;

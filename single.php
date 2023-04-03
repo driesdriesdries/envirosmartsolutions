@@ -13,30 +13,37 @@ get_header();
 	<main id="primary" class="site-main">
 		<div class="container">
 			<?php my_custom_breadcrumbs(); ?>
+			
+			<?php 
+			$image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), 'banner-image')[0];
+			?>
+			<div class="single-post-banner" style="background-image: url('<?php echo $image_url; ?>');">
+			</div>	
 
-			<div class="section">
+			<div class="section section__article-body">
 				<?php
 					if (have_posts()) :
 						while (have_posts()) :
-							the_post();
-							the_content();
+							the_post(); ?>
+							<h1><?php the_title();?></h1>
+							<?php  the_content();
 						endwhile;
 					endif;
 				?>
 			</div>
 			
 			<div class="section section__tag-section">
-			<?php
-				$tags = get_the_tags();
-				if ( $tags ) :
-			?>
+				<?php
+					$tags = get_the_tags();
+					if ( $tags ) :
+				?>
 				<div class="tags-list">
 					<span><i>Tagged With:</i></span>
 					<?php foreach ( $tags as $index => $tag ) : ?>
 						<a href="<?php echo esc_url( get_tag_link( $tag->term_id ) ); ?>" class="tag-link ghost-button ghost-button--small"><?php echo esc_html( $tag->name ); ?></a><?php if ( $index !== count( $tags ) - 1 )  ?>
 					<?php endforeach; ?>
 				</div>
-			<?php endif; ?>
+					<?php endif; ?>
 			</div>
 			
 			<div class="section section__post-navigation">

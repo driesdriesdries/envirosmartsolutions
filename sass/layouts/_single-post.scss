@@ -1,0 +1,28 @@
+.single-post-banner {
+	height: 40rem;
+	width: 100%;
+	background-position: center center;
+	background-size: cover;
+	border: var(--rails);
+	@media only screen and (max-width: $bp-small) {
+		height: 20rem;
+	}
+}
+
+.section {
+	&__article-body {
+		background-color: white;
+		padding: 2rem 2rem;
+		width: 70%;
+		margin: 0 auto;
+		margin-top: -7rem;
+		border: var(--rails);
+		@media only screen and (max-width: $bp-medium) {
+            width: 100%;
+			margin-top: 0rem;
+        }
+	}
+	&__tag-section {
+		
+	}
+}

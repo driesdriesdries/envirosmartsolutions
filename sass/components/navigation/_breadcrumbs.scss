@@ -1,12 +1,12 @@
 .section__breadcrumbs {
-    //background-image: linear-gradient(to right bottom, var(--color-green-dark), var(--color-green-light));
+    //background-color: gray;
     padding-top: 2rem;
     padding-bottom: 2rem;
     display: flex;
+    border: var(--rails);
     ol.breadcrumb {
         display: flex;
         list-style-type: none;
-        //border: 1px solid var(--color-primary);
         margin-bottom: 0;
         margin-left: 0;
         .breadcrumb-item{
