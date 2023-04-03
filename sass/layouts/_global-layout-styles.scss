@@ -1,19 +1,12 @@
 #page {
-	margin: 0 auto;
-}
-
-.container {
 	max-width: 1440px;
-	//background-color: orange;
+	background-color: antiquewhite;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin: 0 auto;
 }
 
-.section {
-	//border: 1px solid crimson;
-	//background-color: grey;
+header, main, footer {
 	width: 100%;
 }
-
