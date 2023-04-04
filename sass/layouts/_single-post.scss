@@ -1,5 +1,5 @@
 .single-post-banner {
-	height: 40rem;
+	height: 35rem;
 	width: 100%;
 	background-position: center center;
 	background-size: cover;
@@ -19,6 +19,7 @@
 		border: var(--rails);
 		h1 {
 			margin-bottom: 1rem;
+			border: var(--rails);
 		}
 		.single-post-meta {
 			display: flex;
@@ -40,8 +41,17 @@
 					margin-left: 1rem;
 					border: var(--rails);
 					display: inline-block;
+					&:first-child {
+						margin-left: 0;
+					}
 					img {
 						height: 2rem;
+						transition: transform 0.3s ease-out;
+						&:hover {
+							transform: translateY(-2px);
+							transition-delay: 0.3s;
+							transition: transform 0.2s ease-in-out;
+						}
 					}
 				}
 			}

@@ -409,12 +409,16 @@ a {
     display: inline-block;
     color: var(--color-primary);
     border-radius: .5rem;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: transform 0.3s ease-out; }
     a.ghost-button:visited {
       color: var(--color-primary);
       text-decoration: underline; }
     a.ghost-button:hover {
-      opacity: .75; }
+      opacity: .75;
+      transform: translateY(-2px);
+      transition-delay: 0.3s;
+      transition: transform 0.2s ease-in-out; }
     a.ghost-button--medium {
       padding: .5rem 1rem;
       font-size: 1.6rem; }
@@ -818,7 +822,7 @@ header, main, footer {
     text-align: center; }
 
 .single-post-banner {
-  height: 40rem;
+  height: 35rem;
   width: 100%;
   background-position: center center;
   background-size: cover;
@@ -835,7 +839,8 @@ header, main, footer {
   margin-top: -7rem;
   border: var(--rails); }
   .section__article-body h1 {
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    border: var(--rails); }
   .section__article-body .single-post-meta {
     display: flex;
     border: var(--rails);
@@ -854,8 +859,15 @@ header, main, footer {
         margin-left: 1rem;
         border: var(--rails);
         display: inline-block; }
+        .section__article-body .single-post-meta__social-icons a:first-child {
+          margin-left: 0; }
         .section__article-body .single-post-meta__social-icons a img {
-          height: 2rem; }
+          height: 2rem;
+          transition: transform 0.3s ease-out; }
+          .section__article-body .single-post-meta__social-icons a img:hover {
+            transform: translateY(-2px);
+            transition-delay: 0.3s;
+            transition: transform 0.2s ease-in-out; }
   @media only screen and (max-width: 56.25em) {
     .section__article-body {
       width: 100%;
@@ -1032,6 +1044,8 @@ header, main, footer {
   justify-content: space-between;
   padding-top: .8rem;
   padding-bottom: .8rem; }
+  .post-navigation .next-post-link {
+    margin-left: auto; }
   .post-navigation a {
     font-size: 1.4rem; }
 

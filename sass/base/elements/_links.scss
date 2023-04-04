@@ -49,12 +49,16 @@ a {
 		color: var(--color-primary);
 		border-radius: .5rem;
 		text-decoration: none;
+		transition: transform 0.3s ease-out;
 		&:visited {
 			color: var(--color-primary);
 			text-decoration: underline;
 		}
 		&:hover {
 			opacity: .75;
+			transform: translateY(-2px);
+            transition-delay: 0.3s;
+            transition: transform 0.2s ease-in-out;
 		}
 		&--medium {
 			padding: .5rem 1rem;
