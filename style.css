@@ -834,6 +834,28 @@ header, main, footer {
   margin: 0 auto;
   margin-top: -7rem;
   border: var(--rails); }
+  .section__article-body h1 {
+    margin-bottom: 1rem; }
+  .section__article-body .single-post-meta {
+    display: flex;
+    border: var(--rails);
+    align-items: center;
+    margin-bottom: 2rem; }
+    .section__article-body .single-post-meta__published-date {
+      border: var(--rails); }
+      .section__article-body .single-post-meta__published-date p {
+        margin-bottom: 0;
+        font-style: italic;
+        font-size: 1.4rem; }
+    .section__article-body .single-post-meta__social-icons {
+      border: var(--rails);
+      margin-left: auto; }
+      .section__article-body .single-post-meta__social-icons a {
+        margin-left: 1rem;
+        border: var(--rails);
+        display: inline-block; }
+        .section__article-body .single-post-meta__social-icons a img {
+          height: 2rem; }
   @media only screen and (max-width: 56.25em) {
     .section__article-body {
       width: 100%;

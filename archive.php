@@ -13,8 +13,9 @@ get_header();
 <main id="primary" class="site-main">
 	<div class="container container__archive">
 		
+		<?php my_custom_breadcrumbs(); ?>	
 		<?php get_template_part( 'template-parts/blog-navigation' ); ?>
-		<?php my_custom_breadcrumbs(); ?>
+		
 		<?php
 			$current_category = get_queried_object();
 			if ( $current_category->description ) {

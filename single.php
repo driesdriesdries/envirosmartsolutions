@@ -26,6 +26,36 @@ get_header();
 						while (have_posts()) :
 							the_post(); ?>
 							<h1><?php the_title();?></h1>
+							<div class="single-post-meta">
+								<div class="single-post-meta__published-date">
+									<?php
+									// Get the published date
+									$published_date = get_the_date( 'F j, Y' );
+
+									// Display the published date
+									echo '<p>' .'Published on: ' . $published_date . '</p>';
+									?>
+								</div>
+								<div class="single-post-meta__social-icons">
+									<!-- WhatsApp Share Icon -->										
+									<a href="https://api.whatsapp.com/send?text=<?php echo urlencode(get_the_title() . ' - ' . get_the_permalink()); ?>" target="_blank" rel="noopener noreferrer">
+										<img src="<?php echo get_theme_file_uri('images/social-whatsapp.svg'); ?>" alt="Share on WhatsApp" />
+									</a>
+									<!-- Email Share Icon -->
+									<a href="mailto:?subject=<?php echo rawurlencode(get_the_title()); ?>&amp;body=<?php echo rawurlencode(get_the_permalink()); ?>" target="_blank" rel="noopener noreferrer">
+										<img src="<?php echo get_theme_file_uri('images/social-mail.svg'); ?>" alt="Share via Email" />
+									</a>
+									<!-- Twitter Share Icon -->
+									<a href="https://twitter.com/intent/tweet?text=<?php echo urlencode(get_the_title() . ' - ' . get_the_permalink()); ?>" target="_blank" rel="noopener noreferrer">
+										<img src="<?php echo get_theme_file_uri('images/social-twitter.svg'); ?>" alt="Share on Twitter" />
+									</a>
+									<!-- Facebook Share Icon -->
+									<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_the_permalink()); ?>" target="_blank" rel="noopener noreferrer">
+										<img src="<?php echo get_theme_file_uri('images/social-facebook.svg'); ?>" alt="Share on Facebook" />
+									</a>
+								</div>
+
+							</div>
 							<?php  the_content();
 						endwhile;
 					endif;

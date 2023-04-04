@@ -17,6 +17,35 @@
 		margin: 0 auto;
 		margin-top: -7rem;
 		border: var(--rails);
+		h1 {
+			margin-bottom: 1rem;
+		}
+		.single-post-meta {
+			display: flex;
+			border: var(--rails);
+			align-items: center;
+			margin-bottom: 2rem;
+			&__published-date {
+				border: var(--rails);
+				p {
+					margin-bottom: 0;
+					font-style: italic;
+					font-size: 1.4rem;
+				}
+			}
+			&__social-icons {
+				border: var(--rails);
+				margin-left: auto;
+				a {
+					margin-left: 1rem;
+					border: var(--rails);
+					display: inline-block;
+					img {
+						height: 2rem;
+					}
+				}
+			}
+		}
 		@media only screen and (max-width: $bp-medium) {
             width: 100%;
 			margin-top: 0rem;
