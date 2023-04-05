@@ -38,14 +38,14 @@
 				border: var(--rails);
 				margin-left: auto;
 				a {
-					margin-left: 1rem;
+					margin-left: 2rem;
 					border: var(--rails);
 					display: inline-block;
 					&:first-child {
 						margin-left: 0;
 					}
 					img {
-						height: 2rem;
+						height: 3rem;
 						transition: transform 0.3s ease-out;
 						&:hover {
 							transform: translateY(-2px);

@@ -20,7 +20,7 @@
             </div>
             <div class="categories-pane__toggle">
                 <button class="categories-pane__toggle--button">
-                    Categories
+                    <span>View Categories ⌄ </span> 
                 </button>
             </div>
         </div>
