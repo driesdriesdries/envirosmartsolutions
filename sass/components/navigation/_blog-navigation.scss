@@ -1,34 +1,63 @@
 // Blog Navigation.scss
 .section__blog-navigation {
-    //background-color: beige;
     display: flex;
     align-items: center;
     border: var(--rails);
-    span {
-        color: orange;
-    }
-    & > div {
-        margin-right: 3px;
-        border: var(--rails);
-    }
-    .categories-list {
-        ul {
-            display: flex;
-            margin-left: 0;
-            margin-bottom: 0;
-            li {
-                list-style: none;
-                margin-right: 1rem;
-                span {
-                    text-decoration: underline;
-                    font-style: italic;
+    .categories-pane {
+        display: flex;
+        &__list {
+            //background-color: lightcoral;
+            ul {
+                //background-color: orangered;
+                display: flex;
+                margin-left: 0;
+                margin-bottom: 0;
+                background-color: white;
+                border: var(--rails);
+                @media only screen and (max-width: $bp-medium) {
+                    display: none;
                 }
-                a {
-                    text-decoration: none;
+                li {
+                    //background-color: yello;
+                    list-style: none;
+                    &:not(:first-child) {
+                        //background-color: lightseagreen;
+                        margin-left: 1rem;
+                    }
+                    a {
+                        display: inline-block;    
+                    }
+                }
+                &.expanded {
+                    //background-color: lightgreen;
+                    flex-direction: column;
+                    display: inherit;
+                    position: absolute;
+                    margin-top: 3rem;
+                    li {
+                        //background-color: red;
+                        margin-left: 0;
+                        a, span {
+                            border: var(--rails);
+                            padding: 1rem 2rem;
+                            width: 100%;
+                        }
+                        span {
+                            display: inline-block;
+                        }
+                    }
                 }
             }
         }
+        &__toggle {
+            background-color: cadetblue;
+            display: none;
+            @media only screen and (max-width: $bp-medium) {
+                display: inherit;
+            }
+        }
     }
+
     .tag-dropdown {
         flex: 0 0 auto;
         border: var(--rails);

@@ -882,23 +882,42 @@ header, main, footer {
   display: flex;
   align-items: center;
   border: var(--rails); }
-  .section__blog-navigation span {
-    color: orange; }
-  .section__blog-navigation > div {
-    margin-right: 3px;
-    border: var(--rails); }
-  .section__blog-navigation .categories-list ul {
-    display: flex;
-    margin-left: 0;
-    margin-bottom: 0; }
-    .section__blog-navigation .categories-list ul li {
-      list-style: none;
-      margin-right: 1rem; }
-      .section__blog-navigation .categories-list ul li span {
-        text-decoration: underline;
-        font-style: italic; }
-      .section__blog-navigation .categories-list ul li a {
-        text-decoration: none; }
+  .section__blog-navigation .categories-pane {
+    display: flex; }
+    .section__blog-navigation .categories-pane__list ul {
+      display: flex;
+      margin-left: 0;
+      margin-bottom: 0;
+      background-color: white;
+      border: var(--rails); }
+      @media only screen and (max-width: 56.25em) {
+        .section__blog-navigation .categories-pane__list ul {
+          display: none; } }
+      .section__blog-navigation .categories-pane__list ul li {
+        list-style: none; }
+        .section__blog-navigation .categories-pane__list ul li:not(:first-child) {
+          margin-left: 1rem; }
+        .section__blog-navigation .categories-pane__list ul li a {
+          display: inline-block; }
+      .section__blog-navigation .categories-pane__list ul.expanded {
+        flex-direction: column;
+        display: inherit;
+        position: absolute;
+        margin-top: 3rem; }
+        .section__blog-navigation .categories-pane__list ul.expanded li {
+          margin-left: 0; }
+          .section__blog-navigation .categories-pane__list ul.expanded li a, .section__blog-navigation .categories-pane__list ul.expanded li span {
+            border: var(--rails);
+            padding: 1rem 2rem;
+            width: 100%; }
+          .section__blog-navigation .categories-pane__list ul.expanded li span {
+            display: inline-block; }
+    .section__blog-navigation .categories-pane__toggle {
+      background-color: cadetblue;
+      display: none; }
+      @media only screen and (max-width: 56.25em) {
+        .section__blog-navigation .categories-pane__toggle {
+          display: inherit; } }
   .section__blog-navigation .tag-dropdown {
     flex: 0 0 auto;
     border: var(--rails); }
