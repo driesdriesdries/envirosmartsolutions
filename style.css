@@ -918,7 +918,6 @@ header, main, footer {
             border-bottom: 4px solid var(--color-primary);
             color: currentColor; }
         .section__blog-navigation .categories-pane__list ul li span {
-          font-style: italic;
           color: lightgray;
           border-bottom: 4px solid var(--color-primary); }
           .section__blog-navigation .categories-pane__list ul li span:hover {
@@ -928,7 +927,9 @@ header, main, footer {
         flex-direction: column;
         display: inherit;
         position: absolute;
-        margin-top: 5.3rem; }
+        margin-top: 4.5rem;
+        border-radius: 5px;
+        box-shadow: var(--shadow-light); }
         @media only screen and (max-width: 37.5em) {
           .section__blog-navigation .categories-pane__list ul.expanded {
             width: 100%; } }
@@ -947,14 +948,48 @@ header, main, footer {
           display: inherit; } }
       .section__blog-navigation .categories-pane__toggle .categories-pane__toggle--button {
         font-size: 1.5rem;
-        padding: 1rem 1rem; }
-        .section__blog-navigation .categories-pane__toggle .categories-pane__toggle--button:active {
-          background-color: var(--color-primary);
-          color: white; }
+        padding: 1rem 1rem;
+        background-color: white;
+        border: 1px solid var(--color-text-primary);
+        box-shadow: var(--shadow-light); }
+        .section__blog-navigation .categories-pane__toggle .categories-pane__toggle--button span::after {
+          content: "\203A";
+          font-size: 1.5rem;
+          margin-left: 1rem;
+          display: inline-block;
+          transition: all .25s;
+          rotate: 90deg; }
+        .section__blog-navigation .categories-pane__toggle .categories-pane__toggle--button.expanded span::after {
+          rotate: -90deg; }
   .section__blog-navigation .tag-dropdown {
     flex: 0 0 auto;
-    border: var(--rails); }
+    border: var(--rails);
+    background-color: red;
+    margin-left: 5px;
+    border-radius: .3rem; }
+    .section__blog-navigation .tag-dropdown button {
+      font-size: 1.5rem;
+      padding: 1rem 1rem;
+      background-color: white;
+      border: 1px solid var(--color-text-primary);
+      box-shadow: var(--shadow-light); }
+      .section__blog-navigation .tag-dropdown button span::after {
+        content: "\203A";
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        display: inline-block;
+        transition: all .25s;
+        rotate: 90deg; }
+      .section__blog-navigation .tag-dropdown button.expanded span::after {
+        rotate: -90deg; }
+    .section__blog-navigation .tag-dropdown__panel {
+      display: none; }
+    .section__blog-navigation .tag-dropdown__panel.expanded {
+      background-color: white;
+      display: inherit;
+      position: absolute; }
   .section__blog-navigation .search-box {
+    background-color: yellow;
     border: var(--rails);
     flex: 1 2 auto;
     max-width: 20rem;
