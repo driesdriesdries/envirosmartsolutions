@@ -28,15 +28,23 @@
         <div class="tag-dropdown">
             <button class="tag-dropdown__button"><span>Tags</span></button>
             <div class="tag-dropdown__panel">
-            <h5>Popular Article Tags</h5>
-                <ul>
-                    <li class="tag-dropdown__panel--link"><a href="#">Water</a></li>
-                    <li class="tag-dropdown__panel--link"><a href="#">Solar</a></li>
-                    <li class="tag-dropdown__panel--link"><a href="#">Wind</a></li>
-                    <li class="tag-dropdown__panel--link"><a href="#">Renewables</a></li>
-                </ul>
-                <hr>
-                <p>View All Tags</p>
+                <?php 
+                $tags = get_tags(array(
+                        'orderby' => 'count',
+                        'order' => 'DESC',
+                        'number' => 5 // Get only the top 5 tags
+                    ));
+
+                    if ($tags) {
+                        echo '<ul>';
+                        foreach ($tags as $tag) {
+                            echo '<li><a href="' . get_tag_link($tag->term_id) . '">' . $tag->name . '</a></li>';
+                        }
+                        echo '</ul>';
+                    } else {
+                        echo 'No tags found';
+                    }
+                ?>
             </div>
             
 
@@ -46,23 +54,4 @@
         </div>
 </div>
 
-<?php /*
-$tags = get_tags(array(
-        'orderby' => 'count',
-        'order' => 'DESC',
-        'number' => 5 // Get only the top 5 tags
-    ));
 
-    if ($tags) {
-        echo '<ul>';
-        foreach ($tags as $tag) {
-            echo '<li><a href="' . get_tag_link($tag->term_id) . '">' . $tag->name . '</a></li>';
-        }
-        echo '</ul>';
-    } else {
-        echo 'No tags found';
-    }
-
-*/
-    
-?>

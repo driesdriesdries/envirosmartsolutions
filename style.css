@@ -886,7 +886,6 @@ header, main, footer {
   align-items: center;
   border: var(--rails); }
   .section__blog-navigation .categories-pane {
-    border: var(--rails);
     display: flex;
     box-shadow: var(--shadow-light);
     padding-left: 2rem;
@@ -900,7 +899,8 @@ header, main, footer {
       display: flex;
       margin-left: 0;
       margin-bottom: 0;
-      background-color: white; }
+      background-color: white;
+      border: var(--rails); }
       @media only screen and (max-width: 56.25em) {
         .section__blog-navigation .categories-pane__list ul {
           display: none; } }
@@ -964,7 +964,6 @@ header, main, footer {
   .section__blog-navigation .tag-dropdown {
     flex: 0 0 auto;
     border: var(--rails);
-    background-color: red;
     margin-left: 5px;
     border-radius: .3rem; }
     .section__blog-navigation .tag-dropdown button {
@@ -973,6 +972,10 @@ header, main, footer {
       background-color: white;
       border: 1px solid var(--color-text-primary);
       box-shadow: var(--shadow-light); }
+      @media only screen and (min-width: 56.25em) {
+        .section__blog-navigation .tag-dropdown button {
+          padding: 1.6rem 1rem;
+          border: none; } }
       .section__blog-navigation .tag-dropdown button span::after {
         content: "\203A";
         font-size: 1.5rem;
@@ -984,12 +987,27 @@ header, main, footer {
         rotate: -90deg; }
     .section__blog-navigation .tag-dropdown__panel {
       display: none; }
+      .section__blog-navigation .tag-dropdown__panel ul {
+        margin-left: 0;
+        margin-bottom: 0;
+        list-style: none; }
+        .section__blog-navigation .tag-dropdown__panel ul li {
+          border: var(--rails);
+          padding: 2rem 2rem;
+          width: 100%; }
+          .section__blog-navigation .tag-dropdown__panel ul li a {
+            text-decoration: none; }
     .section__blog-navigation .tag-dropdown__panel.expanded {
       background-color: white;
       display: inherit;
-      position: absolute; }
+      position: absolute;
+      box-shadow: var(--shadow-light);
+      border-radius: 5px; }
+      @media only screen and (max-width: 37.5em) {
+        .section__blog-navigation .tag-dropdown__panel.expanded {
+          width: 100%;
+          left: 0; } }
   .section__blog-navigation .search-box {
-    background-color: yellow;
     border: var(--rails);
     flex: 1 2 auto;
     max-width: 20rem;

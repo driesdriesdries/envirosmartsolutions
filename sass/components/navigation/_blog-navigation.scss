@@ -3,10 +3,9 @@
     display: flex;
     align-items: center;
     border: var(--rails);
-    //background-color: teal;
     .categories-pane {
         //background-color: orange;
-        border: var(--rails);
+        //border: var(--rails);
         display: flex;
         box-shadow: var(--shadow-light);
         padding-left: 2rem;
@@ -18,12 +17,11 @@
         }
         &__list {
             ul {
-                //background-color: orangered;
                 display: flex;
                 margin-left: 0;
                 margin-bottom: 0;
                 background-color: white;
-                //border: var(--rails);
+                border: var(--rails);
                 @media only screen and (max-width: $bp-medium) {
                     display: none;
                 }
@@ -65,7 +63,6 @@
                         width: 100%;
                     }
                     li {
-                       //background-color: red;
                         margin-left: 0;
                         a, span {
                             border: var(--rails);
@@ -114,7 +111,6 @@
     .tag-dropdown {
         flex: 0 0 auto;
         border: var(--rails);
-        background-color: red;
         margin-left: 5px;
         border-radius: .3rem;
         button {
@@ -123,6 +119,10 @@
             background-color: white;
             border: 1px solid var(--color-text-primary);
             box-shadow: var(--shadow-light);
+            @media only screen and (min-width: $bp-medium) {
+                padding: 1.6rem 1rem;
+                border: none;
+            }
             span::after {
                 content: "\203A";
                 font-size: 1.5rem;
@@ -138,17 +138,35 @@
             }
         }
         &__panel {
-            //background-color: green;
             display: none;
+            ul {
+                margin-left: 0;
+                margin-bottom: 0;
+                list-style: none;
+                li {
+                    border: var(--rails);
+                    padding: 2rem 2rem;
+                    width: 100%;
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
         }
         &__panel.expanded {
             background-color: white;
             display: inherit;
             position: absolute;
+            box-shadow: var(--shadow-light);
+            border-radius: 5px;
+            @media only screen and (max-width: $bp-small) {
+                width: 100%;
+                left: 0;
+            }
         }
     }
     .search-box {
-        background-color: yellow;
+        //background-color: yellow;
         border: var(--rails);
         flex: 1 2 auto;
         max-width: 20rem;
