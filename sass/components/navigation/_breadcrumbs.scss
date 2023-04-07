@@ -1,9 +1,9 @@
 .section__breadcrumbs {
-    //background-color: gray;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    background-color: beige;
+    @include component-padding;
     display: flex;
     border: var(--rails);
+    border-radius: var(--rounded-corners-minimal);
     ol.breadcrumb {
         display: flex;
         list-style-type: none;

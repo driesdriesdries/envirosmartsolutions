@@ -1,0 +1,62 @@
+.tag-dropdown {
+    flex: 0 0 auto;
+    margin-left: 5px;
+    align-self: stretch;
+    box-shadow: var(--shadow-light);
+    border-radius: var(--rounded-corners-minimal);
+    button {
+        background-color: white;
+        @media only screen and (min-width: $bp-medium) {
+            border:none;
+            border-bottom: 4px solid transparent;
+            height: 100%;
+            span {
+                font-size: 1.6rem;
+            }
+        }
+        span::after {
+            content: "\203A";
+            color: var(--color-text-primary);
+            margin-left: 1rem;
+            display: inline-block;
+            transition: all .25s;
+            rotate: 90deg;
+        }
+        &.expanded {
+            span::after {
+                rotate: -90deg;
+            }
+        }
+    }
+    &__panel {
+        display: none;
+        ul {
+            margin-left: 0;
+            margin-bottom: 0;
+            list-style: none;
+            li {
+                border: var(--rails);
+                width: 100%;
+                a {
+                    text-decoration: none;
+                    display: inline-block;
+                    width: 100%;
+                    padding: 2rem 2rem;
+                    color: var(--color-text-primary);
+                }
+            }
+        }
+    }
+    &__panel.expanded {
+        background-color: white;
+        display: inherit;
+        position: absolute;
+        box-shadow: var(--shadow-light);
+        animation: fadeIn .5s;
+        border-radius: var(--rounded-corners-minimal);
+        @media only screen and (max-width: $bp-small) {
+            width: 100%;
+            left: 0;
+        }
+    }
+}
