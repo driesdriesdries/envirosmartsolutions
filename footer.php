@@ -19,6 +19,7 @@
 <script language="JavaScript" type="text/javascript" src="<?php echo get_theme_file_uri('js/navigation.js'); ?>"></script>
 <script language="JavaScript" type="text/javascript" src="<?php echo get_theme_file_uri('js/blog-navigation.js'); ?>"></script>
 <script language="JavaScript" type="text/javascript" src="<?php echo get_theme_file_uri('js/accordion.js'); ?>"></script>
+<script language="JavaScript" type="text/javascript" src="<?php echo get_theme_file_uri('js/table-of-contents.js'); ?>"></script>
 <?php wp_footer(); ?>
 
 </body>

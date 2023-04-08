@@ -109,7 +109,9 @@ get_header();
 			</div>
 			
 			
-
+			<!-- table of contents-->
+			<div class="table-of-contents"></div>
+			
 		</div>
 
 	</main><!-- #main -->

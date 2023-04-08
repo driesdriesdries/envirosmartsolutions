@@ -1,7 +1,6 @@
 .section{
 	&__category-description {
-		padding-top: 2rem;
-		padding-bottom: 2rem;
+		@include component-padding;
 		border: var(--rails);
 		p {
 			margin-bottom: 0;

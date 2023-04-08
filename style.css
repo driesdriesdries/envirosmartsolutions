@@ -349,7 +349,7 @@ template {
   --shadow-light: 0 .5rem 1rem rgba(0,0,0, .1);
   --rounded-corners: 20px;
   --rounded-corners-minimal: 10px;
-  --rails: 0px solid crimson; }
+  --rails: 1px solid crimson; }
 
 * {
   margin: 0;
@@ -648,8 +648,7 @@ textarea {
 # Layouts
 --------------------------------------------------------------*/
 .section__category-description {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 1.5rem;
   border: var(--rails); }
   .section__category-description p {
     margin-bottom: 0; }
