@@ -24,13 +24,6 @@ get_header();
 			<div class="article-container">
 				<div class="left">
 					<!-- table of contents-->
-					<style>
-						.sticky {
-							position: fixed;
-							top: 10px; /* Adjust this value according to your site's layout */
-							width: 26.85rem;
-							}
-					</style>
 					<div class="table-of-contents"></div>
 				</div>
 				<div class="right">

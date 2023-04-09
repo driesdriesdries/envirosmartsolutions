@@ -900,6 +900,12 @@ header, main, footer {
   .article-container .right {
     flex: 1 0; }
 
+.sticky {
+  position: fixed;
+  top: 10px;
+  /* Adjust this value according to your site's layout */
+  width: 26.85rem; }
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/

@@ -256,6 +256,9 @@ function my_custom_breadcrumbs() {
                 echo '<li class="breadcrumb-item">' . $category[0]->cat_name . '</li>';
             }
         }
+    } elseif (is_tag()) {
+        $tag = get_queried_object();
+        echo '<li class="breadcrumb-item">' . $tag->name . '</li>';
     }
 
     if (is_single()) {
