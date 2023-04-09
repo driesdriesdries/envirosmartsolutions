@@ -12,10 +12,10 @@
 .section {
 	&__article-body {
 		background-color: white;
-		padding: 2rem 2rem;
-		width: 70%;
+		@include component-padding;
+		//width: 70%;
 		margin: 0 auto;
-		margin-top: -7rem;
+		//margin-top: -7rem;
 		border: var(--rails);
 		h1 {
 			margin-bottom: 1rem;
@@ -60,5 +60,40 @@
             width: 100%;
 			margin-top: 0rem;
         }
+	}
+}
+
+.article-container {
+	display: flex;
+	//background-color: orange;
+	.left {
+		border: var(--rails);
+		flex: 0 0 30rem;
+		@include component-padding;
+		@media only screen and (max-width: $bp-medium) {
+            display: none;
+        }
+		ul {
+			margin-left: 0;
+			margin-bottom: 0;
+			list-style: none;
+			li {
+				font-size: 1.4rem;
+			}
+		}
+		h3 {
+			// margin-top: 5rem;
+			font-weight: bold;
+		}
+		.table-of-contents {
+			//background-color: lightgrey;
+			border: 1px solid var(--color-text-primary);
+			border-radius: var(--rounded-corners-minimal);
+			@include component-padding;
+		}
+	}
+	.right {
+		//background-color: blue;
+		flex: 1 0;
 	}
 }
