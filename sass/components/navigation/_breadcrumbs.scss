@@ -1,5 +1,6 @@
+//Blog Breadcrumbs
 .section__breadcrumbs {
-    background-color: beige;
+    background-color: var(--placeholder-background-color);
     @include component-padding;
     display: flex;
     border: var(--rails);
@@ -24,3 +25,23 @@
         }
     }
 }
+
+//Woocommerce Breadcrumbs
+.woocommerce-breadcrumb {
+		background-color: var(--placeholder-background-color);
+        border: var(--rails);
+		display: flex;
+		width: 100%;
+		@include component-padding;
+		border-radius: var(--rounded-corners-minimal);
+        font-size: 1.4rem;
+        a {
+            text-decoration: none;
+            color: var(--color-primary);
+            // margin-right: .7rem;
+            display: inline-block;
+            &:not(:first-child) {
+                //margin-left: .7rem;
+            }
+        }
+	}

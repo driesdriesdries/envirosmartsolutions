@@ -84,21 +84,8 @@
 		color: $woocommerce__color-error;
 	}
 }
-
-
 //EnviroCommerce Styling
-
 .single-product-page {
-	&-breadcrumbs {
-		background-color: lightcoral;
-		display: flex;
-		width: 100%;
-		@include component-padding;
-		border-radius: var(--rounded-corners-minimal);
-		nav {
-			font-size: 1.4rem;
-		}
-	}
 	&-main {
 		//background-color: teal;
 		border: var(--rails);
@@ -127,6 +114,21 @@
 			}
 			p.price {
 				font-weight: bold;
+			}
+			.product-meta {
+				//background-color: var(--placeholder-background-color);
+				margin-top: 2rem;
+				> div {
+					//background-color: red;
+					margin-top: 1rem;
+				}
+				h3 {
+					font-size: 1.8rem;
+				}
+				a {
+					font-size:1.4rem;
+					color: var();
+				}
 			}
 		}
 	}

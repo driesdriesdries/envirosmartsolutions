@@ -17,6 +17,7 @@ get_header();
 	<main id="primary" class="site-main soil-gel-page">	
 	
 		<div class="section home-banner">
+		<?php my_custom_breadcrumbs(); ?>
 			<div class="home-banner__copy">
 				<h1>Empowering Sustainable Living</h1>
 				<p>Eco-Friendly Solutions and Practices for a Greener Future.We are focused on environmentally friendly, sustainable, and smart solutions or technologies. We cover topics such as green living, renewable energy, waste management, sustainable products, and eco-friendly practices, with the goal of promoting a more sustainable lifestyle and helping to preserve the environment.</p>

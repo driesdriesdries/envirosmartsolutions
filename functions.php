@@ -239,32 +239,38 @@ function generate_social_proof($countries) {
 
 //Breadcrumbs
 function my_custom_breadcrumbs() {
-    if (is_home() || is_front_page()) {
-        return;
-    }
+	if (is_home() || is_front_page()) {
+		return;
+	}
+	
+	echo '<div class="section section__breadcrumbs">';
+	echo '<nav aria-label="breadcrumb"><ol class="breadcrumb">';
+	echo '<li class="breadcrumb-item"><a href="' . get_home_url() . '">Home</a></li>';
+	echo '<li class="breadcrumb-item';
+	if (is_category() || is_single() || is_tag()) {
+		echo '"><a href="' . get_home_url() . '/blog">Blog</a></li>';
+	} else {
+		echo ' active">Blog</li>';
+	}
 
-    echo '<div class="section section__breadcrumbs">';
-    echo '<nav aria-label="breadcrumb"><ol class="breadcrumb">';
-    echo '<li class="breadcrumb-item"><a href="' . get_home_url() . '">Home</a></li>';
-
-    if (is_category() || is_single()) {
-        $category = get_the_category();
-        if ($category) {
-            if (is_single()) {
-                echo '<li class="breadcrumb-item"><a href="' . get_category_link($category[0]->term_id) . '">' . $category[0]->cat_name . '</a></li>';
-            } else {
-                echo '<li class="breadcrumb-item">' . $category[0]->cat_name . '</li>';
-            }
-        }
-    } elseif (is_tag()) {
-        $tag = get_queried_object();
-        echo '<li class="breadcrumb-item">' . $tag->name . '</li>';
-    }
-
-    if (is_single()) {
-        echo '<li class="breadcrumb-item active" aria-current="page">' . get_the_title() . '</li>';
-    }
-
-    echo '</ol></nav>';
-    echo '</div>';
+	if (is_category() || is_single()) {
+		$category = get_the_category();
+		if ($category) {
+			if (is_single()) {
+				echo '<li class="breadcrumb-item"><a href="' . get_home_url() . '/blog/category/' . $category[0]->slug . '">' . $category[0]->cat_name . '</a></li>';
+			} else {
+				echo '<li class="breadcrumb-item">' . $category[0]->cat_name . '</li>';
+			}
+		}
+	} elseif (is_tag()) {
+		$tag = get_queried_object();
+		echo '<li class="breadcrumb-item">' . $tag->name . '</li>';
+	}
+	
+	if (is_single()) {
+		echo '<li class="breadcrumb-item active" aria-current="page">' . get_the_title() . '</li>';
+	}
+	
+	echo '</ol></nav>';
+	echo '</div>';
 }
