@@ -187,6 +187,7 @@ add_action( 'after_setup_theme', 'custom_image_sizes' );
 function custom_image_sizes() {
     add_image_size( 'card-image-thumbnail', 350, 200, array( 'center', 'center' ) );
     add_image_size( 'banner-image', 1140, 350, array( 'center', 'center' ) );
+	add_image_size( 'single-product', 600, 420, array( 'center', 'center' ) );
 }
 
 //Hero Function
