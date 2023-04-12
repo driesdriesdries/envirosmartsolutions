@@ -349,7 +349,7 @@ template {
   --shadow-light: 0 .5rem 1rem rgba(0,0,0, .1);
   --rounded-corners: 20px;
   --rounded-corners-minimal: 10px;
-  --rails: 0px solid crimson; }
+  --rails: 1px solid crimson; }
 
 * {
   margin: 0;
@@ -1080,7 +1080,7 @@ header, main, footer {
         text-decoration: none; }
     .section__breadcrumbs ol.breadcrumb :not(:last-child).breadcrumb-item::after {
       display: inline-block;
-      content: ">";
+      content: "/";
       margin-left: 1rem; }
 
 .footer {
@@ -1744,9 +1744,13 @@ ul.products {
   color: #df7f69; }
 
 .single-product-page-breadcrumbs {
-  background-color: lightcoral; }
+  background-color: lightcoral;
+  display: flex;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: var(--rounded-corners-minimal); }
   .single-product-page-breadcrumbs nav {
-    font-size: 1.6rem; }
+    font-size: 1.4rem; }
 
 .single-product-page-main {
   border: var(--rails);
