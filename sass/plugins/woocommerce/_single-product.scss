@@ -55,17 +55,21 @@
 				color: white;
 			}
 			.product-meta {
-				background-color: lightcoral;
 				margin-top: 2rem;
-				> div {
-					margin-top: 1rem;
+				span {
+					font-size: 1.4rem;
+					line-height: 3rem;
+					margin-right: .5rem;
+				}
+				.product-category, .product-tags {
+					display: flex;
 				}
 				h3 {
-					font-size: 1.8rem;
+					margin-top: 2rem;
 				}
-				a {
-					font-size:1.4rem;
-					color: var();
+				p {
+					margin-top: 1rem;
+					margin-bottom: 1rem;
 				}
 			}
 		}

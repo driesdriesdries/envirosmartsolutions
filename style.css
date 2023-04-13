@@ -1745,15 +1745,18 @@ ul.products {
       font-size: 1.6rem;
       color: white; }
     .single-product-page-main__right .product-meta {
-      background-color: lightcoral;
       margin-top: 2rem; }
-      .single-product-page-main__right .product-meta > div {
-        margin-top: 1rem; }
-      .single-product-page-main__right .product-meta h3 {
-        font-size: 1.8rem; }
-      .single-product-page-main__right .product-meta a {
+      .single-product-page-main__right .product-meta span {
         font-size: 1.4rem;
-        color: var(); }
+        line-height: 3rem;
+        margin-right: .5rem; }
+      .single-product-page-main__right .product-meta .product-category, .single-product-page-main__right .product-meta .product-tags {
+        display: flex; }
+      .single-product-page-main__right .product-meta h3 {
+        margin-top: 2rem; }
+      .single-product-page-main__right .product-meta p {
+        margin-top: 1rem;
+        margin-bottom: 1rem; }
 
 /**
  * Checkout
