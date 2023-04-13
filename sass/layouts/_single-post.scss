@@ -65,19 +65,12 @@
 	display: flex;
 	.left {
 		border: var(--rails);
-		flex: 0 0 30rem;
+		flex: 0 1 40rem;
 		@include component-padding;
-		@media only screen and (max-width: $bp-medium) {
+		@media only screen and (max-width: $bp-large) {
             display: none;
         }
-		ul {
-			margin-left: 0;
-			margin-bottom: 0;
-			list-style: none;
-			li {
-				font-size: 1.4rem;
-			}
-		}
+		
 		h3 {
 			font-weight: bold;
 		}
@@ -85,6 +78,15 @@
 			border: 1px solid var(--color-text-primary);
 			border-radius: var(--rounded-corners-minimal);
 			@include component-padding;
+			ul {
+				margin-left: 0;
+				margin-bottom: 0;
+				list-style: none;
+				li {
+					font-size: 1.4rem;
+					margin-bottom: 1.5rem;
+				}
+			}
 		}
 	}
 	.right {
@@ -95,5 +97,5 @@
 .sticky {
 	position: fixed;
 	top: 10px; /* Adjust this value according to your site's layout */
-	width: 26.85rem;
+	width: 36.8rem;
 }
