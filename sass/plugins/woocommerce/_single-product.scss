@@ -101,13 +101,19 @@
 			border: 3px solid var(--color-green-dark);
 			border-radius: var(--rounded-corners-minimal);
 			text-align: center;
-			// background-color: yellow;
 			display: flex;
-			justify-content: center;
-			// align-items: center;
-			img {
-				border-radius: var(--rounded-corners-minimal);
-				margin-top: 3.2rem;
+			flex-direction: column;
+			&--primary-image {
+				margin-top: 3.3rem;
+				//background-color: green;
+			}
+			&--image-gallery {
+				margin-top: 1rem;
+				//background-color: aqua;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 1rem;
 			}
 		}
 		&__right {
@@ -127,8 +133,6 @@
 				}
 				.regular {
 					text-decoration: line-through;
-					//color: var(--color-text-primary-light);
-					//font-weight: 100;
 				}
 			}
 			button {

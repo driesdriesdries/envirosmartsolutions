@@ -915,7 +915,8 @@ header, main, footer {
 .section__blog-navigation {
   display: flex;
   justify-content: left;
-  align-items: center; }
+  align-items: center;
+  border: var(--rails); }
   @media only screen and (max-width: 56.25em) {
     .section__blog-navigation button {
       font-size: 1.8rem;
@@ -1772,10 +1773,15 @@ ul.products {
     border-radius: var(--rounded-corners-minimal);
     text-align: center;
     display: flex;
-    justify-content: center; }
-    .single-product-page-main__left img {
-      border-radius: var(--rounded-corners-minimal);
-      margin-top: 3.2rem; }
+    flex-direction: column; }
+    .single-product-page-main__left--primary-image {
+      margin-top: 3.3rem; }
+    .single-product-page-main__left--image-gallery {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem; }
   .single-product-page-main__right {
     border: 3px solid var(--color-green-dark);
     border-radius: var(--rounded-corners-minimal);

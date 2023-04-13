@@ -3,6 +3,7 @@
     display: flex;
     justify-content: left;
     align-items: center;
+    border: var(--rails);
     button {
         @media only screen and (max-width: $bp-medium) {
             font-size: 1.8rem;

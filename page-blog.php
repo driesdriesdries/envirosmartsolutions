@@ -16,7 +16,7 @@ get_header();
 ?>
 	<main id="primary" class="site-main soil-gel-page">	
 	
-		<div class="section home-banner">
+		<div class="section">
 		<?php my_custom_breadcrumbs(); ?>
 			<div class="home-banner__copy">
 				<h1>Empowering Sustainable Living</h1>
