@@ -1,5 +1,5 @@
 table.shop_table_responsive {
-
+border: var(--rails);
 	thead {
 		display: none;
 	}
@@ -12,15 +12,17 @@ table.shop_table_responsive {
 	}
 
 	tr {
-
+		border: var(--rails);
 		td {
 			display: block;
 			text-align: right;
 			clear: both;
+			border: var(--rails);
 
 			&::before {
 				content: attr(data-title) ": ";
 				float: left;
+				border: var(--rails);
 			}
 
 			&.product-remove {

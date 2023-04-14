@@ -1,0 +1,45 @@
+.cart-item {
+    background-color: lightyellow;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.6rem;
+    border:var(--rails);
+    justify-content: space-between;
+    &__remove {
+        background-color: blue;
+        @include flex-column-around;
+    }
+    &__thumbnail {
+        background-color: yellow;
+        @include flex-column-around;
+    }
+    &__name {
+        background-color: lightblue;
+        @include flex-column-around;
+        a:first-child {
+            color: var(--color-text-primary);
+
+        }
+    }
+    &__price {
+        background-color: lightgray;
+        @include flex-column-around;
+    }
+    &__quantity {
+        background-color: lightsalmon;
+        @include flex-column-around;
+    }
+}
+
+.cart-wrapper {
+    background-color: green;
+    display: flex;
+    justify-content: flex-end;
+    &__total {
+        background-color: yellow;
+        a {
+            display: block;
+        }
+    }
+}

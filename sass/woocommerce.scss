@@ -27,6 +27,11 @@ $woocommerce__color-info: #008ddf;
  */
 @import "plugins/woocommerce/single-product";
 
+
+/**
+ * Cart/Basket
+ */
+ @import "plugins/woocommerce/cart";
 /**
  * Checkout
  */

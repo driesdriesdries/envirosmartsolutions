@@ -36,3 +36,11 @@
   @mixin component-padding {
 	padding: 1.5rem;
   }
+
+  @mixin flex-column-around {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+  }
+
+  

@@ -1622,28 +1622,32 @@ WooCommerce styles override
 /**
  * Shop tables
  */
-table.shop_table_responsive thead {
-  display: none; }
-
-table.shop_table_responsive tbody th {
-  display: none; }
-
-table.shop_table_responsive tr td {
-  display: block;
-  text-align: right;
-  clear: both; }
-  table.shop_table_responsive tr td::before {
-    content: attr(data-title) ": ";
-    float: left; }
-  table.shop_table_responsive tr td.product-remove a {
-    text-align: left; }
-  table.shop_table_responsive tr td.product-remove::before {
+table.shop_table_responsive {
+  border: var(--rails); }
+  table.shop_table_responsive thead {
     display: none; }
-  table.shop_table_responsive tr td.actions::before, table.shop_table_responsive tr td.download-actions::before {
+  table.shop_table_responsive tbody th {
     display: none; }
-  table.shop_table_responsive tr td.download-actions .button {
-    display: block;
-    text-align: center; }
+  table.shop_table_responsive tr {
+    border: var(--rails); }
+    table.shop_table_responsive tr td {
+      display: block;
+      text-align: right;
+      clear: both;
+      border: var(--rails); }
+      table.shop_table_responsive tr td::before {
+        content: attr(data-title) ": ";
+        float: left;
+        border: var(--rails); }
+      table.shop_table_responsive tr td.product-remove a {
+        text-align: left; }
+      table.shop_table_responsive tr td.product-remove::before {
+        display: none; }
+      table.shop_table_responsive tr td.actions::before, table.shop_table_responsive tr td.download-actions::before {
+        display: none; }
+      table.shop_table_responsive tr td.download-actions .button {
+        display: block;
+        text-align: center; }
 
 @media screen and (min-width: 48em) {
   table.shop_table_responsive thead {
@@ -1669,7 +1673,8 @@ ul.products {
     position: relative;
     margin-bottom: 2em; }
     ul.products li.product img {
-      display: block; }
+      display: block;
+      background-color: green; }
     ul.products li.product .button {
       display: block; }
 
@@ -1757,6 +1762,54 @@ ul.products {
       .single-product-page-main__right .product-meta p {
         margin-top: 1rem;
         margin-bottom: 1rem; }
+
+/**
+ * Cart/Basket
+ */
+.cart-item {
+  background-color: lightyellow;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.6rem;
+  border: var(--rails);
+  justify-content: space-between; }
+  .cart-item__remove {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  .cart-item__thumbnail {
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  .cart-item__name {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    .cart-item__name a:first-child {
+      color: var(--color-text-primary); }
+  .cart-item__price {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  .cart-item__quantity {
+    background-color: lightsalmon;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+
+.cart-wrapper {
+  background-color: green;
+  display: flex;
+  justify-content: flex-end; }
+  .cart-wrapper__total {
+    background-color: yellow; }
+    .cart-wrapper__total a {
+      display: block; }
 
 /**
  * Checkout
