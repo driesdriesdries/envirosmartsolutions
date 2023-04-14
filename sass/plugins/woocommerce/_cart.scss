@@ -1,45 +1,75 @@
 .cart-item {
-    background-color: lightyellow;
-    margin-bottom: 2rem;
+    // background-color: lightyellow;
+    margin-bottom: 3rem;
     display: flex;
     flex-wrap: wrap;
     font-size: 1.6rem;
     border:var(--rails);
-    justify-content: space-between;
+    justify-content: flex-end;
     &__remove {
-        background-color: blue;
+        border: var(--rails);
         @include flex-column-around;
+        @include component-padding;
+        flex: 0 0 5rem;
+        text-align: center;
     }
     &__thumbnail {
-        background-color: yellow;
+        border: var(--rails);
         @include flex-column-around;
     }
     &__name {
-        background-color: lightblue;
+        flex: 1 0 50rem;
+        border: var(--rails);
         @include flex-column-around;
+        @include component-padding;
         a:first-child {
             color: var(--color-text-primary);
-
         }
     }
     &__price {
-        background-color: lightgray;
+        border: var(--rails);
         @include flex-column-around;
+        font-weight: bold;
+        @include component-padding;
     }
     &__quantity {
-        background-color: lightsalmon;
+        border: var(--rails);
+        @include flex-column-around;
+        @include component-padding;
+    }
+}
+
+.checkout_coupon_wrapper {
+    border: var(--rails);
+    display: flex;
+    justify-content: flex-end;
+    form {
+        border: var(--rails);
         @include flex-column-around;
     }
 }
 
 .cart-wrapper {
-    background-color: green;
+    margin-top: 2rem;
+    border: var(--rails);
     display: flex;
     justify-content: flex-end;
     &__total {
-        background-color: yellow;
+        border: var(--rails);
+        text-align: right;
+        h3 {
+            font-weight: bold;
+            border: var(--rails);
+        }
         a {
             display: block;
+            border: var(--rails);
+        }
+        span {
+            font-weight: bold;
+            font-size: 3rem;
+            border: var(--rails);
         }
     }
 }
+

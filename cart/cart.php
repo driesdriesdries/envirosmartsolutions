@@ -35,7 +35,7 @@ do_action( 'woocommerce_before_cart' ); ?>
             $product_permalink = apply_filters( 'woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '', $cart_item, $cart_item_key );
 
             echo '<div class="cart-item">';
-
+			
             // Product remove link
             echo '<div class="cart-item__remove">';
             echo '<a href="' . esc_url( wc_get_cart_remove_url( $cart_item_key ) ) . '" class="cart-item__remove" title="' . esc_attr__( 'Remove this item', 'woocommerce' ) . '">' . esc_html__( 'X', 'woocommerce' ) . '</a>';
@@ -69,31 +69,31 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 <!-- End testing cart output -->
 
+<!-- Voucher testing -->
+<div class="checkout_coupon_wrapper">
+    <?php 
+    if ( ! empty( $_POST['coupon_code'] ) ) {
+        $coupon_code = wc_clean( $_POST['coupon_code'] );
+        WC()->cart->apply_coupon( $coupon_code );
+    }
+
+    echo '<form class="checkout_coupon" method="post" style="margin-bottom: 20px;">';
+    echo '<input type="text" name="coupon_code" class="input-text" placeholder="' . esc_attr__( 'Coupon code', 'woocommerce' ) . '" id="coupon_code" value="" />';
+    echo '<button type="submit" class="button" name="apply_coupon" value="' . esc_attr__( 'Apply Coupon', 'woocommerce' ) . '">' . esc_html__( 'Apply Coupon', 'woocommerce' ) . '</button>';
+    echo '</form>';
+    ?>
+</div>
+<!-- Voucher testing ends -->
+
 <!-- Code that displays the cart total -->
 <div class="cart-wrapper">
 	<div class="cart-wrapper__total">
-	<h3><?php esc_html_e( 'Cart Total:', 'woocommerce' ); ?></h3>
+	<h3><?php esc_html_e( 'Cart Total', 'woocommerce' ); ?></h3>
     <span class="amount"><?php echo wp_kses_data( WC()->cart->get_cart_total() ); ?></span>
-    <a href="<?php echo esc_url( wc_get_checkout_url() ); ?>" class="checkout-button button alt wc-forward"><?php esc_html_e( 'Proceed to checkout', 'woocommerce' ); ?></a>
+    <a href="<?php echo esc_url( wc_get_checkout_url() ); ?>" class="primary-button primary-button--medium checkout-button button alt wc-forward"><?php esc_html_e( 'Proceed to checkout', 'woocommerce' ); ?></a>
 	</div>
 </div>
 
 <!-- End code that displays the total -->
-
-
-<!-- Voucher testing -->
-<?php 
-if ( ! empty( $_POST['coupon_code'] ) ) {
-    $coupon_code = wc_clean( $_POST['coupon_code'] );
-    WC()->cart->apply_coupon( $coupon_code );
-}
-
-echo '<form class="checkout_coupon" method="post" style="margin-bottom: 20px;">';
-echo '<input type="text" name="coupon_code" class="input-text" placeholder="' . esc_attr__( 'Coupon code', 'woocommerce' ) . '" id="coupon_code" value="" />';
-echo '<button type="submit" class="button" name="apply_coupon" value="' . esc_attr__( 'Apply Coupon', 'woocommerce' ) . '">' . esc_html__( 'Apply Coupon', 'woocommerce' ) . '</button>';
-echo '</form>';
-
-?>
-<!-- Voucher testing ends -->
 
 <?php do_action( 'woocommerce_after_cart' ); ?>
