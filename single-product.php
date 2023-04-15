@@ -58,15 +58,23 @@ if ( function_exists( 'woocommerce_breadcrumb' ) ) {
 		<?php the_content(); ?>
 
 		<!-- Add to cart -->
-		<form class="cart" method="post" enctype="multipart/form-data">
-			<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
-			
-			<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" />
-			
-			<button type="submit" class="single_add_to_cart_button button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
-			
-			<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
-		</form>
+<form class="cart" method="post" enctype="multipart/form-data">
+	<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
+	
+	<!-- Quantity input -->
+	<div class="quantity">
+		<label for="quantity"><?php esc_html_e( 'Quantity:', 'woocommerce' ); ?></label>
+		<input type="number" id="quantity" name="quantity" value="1" min="1" step="1">
+	</div>
+
+	<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" />
+	
+	<button type="submit" class="single_add_to_cart_button button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+	
+	<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
+</form>
+
+
 
 		<?php endwhile; ?>
 		
@@ -84,25 +92,25 @@ if ( function_exists( 'woocommerce_breadcrumb' ) ) {
 					
 					// Get product SKU
 					$product_sku = $product->get_sku();
-					?>
+				?>
 
-					<?php if (!empty($product_category)): ?>
+				<?php if (!empty($product_category)): ?>
 					<div class="product-category">
 						<span><?php esc_html_e( 'Category:', 'woocommerce' ); ?></span>
 						<span class="posted-in"><?php echo $product_category; ?></span>
 					</div>
-					<?php endif; ?>
+				<?php endif; ?>
 
-					<?php if (!empty($product_tags)): ?>
+				<?php if (!empty($product_tags)): ?>
 					<div class="product-tags">
 						<span><?php esc_html_e( 'Tags:', 'woocommerce' ); ?></span>
 						<span class="tagged-as"><?php echo $product_tags; ?></span>
 					</div>
-					<?php endif; ?>
+				<?php endif; ?>
 
-					<?php if (!empty($product_sku)): ?>
+				<?php if (!empty($product_sku)): ?>
 					<p>SKU: <?php echo $product_sku; ?></p>
-					<?php endif; ?>
+				<?php endif; ?>
 
 
 					<!-- Additional Information -->
