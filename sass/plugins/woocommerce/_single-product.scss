@@ -49,10 +49,24 @@
 				}
 			}
 			button {
-				background-color: var(--color-primary);
-				border-color: var(--color-primary);
+				// background-color: var(--color-primary);
+				// border-color: var(--color-primary);
+				// font-size: 1.6rem;
+				// color: white;
+			}
+			form {
+				background-color: olivedrab;
+				display: flex;
+				margin-bottom: 2rem;
+				align-items: center;
 				font-size: 1.6rem;
-				color: white;
+				input {
+					font-size: 1.8rem;
+					margin-right: 1rem;
+				}
+			}
+			.next-step {
+				margin-bottom: 2rem;
 			}
 			.product-meta {
 				margin-top: 2rem;

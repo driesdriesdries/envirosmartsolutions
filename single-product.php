@@ -40,42 +40,51 @@ if ( function_exists( 'woocommerce_breadcrumb' ) ) {
 	</div>
 	
 	<div class="single-product-page-main__right">
-	<?php while ( have_posts() ) : the_post(); ?>
-		<?php global $product; ?>
+		<?php while ( have_posts() ) : the_post(); ?>
+			<?php global $product; ?>
 
-		<?php the_title( '<h1 class="product_title entry-title">', '</h1>' ); ?>
-		
-		<!-- Display the prices -->
-		<?php if ( $product->is_on_sale() && $product->get_sale_price() ) : ?>
-			<p class="price">
-				<span class="regular"><?php echo wc_price( $product->get_regular_price() ); ?></span>	
-				<span class="sale"><?php echo wc_price( $product->get_sale_price() ); ?></span>
-			</p>
-		<?php else : ?>
-			<p class="price"><?php echo wc_price( $product->get_regular_price() ); ?></p>
-		<?php endif; ?>
+			<?php the_title( '<h1 class="product_title entry-title">', '</h1>' ); ?>
+			
+			<!-- Display the prices -->
+			<?php if ( $product->is_on_sale() && $product->get_sale_price() ) : ?>
+				<p class="price">
+					<span class="regular"><?php echo wc_price( $product->get_regular_price() ); ?></span>	
+					<span class="sale"><?php echo wc_price( $product->get_sale_price() ); ?></span>
+				</p>
+			<?php else : ?>
+				<p class="price"><?php echo wc_price( $product->get_regular_price() ); ?></p>
+			<?php endif; ?>
+			
 
-		<?php the_content(); ?>
+			<!-- Testing add to cart here -->
+			<?php if ( $product->is_in_stock() ) : ?>
 
-		<!-- Add to cart -->
-<form class="cart" method="post" enctype="multipart/form-data">
-	<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
-	
-	<!-- Quantity input -->
-	<div class="quantity">
-		<label for="quantity"><?php esc_html_e( 'Quantity:', 'woocommerce' ); ?></label>
-		<input type="number" id="quantity" name="quantity" value="1" min="1" step="1">
-	</div>
+				<form class="cart" method="post" enctype='multipart/form-data'>
+					<div class="quantity">
+						<label for="quantity_<?php echo esc_attr( $product->get_id() ); ?>">Quantity:</label>
+						<input type="number" id="quantity_<?php echo esc_attr( $product->get_id() ); ?>" class="input-text qty text" step="1" min="<?php echo esc_attr( $product->get_min_purchase_quantity() ); ?>" max="<?php echo $product->managing_stock() ? esc_attr( $product->get_max_purchase_quantity() ) : ''; ?>" name="quantity" value="<?php echo esc_attr( $product->get_min_purchase_quantity() ); ?>" title="Qty" size="4" inputmode="numeric" />
+					</div>
 
-	<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" />
-	
-	<button type="submit" class="single_add_to_cart_button button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
-	
-	<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
-</form>
+					<button type="submit" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" class="single_add_to_cart_button button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+				</form>
+
+			<?php else : ?>
+			<h1>There is not enough stock.</h1>
+			<?php endif; ?>
 
 
+			<!-- end testing -->
 
+			<!-- next step testing -->
+			<?php if ( WC()->cart->get_cart_contents_count() > 0 ) : ?>
+				<div class="next-step">
+					<a href="<?php echo wc_get_cart_url(); ?>" class="primary-button primary-button--medium cart-link">View Cart</a>
+					<a href="<?php echo wc_get_checkout_url(); ?>" class="ghost-button ghost-button--medium checkout-link">Proceed to Checkout</a>
+				</div>
+			<?php endif; ?>
+
+
+			<?php the_content(); ?>
 		<?php endwhile; ?>
 		
 		<!-- Category and tags -->

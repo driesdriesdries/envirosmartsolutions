@@ -1744,11 +1744,17 @@ ul.products {
         color: var(--color-primary); }
       .single-product-page-main__right p.price .regular {
         text-decoration: line-through; }
-    .single-product-page-main__right button {
-      background-color: var(--color-primary);
-      border-color: var(--color-primary);
-      font-size: 1.6rem;
-      color: white; }
+    .single-product-page-main__right form {
+      background-color: olivedrab;
+      display: flex;
+      margin-bottom: 2rem;
+      align-items: center;
+      font-size: 1.6rem; }
+      .single-product-page-main__right form input {
+        font-size: 1.8rem;
+        margin-right: 1rem; }
+    .single-product-page-main__right .next-step {
+      margin-bottom: 2rem; }
     .single-product-page-main__right .product-meta {
       margin-top: 2rem; }
       .single-product-page-main__right .product-meta span {
