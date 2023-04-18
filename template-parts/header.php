@@ -10,8 +10,8 @@
         <div class="nav-right">
             <div class="menu-box">
                 <ul class="menu-box-list">
-                    <li class="menu-box-list--item"><a href="<?php echo site_url('/category/agriculture/'); ?>">Agriculture</a></li>
-                    <li class="menu-box-list--item"><a href="<?php echo site_url('/category/water-treatment'); ?>">Water Treatment</a></li>
+                    <li class="menu-box-list--item"><a href="<?php echo site_url('/blog/category/agriculture/'); ?>">Agriculture</a></li>
+                    <li class="menu-box-list--item"><a href="<?php echo site_url('/blog/category/water-treatment'); ?>">Water Treatment</a></li>
                     <li class="menu-box-list--item modaltrigger"><a href="#">Contact</a></li>
                 </ul>
             </div>
