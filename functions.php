@@ -199,8 +199,9 @@ function createHeroSection($h1Text, $pText, $bgImageURL) {
 			<h1>{$h1Text}</h1>
 			<p class="tagline">{$pText}</p>
 			<div class="button-box">
-				<a href="javascript:void(0)" class="modaltrigger button button__primary">CONTACT</a>
-				<a href="#" class="learn-more button button__secondary">LEARN MORE</a>
+				<p></p>
+				<a href="javascript:void(0)" class="primary-button primary-button--medium modaltrigger">CONTACT</a>
+				<a href="#" class="learn-more ghost-button ghost-button--medium">LEARN MORE</a>
 			</div>
 		</div>
 	</div>
@@ -232,7 +233,8 @@ function generate_social_proof($countries) {
         <h4>
             <i>'.$countries.'</i>
         </h4>
-        <a href="javascript:void(0)" class="modaltrigger button button__primary">CONTACT</a>
+		<p></p>
+        <a href="javascript:void(0)" class="modaltrigger primary-button primary-button--medium">CONTACT</a>
     </div>';
     return $html;
 }

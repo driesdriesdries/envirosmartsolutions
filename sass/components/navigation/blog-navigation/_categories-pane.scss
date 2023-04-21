@@ -60,7 +60,7 @@
                 li {
                     margin-left: 0;
                     a, span {
-                        border: var(--rails);
+                        //border: var(--rails);
                         @include component-padding;
                         width: 100%;
                     }

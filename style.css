@@ -830,8 +830,7 @@ header, main, footer {
   height: 35rem;
   width: 100%;
   background-position: center center;
-  background-size: cover;
-  border: var(--rails); }
+  background-size: cover; }
   @media only screen and (max-width: 37.5em) {
     .single-post-banner {
       height: 20rem; } }
@@ -839,28 +838,21 @@ header, main, footer {
 .section__article-body {
   background-color: white;
   padding: 1.5rem;
-  margin: 0 auto;
-  border: var(--rails); }
+  margin: 0 auto; }
   .section__article-body h1 {
-    margin-bottom: 1rem;
-    border: var(--rails); }
+    margin-bottom: 1rem; }
   .section__article-body .single-post-meta {
     display: flex;
-    border: var(--rails);
     align-items: center;
     margin-bottom: 2rem; }
-    .section__article-body .single-post-meta__published-date {
-      border: var(--rails); }
-      .section__article-body .single-post-meta__published-date p {
-        margin-bottom: 0;
-        font-style: italic;
-        font-size: 1.4rem; }
+    .section__article-body .single-post-meta__published-date p {
+      margin-bottom: 0;
+      font-style: italic;
+      font-size: 1.4rem; }
     .section__article-body .single-post-meta__social-icons {
-      border: var(--rails);
       margin-left: auto; }
       .section__article-body .single-post-meta__social-icons a {
         margin-left: 2rem;
-        border: var(--rails);
         display: inline-block; }
         .section__article-body .single-post-meta__social-icons a:first-child {
           margin-left: 0; }
@@ -879,7 +871,6 @@ header, main, footer {
 .article-container {
   display: flex; }
   .article-container .left {
-    border: var(--rails);
     flex: 0 0 30rem;
     padding: 1.5rem; }
     @media only screen and (max-width: 56.25em) {
@@ -973,7 +964,6 @@ header, main, footer {
         .section__blog-navigation .categories-pane__list ul.expanded li {
           margin-left: 0; }
           .section__blog-navigation .categories-pane__list ul.expanded li a, .section__blog-navigation .categories-pane__list ul.expanded li span {
-            border: var(--rails);
             padding: 1.5rem;
             width: 100%; }
           .section__blog-navigation .categories-pane__list ul.expanded li span {
@@ -1025,7 +1015,6 @@ header, main, footer {
         margin-bottom: 0;
         list-style: none; }
         .section__blog-navigation .tag-dropdown__panel ul li {
-          border: var(--rails);
           width: 100%; }
           .section__blog-navigation .tag-dropdown__panel ul li a {
             text-decoration: none;
@@ -1192,7 +1181,6 @@ header, main, footer {
           padding: 2rem 2rem; }
 
 .post-navigation {
-  border: var(--rails);
   display: flex;
   justify-content: space-between;
   padding-top: .8rem;
@@ -1207,8 +1195,7 @@ header, main, footer {
   padding-bottom: 1rem;
   display: flex;
   justify-content: center;
-  font-size: 1.6rem;
-  border: var(--rails); }
+  font-size: 1.6rem; }
   .section__tag-section .tags-list .tag-link {
     margin-left: .5rem; }
 
@@ -1245,7 +1232,6 @@ header, main, footer {
     border-top: 1px solid var(--color-text-primary); }
 
 .card-section {
-  border: var(--rails);
   display: flex;
   justify-content: center;
   padding-top: 3rem;
@@ -1326,6 +1312,10 @@ header, main, footer {
     box-shadow: var(--shadow-dark);
     animation: fadeIn 1s;
     color: var(--color-text-primary); }
+    .modal-content h3 {
+      font-weight: bold;
+      font-size: 3rem;
+      margin-bottom: 2rem; }
     @media only screen and (max-width: 56.25em) {
       .modal-content {
         width: 85%;

@@ -3,7 +3,7 @@
 	width: 100%;
 	background-position: center center;
 	background-size: cover;
-	border: var(--rails);
+	//border: var(--rails);
 	@media only screen and (max-width: $bp-small) {
 		height: 20rem;
 	}
@@ -14,18 +14,18 @@
 		background-color: white;
 		@include component-padding;
 		margin: 0 auto;
-		border: var(--rails);
+		//border: var(--rails);
 		h1 {
 			margin-bottom: 1rem;
-			border: var(--rails);
+			//border: var(--rails);
 		}
 		.single-post-meta {
 			display: flex;
-			border: var(--rails);
+			//border: var(--rails);
 			align-items: center;
 			margin-bottom: 2rem;
 			&__published-date {
-				border: var(--rails);
+				//border: var(--rails);
 				p {
 					margin-bottom: 0;
 					font-style: italic;
@@ -33,11 +33,11 @@
 				}
 			}
 			&__social-icons {
-				border: var(--rails);
+				//border: var(--rails);
 				margin-left: auto;
 				a {
 					margin-left: 2rem;
-					border: var(--rails);
+					//border: var(--rails);
 					display: inline-block;
 					&:first-child {
 						margin-left: 0;
@@ -64,7 +64,7 @@
 .article-container {
 	display: flex;
 	.left {
-		border: var(--rails);
+		//border: var(--rails);
 		flex: 0 0 30rem;
 		@include component-padding;
 		@media only screen and (max-width: $bp-medium) {
