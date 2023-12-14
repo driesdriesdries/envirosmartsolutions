@@ -6,7 +6,7 @@
 		
 		<h3>Contact Us</h3>
 		<p>We appreciate your interest! Please fill out the form below and we will get back to you as soon as possible.</p>
-		<?php echo do_shortcode( '[contact-form-7 id="7" title="Contact form 1"]' ); ?>
+		<?php echo do_shortcode( '[contact-form-7 id="470ed24" title="Contact form 1"]' ); ?>
 	</div>
 </div>
 <!-- Modal Ends -->
