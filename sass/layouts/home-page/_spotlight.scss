@@ -1,0 +1,44 @@
+.spotlight {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    box-shadow: var(--shadow-light);
+    .featured-article {
+        display: flex;
+        background-color: purple;
+        flex: 0 0 60%;
+        .image {
+            flex: 0 0 50%;
+        }
+        .details {
+            flex: 0 0 50%;
+            background-color: white;
+            padding: 3rem 2rem;
+            h3 {
+                margin-bottom: 1.2rem;
+            }
+            p {
+                margin-bottom: 0;
+                font-size: 1.4rem;
+            }
+            .excerpt {
+                margin: 2.5rem 0;
+                font-size: 1.6rem;
+            }
+            a {
+                margin-top: 2rem;
+            }
+            .date, .read-time, .category, .tagged, .author {
+                font-weight: bold;
+            }
+            span {
+                font-weight: 100;
+                font-style: italic;
+            }
+        }
+    }
+    .latest-articles {
+        background-color: orangered;
+        flex: 0 0 40%;
+    }
+}

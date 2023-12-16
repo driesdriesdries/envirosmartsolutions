@@ -839,8 +839,39 @@ header, main, footer {
       margin-top: 1rem;
       margin-bottom: 2rem; }
 
-.featured-post .instance {
-  display: flex; }
+.spotlight {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  box-shadow: var(--shadow-light); }
+  .spotlight .featured-article {
+    display: flex;
+    background-color: purple;
+    flex: 0 0 60%; }
+    .spotlight .featured-article .image {
+      flex: 0 0 50%; }
+    .spotlight .featured-article .details {
+      flex: 0 0 50%;
+      background-color: white;
+      padding: 3rem 2rem; }
+      .spotlight .featured-article .details h3 {
+        margin-bottom: 1.2rem; }
+      .spotlight .featured-article .details p {
+        margin-bottom: 0;
+        font-size: 1.4rem; }
+      .spotlight .featured-article .details .excerpt {
+        margin: 2.5rem 0;
+        font-size: 1.6rem; }
+      .spotlight .featured-article .details a {
+        margin-top: 2rem; }
+      .spotlight .featured-article .details .date, .spotlight .featured-article .details .read-time, .spotlight .featured-article .details .category, .spotlight .featured-article .details .tagged, .spotlight .featured-article .details .author {
+        font-weight: bold; }
+      .spotlight .featured-article .details span {
+        font-weight: 100;
+        font-style: italic; }
+  .spotlight .latest-articles {
+    background-color: orangered;
+    flex: 0 0 40%; }
 
 .home-page .home-banner {
   border: var(--rails); }
