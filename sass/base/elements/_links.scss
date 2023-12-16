@@ -1,5 +1,5 @@
 a {
-	color: $color__link;
+	color: var(--color-secondary);
 
 	&:visited {
 		color: $color__link-visited;

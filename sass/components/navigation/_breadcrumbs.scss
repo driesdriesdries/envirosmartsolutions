@@ -1,8 +1,7 @@
 .section__breadcrumbs {
-    background-color: beige;
     @include component-padding;
     display: flex;
-    border: var(--rails);
+    border: 1px solid var(--color-secondary);
     border-radius: var(--rounded-corners-minimal);
     ol.breadcrumb {
         display: flex;

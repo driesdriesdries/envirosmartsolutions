@@ -11,7 +11,7 @@
 
 .section {
 	&__article-body {
-		background-color: white;
+		//background-color: white;
 		@include component-padding;
 		margin: 0 auto;
 		//border: var(--rails);
@@ -85,10 +85,21 @@
 			border: 1px solid var(--color-text-primary);
 			border-radius: var(--rounded-corners-minimal);
 			@include component-padding;
+			a {
+				color:var(--color-secondary)
+			}
 		}
 	}
 	.right {
 		flex: 1 0;
+		.article_sources {
+			background-color: grey;
+			padding: 1rem;
+			border-radius: 1rem;
+			p {
+				margin-bottom: 0;
+			}
+		}
 	}
 }
 
