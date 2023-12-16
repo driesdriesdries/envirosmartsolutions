@@ -10,21 +10,21 @@ h6 {
 }
 
 h1 {
-	font-size: 5rem;
+    font-size: 3.0rem; /* Larger for main titles */
 }
 h2 {
-	font-size: 4rem;
+    font-size: 2.25rem; /* Slightly smaller than h1 */
 }
 h3 {
-	font-size: 2rem;
+    font-size: 1.75rem; /* Slightly smaller than h2 */
 
 }
 h4 {
-	font-size: 2.4rem;
+    font-size: 1.5rem; /* Slightly smaller than h3 */
 }
 h5 {
-	font-size: 1.5rem;
+    font-size: 1.25rem; /* Slightly smaller than h4 */
 }
 h6 {
-	font-size: 1.2rem;
+    font-size: 1.0rem; /* Smallest, suitable for the least prominent headings */
 }

@@ -67,29 +67,34 @@ get_header();
 								endwhile;
 							endif;
 						?>
-						<div class="article_sources">
-							<?php
-							// Check if there are any rows in the 'sources' repeater field
-							if( have_rows('sources') ): 
-								// If rows are available, display the heading 'Article Sources'
-								echo '<h3 class="sources_heading">Article Sources</h3>';
-								echo '<ul>';
-								// Loop through each row (source) and display its details
-								while( have_rows('sources') ): the_row(); 
-									$title = get_sub_field('source_title');
-									$url = get_sub_field('source_url');
-									$description = get_sub_field('source_description');
-									echo '<li>';
-									echo '<strong>' . esc_html($title) . '</strong>';
-									echo '<a href="' . esc_url($url) . '" target="_blank">Source Link</a>';
-									echo '<p>' . esc_html($description) . '</p>';
-									echo '</li>';
-								endwhile;
-								echo '</ul>';
-							// End if - only show the heading and list if there are sources
-							endif; 
-							?>
-						</div>
+						<?php
+						// Check if there are any rows in the 'sources' repeater field
+						if( have_rows('sources') ): 
+						?>
+							<div class="article_sources">
+								<h3 class="sources_heading">Article Sources</h3>
+								<ul>
+									<?php 
+									// Loop through each row (source) and display its details
+									while( have_rows('sources') ): the_row(); 
+										$title = get_sub_field('source_title');
+										$url = get_sub_field('source_url');
+										$description = get_sub_field('source_description');
+									?>
+										<li>
+											<strong><?php echo esc_html($title); ?></strong>
+											<a href="<?php echo esc_url($url); ?>" target="_blank">Source Link</a>
+											<p><?php echo esc_html($description); ?></p>
+										</li>
+									<?php 
+									endwhile; 
+									?>
+								</ul>
+							</div>
+						<?php 
+						// End if - only render the div and its contents if there are sources
+						endif; 
+						?>
 
 
 						<div class="section section__tag-section">

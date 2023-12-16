@@ -28,14 +28,14 @@
             }
         }
     }
-    &__panel {
+    .tag-dropdown__panel {
         display: none;
         ul {
+            background-color: white;
             margin-left: 0;
             margin-bottom: 0;
             list-style: none;
-            li {
-                //border: var(--rails);
+            li.tagItem { // The class 'tagItem' is applied to the <li>
                 width: 100%;
                 a {
                     text-decoration: none;
@@ -43,12 +43,19 @@
                     width: 100%;
                     padding: 2rem 2rem;
                     color: var(--color-text-primary);
+                    transition: background-color 0.3s ease; // Transition for background-color
+    
+                    &:hover {
+                        background-color: var(--color-accent1); // Change background color to pink on hover
+                    }
                 }
             }
         }
     }
+    
+    
     &__panel.expanded {
-        background-color: white;
+        //background-color: white;
         display: inherit;
         position: absolute;
         box-shadow: var(--shadow-light);

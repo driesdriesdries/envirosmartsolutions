@@ -65,7 +65,7 @@
 	display: flex;
 	.left {
 		//border: var(--rails);
-		flex: 0 0 30rem;
+		flex: 0 0 40rem;
 		@include component-padding;
 		@media only screen and (max-width: $bp-medium) {
             display: none;
@@ -82,8 +82,7 @@
 			font-weight: bold;
 		}
 		.table-of-contents {
-			border: 1px solid var(--color-text-primary);
-			border-radius: var(--rounded-corners-minimal);
+			background-color: var(--well-color);
 			@include component-padding;
 			a {
 				color:var(--color-secondary)
@@ -93,7 +92,7 @@
 	.right {
 		flex: 1 0;
 		.article_sources {
-			background-color: grey;
+			background-color: var(--well-color);
 			padding: 1rem;
 			border-radius: 1rem;
 			p {

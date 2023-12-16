@@ -340,6 +340,8 @@ template {
 :root {
   --color-primary: #4C9A2A;
   /* Rich Green */
+  --color-primary-dark: #2a5c16;
+  /* Darker Shade of Rich Green */
   --color-secondary: #57A0D3;
   /* Sky Blue */
   --color-tertiary: #8B4513;
@@ -348,6 +350,8 @@ template {
   /* Light Yellow */
   --color-accent2: #1E90FF;
   /* Deep Blue */
+  --well-color: #f2f2f2;
+  /* soft grey used for well */
   --color-green-dark: #4f704f;
   --color-green-light: #bcdabc;
   --canvas-green: #F4FBF3;
@@ -624,22 +628,28 @@ h6 {
   color: var(--color-primary); }
 
 h1 {
-  font-size: 5rem; }
+  font-size: 3.0rem;
+  /* Larger for main titles */ }
 
 h2 {
-  font-size: 4rem; }
+  font-size: 2.25rem;
+  /* Slightly smaller than h1 */ }
 
 h3 {
-  font-size: 2rem; }
+  font-size: 1.75rem;
+  /* Slightly smaller than h2 */ }
 
 h4 {
-  font-size: 2.4rem; }
+  font-size: 1.5rem;
+  /* Slightly smaller than h3 */ }
 
 h5 {
-  font-size: 1.5rem; }
+  font-size: 1.25rem;
+  /* Slightly smaller than h4 */ }
 
 h6 {
-  font-size: 1.2rem; }
+  font-size: 1.0rem;
+  /* Smallest, suitable for the least prominent headings */ }
 
 body,
 button,
@@ -878,7 +888,7 @@ header, main, footer {
 .article-container {
   display: flex; }
   .article-container .left {
-    flex: 0 0 30rem;
+    flex: 0 0 40rem;
     padding: 1.5rem; }
     @media only screen and (max-width: 56.25em) {
       .article-container .left {
@@ -892,15 +902,14 @@ header, main, footer {
     .article-container .left h3 {
       font-weight: bold; }
     .article-container .left .table-of-contents {
-      border: 1px solid var(--color-text-primary);
-      border-radius: var(--rounded-corners-minimal);
+      background-color: var(--well-color);
       padding: 1.5rem; }
       .article-container .left .table-of-contents a {
         color: var(--color-secondary); }
   .article-container .right {
     flex: 1 0; }
     .article-container .right .article_sources {
-      background-color: grey;
+      background-color: var(--well-color);
       padding: 1rem;
       border-radius: 1rem; }
       .article-container .right .article_sources p {
@@ -955,7 +964,7 @@ header, main, footer {
           text-decoration: none;
           color: var(--color-text-primary); }
           .section__blog-navigation .categories-pane__list ul li a:hover, .section__blog-navigation .categories-pane__list ul li span:hover {
-            border-bottom: 4px solid var(--color-primary);
+            border-bottom: 4px solid var(--color-accent1);
             color: currentColor; }
         .section__blog-navigation .categories-pane__list ul li span {
           color: lightgray;
@@ -1023,22 +1032,25 @@ header, main, footer {
         rotate: 90deg; }
       .section__blog-navigation .tag-dropdown button.expanded span::after {
         rotate: -90deg; }
-    .section__blog-navigation .tag-dropdown__panel {
+    .section__blog-navigation .tag-dropdown .tag-dropdown__panel {
       display: none; }
-      .section__blog-navigation .tag-dropdown__panel ul {
+      .section__blog-navigation .tag-dropdown .tag-dropdown__panel ul {
+        background-color: white;
         margin-left: 0;
         margin-bottom: 0;
         list-style: none; }
-        .section__blog-navigation .tag-dropdown__panel ul li {
+        .section__blog-navigation .tag-dropdown .tag-dropdown__panel ul li.tagItem {
           width: 100%; }
-          .section__blog-navigation .tag-dropdown__panel ul li a {
+          .section__blog-navigation .tag-dropdown .tag-dropdown__panel ul li.tagItem a {
             text-decoration: none;
             display: inline-block;
             width: 100%;
             padding: 2rem 2rem;
-            color: var(--color-text-primary); }
+            color: var(--color-text-primary);
+            transition: background-color 0.3s ease; }
+            .section__blog-navigation .tag-dropdown .tag-dropdown__panel ul li.tagItem a:hover {
+              background-color: var(--color-accent1); }
     .section__blog-navigation .tag-dropdown__panel.expanded {
-      background-color: white;
       display: inherit;
       position: absolute;
       box-shadow: var(--shadow-light);
@@ -1068,8 +1080,7 @@ header, main, footer {
 .section__breadcrumbs {
   padding: 1.5rem;
   display: flex;
-  border: 1px solid var(--color-secondary);
-  border-radius: var(--rounded-corners-minimal); }
+  background-color: var(--well-color); }
   .section__breadcrumbs ol.breadcrumb {
     display: flex;
     list-style-type: none;
@@ -1106,9 +1117,6 @@ header, main, footer {
       font-size: 1.4rem;
       color: var(--color-text-primary);
       text-align: center; }
-
-.container-navbar {
-  border: 1px solid var(--color-text-primary); }
 
 .main-navigation {
   display: flex;
