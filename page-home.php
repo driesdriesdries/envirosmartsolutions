@@ -16,6 +16,49 @@ get_header();
 ?>
 	<main id="primary" class="site-main container home-page">
 		<?php  get_template_part( 'template-parts/blog-navigation' ); ?>
+		
+		<div class="featured-post">
+			<h2 class="heading">Featured Post</h2>
+			<?php
+			// Set up the arguments for the WP_Query
+			$args = array(
+				'tag' => 'featured',      // Look for posts with the 'featured' tag
+				'posts_per_page' => 1,    // Limit to only 1 post
+				'orderby' => 'date',      // Order by post date
+				'order' => 'DESC'         // Start with the most recent
+			);
+
+			// Create a new instance of WP_Query
+			$featured_query = new WP_Query($args);
+
+			// Check if the query has posts and display them
+			if ($featured_query->have_posts()) : 
+				while ($featured_query->have_posts()) : $featured_query->the_post();
+					?>
+					<div class="instance">
+						<div class="featured-post__left">
+							<?php 
+							// Display the featured image
+							if (has_post_thumbnail()) {
+								echo get_the_post_thumbnail($post->ID, 'large');
+							}
+							?>
+						</div>
+						<div class="featured-post__right">
+							<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+							<p class="author">By <?php the_author(); ?></p>
+							<div class="excerpt"><?php the_excerpt(); ?></div>
+						</div>
+					</div>
+					<?php
+				endwhile;
+			endif;
+
+			// Reset post data to avoid conflicts with other queries
+			wp_reset_postdata();
+			?>
+		</div>
+
 		<div class="section home-banner">
 			<div class="home-banner__copy">
 				<h1>Empowering Sustainable Living</h1>
