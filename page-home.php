@@ -15,7 +15,9 @@
 get_header();
 ?>
 	<main id="primary" class="site-main container home-page">
-		<?php  get_template_part( 'template-parts/blog-navigation' ); ?>
+			
+		<?php  get_template_part( 'template-parts/home-page/hero' ); ?>
+		<?php  get_template_part( 'template-parts/blog-navigation' ); ?>	
 		<?php  get_template_part( 'template-parts/home-page/spotlight' ); ?>
 
 		<div class="section home-banner">

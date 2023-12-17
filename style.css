@@ -841,7 +841,9 @@ header, main, footer {
   margin-top: 2rem;
   margin-bottom: 2rem;
   display: flex;
-  box-shadow: var(--shadow-light); }
+  box-shadow: var(--shadow-light);
+  border-radius: 3rem;
+  overflow: hidden; }
   .spotlight .featured-article {
     display: flex;
     flex-direction: row;
@@ -890,6 +892,35 @@ header, main, footer {
         padding: 1.5rem; }
         .spotlight .latest-articles .item .right p {
           margin-bottom: 0.5rem; }
+
+.hero {
+  padding: 1rem 1rem;
+  display: flex;
+  border: 2px solid var(--color-primary);
+  border-radius: 20px;
+  margin-bottom: 2rem; }
+  .hero .left {
+    flex: 0 0 55%;
+    padding: 20rem 5rem; }
+    .hero .left h1 {
+      font-size: 4rem; }
+  .hero .right {
+    position: relative;
+    /* Ensure that the pseudo-element is positioned relatively to this container */
+    flex: 0 0 45%; }
+    .hero .right:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url("images/hero.png") no-repeat center center;
+      background-size: cover;
+      transform: scaleX(-1);
+      /* Flip the pseudo-element horizontally */
+      z-index: -1;
+      /* Position the pseudo-element behind the content of '.right' */ }
 
 .home-page .home-banner {
   border: var(--rails); }
