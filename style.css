@@ -340,8 +340,6 @@ template {
 :root {
   --color-primary: #2a5c16;
   /* Rich Green */
-  --color-primary-dark: #2a5c16;
-  /* Darker Shade of Rich Green */
   --color-secondary: #57A0D3;
   /* Sky Blue */
   --color-tertiary: #8B4513;
@@ -846,10 +844,13 @@ header, main, footer {
   box-shadow: var(--shadow-light); }
   .spotlight .featured-article {
     display: flex;
-    background-color: purple;
+    flex-direction: row;
+    align-items: center;
     flex: 0 0 60%; }
     .spotlight .featured-article .image {
-      flex: 0 0 50%; }
+      flex: 0 0 50%;
+      width: 100%;
+      height: 100%; }
     .spotlight .featured-article .details {
       flex: 0 0 50%;
       background-color: white;
@@ -870,8 +871,25 @@ header, main, footer {
         font-weight: 100;
         font-style: italic; }
   .spotlight .latest-articles {
-    background-color: orangered;
-    flex: 0 0 40%; }
+    padding: 2rem; }
+    .spotlight .latest-articles .item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      transition: box-shadow 0.3s ease;
+      /* Transition effect for the box-shadow */ }
+      .spotlight .latest-articles .item:hover {
+        box-shadow: var(--shadow-light);
+        /* Box shadow applied on hover */ }
+      .spotlight .latest-articles .item .left {
+        width: 20rem;
+        height: 17rem; }
+      .spotlight .latest-articles .item .right {
+        width: 70%;
+        padding: 1.5rem; }
+        .spotlight .latest-articles .item .right p {
+          margin-bottom: 0.5rem; }
 
 .home-page .home-banner {
   border: var(--rails); }
