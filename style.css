@@ -961,11 +961,6 @@ header, main, footer {
       z-index: -1;
       /* Position the pseudo-element behind the content of '.right' */ }
 
-.home-page .home-banner {
-  border: var(--rails); }
-  .home-page .home-banner__copy {
-    text-align: center; }
-
 .single-post-banner {
   height: 35rem;
   width: 100%;
@@ -1502,6 +1497,45 @@ header, main, footer {
   color: #000;
   text-decoration: none;
   cursor: pointer; }
+
+.explore {
+  border: 2px solid var(--color-primary);
+  border-radius: var(--rounded-corners);
+  padding: 2rem 2rem; }
+  .explore h3 {
+    font-size: 4rem; }
+  .explore .card-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .explore .card-group {
+        flex-direction: column; } }
+    .explore .card-group .card {
+      flex: 0 0 22%;
+      margin: 5px;
+      box-sizing: border-box; }
+      .explore .card-group .card .card-top {
+        height: 30rem;
+        border-top-left-radius: var(--rounded-corners);
+        border-top-right-radius: var(--rounded-corners);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: inherit; }
+      .explore .card-group .card .card-bottom {
+        background-color: var(--well-color);
+        text-align: center;
+        padding: 2rem 0; }
+        .explore .card-group .card .card-bottom a {
+          text-decoration: none;
+          color: inherit; }
+        .explore .card-group .card .card-bottom h4 {
+          margin: 0; }
 
 .section__hero {
   text-align: center;

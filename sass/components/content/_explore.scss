@@ -1,0 +1,54 @@
+.explore {
+    //background-color: orangered;
+    border: 2px solid var(--color-primary);
+    border-radius: var(--rounded-corners);
+    padding: 2rem 2rem;
+    h3 {
+        font-size: 4rem;
+    }
+    .card-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        //background-color: blueviolet;
+        flex-wrap: wrap;
+        padding: 2rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+        }
+
+        .card {
+            flex: 0 0 22%;
+            margin: 5px;
+            box-sizing: border-box;
+
+            .card-top {
+                height: 30rem;
+                border-top-left-radius: var(--rounded-corners);
+                border-top-right-radius: var(--rounded-corners);
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                color: inherit;
+            }
+
+            .card-bottom {
+                background-color: var(--well-color);
+                text-align: center;
+                padding: 2rem 0;
+
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                }
+
+                h4 {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
