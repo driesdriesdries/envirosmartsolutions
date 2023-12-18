@@ -18,9 +18,9 @@ get_header();
 			
 		<?php  get_template_part( 'template-parts/home-page/hero'); ?>
 
-		<?php  get_template_part( 'template-parts/newsletter'); ?>
-			
 		<?php  get_template_part( 'template-parts/home-page/spotlight' ); ?>
+
+		<?php  get_template_part( 'template-parts/blog-navigation'); ?>
 
 		<div class="section home-banner">
 			<div class="home-banner__copy">
@@ -47,6 +47,9 @@ get_header();
 				?>
 			</div>
 		</div>
+
+		<?php  get_template_part( 'template-parts/newsletter'); ?>
+		
 	</main><!-- #main -->
 
 <?php
