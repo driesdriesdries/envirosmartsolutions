@@ -1,0 +1,70 @@
+.newsletter {
+    background-color: var(--well-color); /* Ensure --well-color is defined */
+    display: flex;
+    border-radius: 2rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left {
+        //border: 1px solid black;
+        flex: 0 0 30%;
+        padding: 2rem;
+
+
+        p {
+            margin-bottom: 0;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 100%;
+        }
+    }
+
+    .right {
+        //border: 1px solid black;
+        flex: 0 0 70%;
+        padding: 2rem;
+        padding-top: 3rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 100%;
+        }
+        
+        .wpcf7-form {
+            width: 100%; /* Ensure the form takes full width of its parent */
+            #submit_button {
+                background-color: var(--color-primary);
+                color: white;
+                padding: 1.8rem;
+                border: transparent;
+            }
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-bottom: 0;
+
+                .wpcf7-form-control-wrap {
+                    flex: 1; /* Allows the fields to grow and take available space */
+                    min-width: 120px; /* Minimum width of the fields */
+
+                    &:not(.wpcf7-submit) {
+                        margin-right: 10px; /* Space between fields, except the submit button */
+                    }
+
+                    input {
+                        width: 100%; /* Full width of the parent */
+                        padding: 1rem; /* Padding for inputs */
+                        margin-bottom: 0; /* Reset margin bottom */
+                        font-size: 2.1rem; /* Set the font size of inputs */
+                    }
+                }
+            }
+        }
+    }
+}

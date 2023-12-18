@@ -48,10 +48,17 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
-@keyframes fadeIn {
-  0% {
+/* Apply this class to the body tag */
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+@keyframes fadeInAnimation {
+  from {
     opacity: 0; }
-  100% {
+  to {
     opacity: 1; } }
 
 /*--------------------------------------------------------------
@@ -412,6 +419,11 @@ a {
       text-decoration: underline; }
     a.primary-button:hover {
       opacity: .75; }
+    a.primary-button--large {
+      padding: 2rem 2rem;
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-transform: uppercase; }
     a.primary-button--medium {
       padding: .5rem 1rem;
       font-size: 1.6rem; }
@@ -434,6 +446,11 @@ a {
       transform: translateY(-2px);
       transition-delay: 0.3s;
       transition: transform 0.2s ease-in-out; }
+    a.ghost-button--large {
+      padding: 2rem 2rem;
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-transform: uppercase; }
     a.ghost-button--medium {
       padding: .5rem 1rem;
       font-size: 1.6rem; }
@@ -841,14 +858,19 @@ header, main, footer {
   margin-top: 2rem;
   margin-bottom: 2rem;
   display: flex;
-  box-shadow: var(--shadow-light);
-  border-radius: 3rem;
-  overflow: hidden; }
+  border-radius: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    .spotlight {
+      flex-direction: column;
+      align-items: center; } }
   .spotlight .featured-article {
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex: 0 0 60%; }
+    flex: 0 0 60%;
+    box-shadow: var(--shadow-light);
+    border-radius: 50px;
+    overflow: hidden; }
     .spotlight .featured-article .image {
       flex: 0 0 50%;
       width: 100%;
@@ -866,14 +888,13 @@ header, main, footer {
         margin: 2.5rem 0;
         font-size: 1.6rem; }
       .spotlight .featured-article .details a {
-        margin-top: 2rem; }
-      .spotlight .featured-article .details .date, .spotlight .featured-article .details .read-time, .spotlight .featured-article .details .category, .spotlight .featured-article .details .tagged, .spotlight .featured-article .details .author {
-        font-weight: bold; }
+        margin-top: 2rem;
+        text-decoration: none; }
       .spotlight .featured-article .details span {
         font-weight: 100;
         font-style: italic; }
   .spotlight .latest-articles {
-    padding: 2rem; }
+    margin-left: 2rem; }
     .spotlight .latest-articles .item {
       display: flex;
       align-items: center;
@@ -890,6 +911,8 @@ header, main, footer {
       .spotlight .latest-articles .item .right {
         width: 70%;
         padding: 1.5rem; }
+        .spotlight .latest-articles .item .right a {
+          text-decoration: none; }
         .spotlight .latest-articles .item .right p {
           margin-bottom: 0.5rem; }
 
@@ -903,7 +926,8 @@ header, main, footer {
     flex: 0 0 55%;
     padding: 20rem 5rem; }
     .hero .left h1 {
-      font-size: 4rem; }
+      font-size: 4rem;
+      letter-spacing: -2.5px; }
   .hero .right {
     position: relative;
     /* Ensure that the pseudo-element is positioned relatively to this container */
@@ -915,7 +939,7 @@ header, main, footer {
       left: 0;
       right: 0;
       bottom: 0;
-      background: url("images/hero.png") no-repeat center center;
+      background: url("images/home/hero.png") no-repeat center center;
       background-size: cover;
       transform: scaleX(-1);
       /* Flip the pseudo-element horizontally */
@@ -1497,6 +1521,63 @@ header, main, footer {
       margin-left: 1rem;
       margin-right: 1rem; }
 
+.newsletter {
+  background-color: var(--well-color);
+  /* Ensure --well-color is defined */
+  display: flex;
+  border-radius: 2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .newsletter {
+      flex-direction: column;
+      align-items: center; } }
+  .newsletter .left {
+    flex: 0 0 30%;
+    padding: 2rem; }
+    .newsletter .left p {
+      margin-bottom: 0; }
+    @media only screen and (max-width: 56.25em) {
+      .newsletter .left {
+        width: 100%; } }
+  .newsletter .right {
+    flex: 0 0 70%;
+    padding: 2rem;
+    padding-top: 3rem; }
+    @media only screen and (max-width: 56.25em) {
+      .newsletter .right {
+        width: 100%; } }
+    .newsletter .right .wpcf7-form {
+      width: 100%;
+      /* Ensure the form takes full width of its parent */ }
+      .newsletter .right .wpcf7-form #submit_button {
+        background-color: var(--color-primary);
+        color: white;
+        padding: 1.8rem;
+        border: transparent; }
+      .newsletter .right .wpcf7-form p {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 0; }
+        .newsletter .right .wpcf7-form p .wpcf7-form-control-wrap {
+          flex: 1;
+          /* Allows the fields to grow and take available space */
+          min-width: 120px;
+          /* Minimum width of the fields */ }
+          .newsletter .right .wpcf7-form p .wpcf7-form-control-wrap:not(.wpcf7-submit) {
+            margin-right: 10px;
+            /* Space between fields, except the submit button */ }
+          .newsletter .right .wpcf7-form p .wpcf7-form-control-wrap input {
+            width: 100%;
+            /* Full width of the parent */
+            padding: 1rem;
+            /* Padding for inputs */
+            margin-bottom: 0;
+            /* Reset margin bottom */
+            font-size: 2.1rem;
+            /* Set the font size of inputs */ }
+
 .sticky {
   display: block; }
 
@@ -1690,10 +1771,17 @@ Theme Name: EnviroSmartSolutions
 
 WooCommerce styles override
 */
-@keyframes fadeIn {
-  0% {
+/* Apply this class to the body tag */
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+@keyframes fadeInAnimation {
+  from {
     opacity: 0; }
-  100% {
+  to {
     opacity: 1; } }
 
 /**

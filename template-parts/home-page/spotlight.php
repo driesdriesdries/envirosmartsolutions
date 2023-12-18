@@ -21,9 +21,13 @@
                 </div>
 
                 <div class="details">
-                    <h3 class="article-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                    <p class="date">Date: <span><?php echo get_the_date('j F Y'); ?></span></p>
-                    <p class="read-time">Read Time: <span>4 Minutes</span></p>
+                    <h2 class="article-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                    <p class="date"><span><?php echo get_the_date('j F Y'); ?></span></p>
+                    <p class="author">By: 
+                        <span>
+                            <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author(); ?></a>
+                        </span>
+                    </p>
                     <p class="excerpt">
                         <?php 
                         $excerpt = get_the_excerpt(); // Get the full excerpt
@@ -32,7 +36,7 @@
                         echo implode(' ', $first_five_words) . '...'; // Combine the first five words back into a string and append an ellipsis
                         ?>
                     </p>
-                    <p class="category">Filed Under:
+                    <p class="category">Category:
                         <span>	
                             <?php 
                             $categories = get_the_category(); 
@@ -48,7 +52,7 @@
                         </span>
                     </p>
                     
-                    <p class="tagged">Tagged With: 
+                    <p class="tagged">Tags: 
                         <span>
                             
                             <?php 
@@ -73,13 +77,9 @@
                             ?>
                         </span>
                     </p>
-                    <p class="author">Authored by: 
-                        <span>
-                            <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author(); ?></a>
-                        </span>
-                    </p>
                     
-                    <a href="<?php the_permalink(); ?>" class="primary-button primary-button--medium single-card-cta">Learn More</a>
+                    
+                    <a href="<?php the_permalink(); ?>" class="primary-button primary-button--medium single-card-cta">Read More</a>
                 </div>
                 <?php
             endwhile;
@@ -124,7 +124,6 @@
                     <div class="right">
                         <h4 class="article-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                         <p class="article-excerpt"><?php echo wp_trim_words(get_the_excerpt(), 10, '...'); ?></p>
-                        <p class="read-more"><a href="<?php the_permalink(); ?>">Read More &raquo;</a></p>
                     </div>
                 </div>
                 <?php

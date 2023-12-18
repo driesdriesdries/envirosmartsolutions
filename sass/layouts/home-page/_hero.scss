@@ -5,12 +5,11 @@
     border-radius: 20px;
     margin-bottom: 2rem;
     .left {
-        //background-color: red;
         flex: 0 0 55%;
-        //border: 1px solid black;
         padding: 20rem 5rem;
         h1 {
             font-size: 4rem;
+            letter-spacing: -2.5px;
         }
     }
     .right {
@@ -25,7 +24,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('images/hero.png') no-repeat center center;
+            background: url('images/home/hero.png') no-repeat center center;
             background-size: cover;
             transform: scaleX(-1); /* Flip the pseudo-element horizontally */
             z-index: -1; /* Position the pseudo-element behind the content of '.right' */
