@@ -862,7 +862,9 @@ header, main, footer {
   @media only screen and (max-width: 56.25em) {
     .spotlight {
       flex-direction: column;
-      align-items: center; } }
+      align-items: center;
+      margin-left: 1rem;
+      margin-right: 1rem; } }
   .spotlight .featured-article {
     display: flex;
     flex-direction: row;
@@ -871,10 +873,13 @@ header, main, footer {
     box-shadow: var(--shadow-light);
     border-radius: 50px;
     overflow: hidden; }
+    @media only screen and (max-width: 56.25em) {
+      .spotlight .featured-article {
+        margin-bottom: 2rem; } }
     .spotlight .featured-article .image {
       flex: 0 0 50%;
       width: 100%;
-      height: 100%; }
+      height: 50rem; }
     .spotlight .featured-article .details {
       flex: 0 0 50%;
       background-color: white;
@@ -902,6 +907,9 @@ header, main, footer {
       cursor: pointer;
       transition: box-shadow 0.3s ease;
       /* Transition effect for the box-shadow */ }
+      @media only screen and (max-width: 56.25em) {
+        .spotlight .latest-articles .item {
+          margin-bottom: 2rem; } }
       .spotlight .latest-articles .item:hover {
         box-shadow: var(--shadow-light);
         /* Box shadow applied on hover */ }
@@ -922,12 +930,19 @@ header, main, footer {
   border: 2px solid var(--color-primary);
   border-radius: 20px;
   margin-bottom: 2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .hero {
+      flex-direction: column;
+      align-items: center; } }
   .hero .left {
     flex: 0 0 55%;
     padding: 20rem 5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .hero .left {
+        padding: 10rem 5rem; } }
     .hero .left h1 {
       font-size: 4rem;
-      letter-spacing: -2.5px; }
+      letter-spacing: -2px; }
   .hero .right {
     position: relative;
     /* Ensure that the pseudo-element is positioned relatively to this container */
