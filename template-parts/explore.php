@@ -1,6 +1,5 @@
 <div class="explore">
-    <h3>Explore More</h3>
-    <?php get_template_part('template-parts/blog-navigation'); ?>
+    <h3>Explore Categories</h3>
     <div class="card-group">
         <?php 
             $args = array(

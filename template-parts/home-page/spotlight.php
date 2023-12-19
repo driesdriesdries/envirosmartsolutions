@@ -1,4 +1,7 @@
-<div class="spotlight">
+<div class="spotlight-container">
+    
+</div>
+<div class="spotlight">    
     <div class="featured-article">
         <?php
         // Set up the arguments for the WP_Query

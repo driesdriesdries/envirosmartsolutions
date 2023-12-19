@@ -2,6 +2,7 @@
     background-color: var(--well-color); /* Ensure --well-color is defined */
     display: flex;
     border-radius: 2rem;
+    margin-top: 2rem;
 
     @media only screen and (max-width: $bp-medium) {
         flex-direction: column;

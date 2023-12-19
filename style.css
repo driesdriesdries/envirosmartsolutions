@@ -398,7 +398,7 @@ html {
   background-color: var(--color-primary); }
 
 a {
-  color: var(--color-secondary); }
+  color: var(--color-primary); }
   a:visited {
     color: #5A825A; }
   a:hover, a:focus, a:active {
@@ -1574,7 +1574,8 @@ header, main, footer {
   background-color: var(--well-color);
   /* Ensure --well-color is defined */
   display: flex;
-  border-radius: 2rem; }
+  border-radius: 2rem;
+  margin-top: 2rem; }
   @media only screen and (max-width: 56.25em) {
     .newsletter {
       flex-direction: column;
